@@ -1,0 +1,31 @@
+C:\Users\Wilfredo\Desktop\admin\admin\admin\bin\Debug\admin.exe.config
+C:\Users\Wilfredo\Desktop\admin\admin\admin\bin\Debug\admin.exe
+C:\Users\Wilfredo\Desktop\admin\admin\admin\bin\Debug\admin.pdb
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.exe
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.pdb
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\bin\Debug\admin.exe.config
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.exe
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.pdb
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\bin\Debug\admin.exe
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\bin\Debug\admin.pdb
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
