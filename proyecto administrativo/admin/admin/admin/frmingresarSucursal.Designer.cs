@@ -33,21 +33,21 @@
             this.bguardar = new System.Windows.Forms.Button();
             this.cestadoSucursal = new System.Windows.Forms.ComboBox();
             this.txtdireccionSucursal = new System.Windows.Forms.TextBox();
-            this.txtnombreSucursal = new System.Windows.Forms.TextBox();
             this.lestadoSucursal = new System.Windows.Forms.Label();
-            this.ldireccionSucursal = new System.Windows.Forms.Label();
+            this.lciudad = new System.Windows.Forms.Label();
             this.lnombreSucursal = new System.Windows.Forms.Label();
+            this.cciudad = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cciudad);
             this.groupBox1.Controls.Add(this.bguardar);
             this.groupBox1.Controls.Add(this.cestadoSucursal);
             this.groupBox1.Controls.Add(this.txtdireccionSucursal);
-            this.groupBox1.Controls.Add(this.txtnombreSucursal);
             this.groupBox1.Controls.Add(this.lestadoSucursal);
-            this.groupBox1.Controls.Add(this.ldireccionSucursal);
+            this.groupBox1.Controls.Add(this.lciudad);
             this.groupBox1.Controls.Add(this.lnombreSucursal);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
@@ -65,7 +65,7 @@
             this.bguardar.Location = new System.Drawing.Point(175, 164);
             this.bguardar.Name = "bguardar";
             this.bguardar.Size = new System.Drawing.Size(110, 50);
-            this.bguardar.TabIndex = 6;
+            this.bguardar.TabIndex = 3;
             this.bguardar.Text = "          Guardar";
             this.bguardar.UseVisualStyleBackColor = true;
             this.bguardar.Click += new System.EventHandler(this.bguardar_Click);
@@ -76,21 +76,14 @@
             this.cestadoSucursal.Location = new System.Drawing.Point(160, 108);
             this.cestadoSucursal.Name = "cestadoSucursal";
             this.cestadoSucursal.Size = new System.Drawing.Size(285, 27);
-            this.cestadoSucursal.TabIndex = 5;
+            this.cestadoSucursal.TabIndex = 2;
             // 
             // txtdireccionSucursal
             // 
             this.txtdireccionSucursal.Location = new System.Drawing.Point(160, 70);
             this.txtdireccionSucursal.Name = "txtdireccionSucursal";
             this.txtdireccionSucursal.Size = new System.Drawing.Size(285, 27);
-            this.txtdireccionSucursal.TabIndex = 4;
-            // 
-            // txtnombreSucursal
-            // 
-            this.txtnombreSucursal.Location = new System.Drawing.Point(160, 32);
-            this.txtnombreSucursal.Name = "txtnombreSucursal";
-            this.txtnombreSucursal.Size = new System.Drawing.Size(285, 27);
-            this.txtnombreSucursal.TabIndex = 3;
+            this.txtdireccionSucursal.TabIndex = 1;
             // 
             // lestadoSucursal
             // 
@@ -101,23 +94,31 @@
             this.lestadoSucursal.TabIndex = 2;
             this.lestadoSucursal.Text = "Estado de la Sucursal:";
             // 
-            // ldireccionSucursal
+            // lciudad
             // 
-            this.ldireccionSucursal.AutoSize = true;
-            this.ldireccionSucursal.Location = new System.Drawing.Point(6, 70);
-            this.ldireccionSucursal.Name = "ldireccionSucursal";
-            this.ldireccionSucursal.Size = new System.Drawing.Size(74, 19);
-            this.ldireccionSucursal.TabIndex = 1;
-            this.ldireccionSucursal.Text = "Dirección:";
+            this.lciudad.AutoSize = true;
+            this.lciudad.Location = new System.Drawing.Point(6, 35);
+            this.lciudad.Name = "lciudad";
+            this.lciudad.Size = new System.Drawing.Size(58, 19);
+            this.lciudad.TabIndex = 1;
+            this.lciudad.Text = "Ciudad:";
             // 
             // lnombreSucursal
             // 
             this.lnombreSucursal.AutoSize = true;
-            this.lnombreSucursal.Location = new System.Drawing.Point(6, 32);
+            this.lnombreSucursal.Location = new System.Drawing.Point(6, 73);
             this.lnombreSucursal.Name = "lnombreSucursal";
             this.lnombreSucursal.Size = new System.Drawing.Size(64, 19);
             this.lnombreSucursal.TabIndex = 0;
             this.lnombreSucursal.Text = "Nombre:";
+            // 
+            // cciudad
+            // 
+            this.cciudad.FormattingEnabled = true;
+            this.cciudad.Location = new System.Drawing.Point(160, 32);
+            this.cciudad.Name = "cciudad";
+            this.cciudad.Size = new System.Drawing.Size(285, 27);
+            this.cciudad.TabIndex = 0;
             // 
             // frmingresarSucursal
             // 
@@ -142,11 +143,11 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label lestadoSucursal;
-        private System.Windows.Forms.Label ldireccionSucursal;
+        private System.Windows.Forms.Label lciudad;
         private System.Windows.Forms.Label lnombreSucursal;
         private System.Windows.Forms.ComboBox cestadoSucursal;
         private System.Windows.Forms.TextBox txtdireccionSucursal;
-        private System.Windows.Forms.TextBox txtnombreSucursal;
         private System.Windows.Forms.Button bguardar;
+        private System.Windows.Forms.ComboBox cciudad;
     }
 }

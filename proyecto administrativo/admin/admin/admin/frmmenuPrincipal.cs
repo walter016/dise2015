@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+ * Diseño principal Wilfredo Chacon
+ * Agregacion menu sucursal,ciudad y salida Walter Flores 
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,6 +64,18 @@ namespace admin
         {
             frmingresarSucursal form = new frmingresarSucursal();
             form.Show();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void registrarCiudadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmingresarCiudad formCiudad = new frmingresarCiudad();
+            formCiudad.Show();
+
         }
     }
 }

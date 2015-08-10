@@ -62,6 +62,12 @@
     <Compile Include="frmbuscarSucursal.Designer.cs">
       <DependentUpon>frmbuscarSucursal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmingresarCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmingresarCiudad.Designer.cs">
+      <DependentUpon>frmingresarCiudad.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmingresarPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmbuscarSucursal.resx">
       <DependentUpon>frmbuscarSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmingresarCiudad.resx">
+      <DependentUpon>frmingresarCiudad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmingresarPelicula.resx">
       <DependentUpon>frmingresarPelicula.cs</DependentUpon>

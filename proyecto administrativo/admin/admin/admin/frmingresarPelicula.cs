@@ -14,43 +14,26 @@ namespace admin
 {
     public partial class frmingresarPelicula : Form
     {
-
-        String ora_connect = "server=127.0.0.1; database=taquilla; Uid=root; pwd=;";
-        MySqlConnection con = new MySqlConnection();
+        MySqlConnection con = new MySqlConnection("server=localhost; database=taquilla; Uid=root; pwd=;");
+        System.IO.MemoryStream ms = new System.IO.MemoryStream();
 
         public frmingresarPelicula()
         {
             InitializeComponent();
-            con.ConnectionString = ora_connect;
+            //con.ConnectionString = ora_connect;
         }
 
         private void bguardar_Click(object sender, EventArgs e)
         {
-            string query = string.Format("INSERT INTO MAPELICULA (vtitulo, dcosto, ddescuento, vduracion, vsala, vclasificacion, vcategoria, velenco, vdepartamento, vestablecimiento, vidioma, vsubtitulo, ipuntos, vrutaImagen) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')", txttitulo.Text, txtcosto.Text, txtdescuento.Text, txtduracionPelicula.Text, csalasCine.SelectedValue, cclasificacionContenidos.SelectedItem, ccategoriaPelicula.SelectedItem, txtelencoPelicula.Text, cdepartamento.SelectedItem, cestablecimiento.SelectedValue, cidioma.SelectedItem, csubtitulo.SelectedItem, txtpuntosBonificacion.Text, txtrutaImagen.Text = txtrutaImagen.Text.Replace("\\", "\\\\"));
+         
             //string query2 = string.Format("INSERT INTO HORARIO (vhora, dfecha) VALUES('{0}','{1}')", txthorario.Text, dcalendario.Value.Date.ToString("yyyy-MM-dd"));
             try
             {
+                pimagenPelicula.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                string query = string.Format("INSERT INTO pelicula (`vtitulo`, `dcosto`, `ddescuento`, `vduracion`, `vclasificacion`, `vcategoria`, `velenco`, `vdepartamento`, `vestablecimiento`, `vidioma`, `vsubtitulo`, `vformato`, `ipuntos`, `bimagen`) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')", txttitulo.Text, txtcosto.Text, txtdescuento.Text, txtduracionPelicula.Text, csalasCine.SelectedValue, cclasificacionContenidos.SelectedItem, ccategoriaPelicula.SelectedItem, txtelencoPelicula.Text, cdepartamento.SelectedItem, cestablecimiento.SelectedValue, cidioma.SelectedItem, csubtitulo.SelectedItem, txtpuntosBonificacion.Text, ms.GetBuffer());
+   
                 clascrearConexion.inserta(query);
-                //clascrearConexion.inserta(query2);
-
-                txttitulo.ResetText();
-                txtcosto.ResetText();
-                txtdescuento.ResetText();
-                txtduracionPelicula.ResetText();
-                csalasCine.ResetText();
-                //txthorario.ResetText();
-                cclasificacionContenidos.ResetText();
-                ccategoriaPelicula.ResetText();
-                txtelencoPelicula.ResetText();
-                cdepartamento.ResetText();
-                cestablecimiento.ResetText();
-                cidioma.ResetText();
-                csubtitulo.ResetText();
-                //cformatoPelicula.ResetText();
-                txtpuntosBonificacion.ResetText();
-                txtrutaImagen.ResetText();
-
-                MessageBox.Show("Pelicula registrada con Exito");
+                MessageBox.Show("Pelicula registrada con Exito "+query);
             }
             catch
             {
@@ -71,12 +54,12 @@ namespace admin
                 this.txtrutaImagen.Text = BuscarImagen.FileName; 
                 String Direccion = BuscarImagen.FileName; 
                 this.pimagenPelicula.ImageLocation = Direccion;
-                pimagenPelicula.SizeMode = PictureBoxSizeMode.StretchImage;
+                pimagenPelicula.SizeMode = PictureBoxSizeMode.StretchImage;        
             }
         }
 
         private void frmingresarPelicula_Load(object sender, EventArgs e)
-        {
+        {/*
             con.Open();
             DataSet dsd = new DataSet();
             MySqlDataAdapter sql2 = new MySqlDataAdapter("SELECT VNOMBRE FROM TRSUCURSAL", con);
@@ -93,7 +76,7 @@ namespace admin
             sql1.Fill(dsd1, "TRSALA");
             csalasCine.DataSource = dsd1.Tables[0].DefaultView;
             csalasCine.ValueMember = "VTIPO";
-            csalasCine.DisplayMember = "VTIPO";
+            csalasCine.DisplayMember = "VTIPO";*/
         }
 
         private void button1_Click(object sender, EventArgs e)

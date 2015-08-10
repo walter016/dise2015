@@ -13,8 +13,10 @@ namespace admin
         public static MySqlConnection ObtenerConexion()
         {
             MySqlConnection conectar = new MySqlConnection("server=localhost; database=taquilla; Uid=root; pwd=;");
+
             conectar.Open();
             return conectar;
+
         }
         public static MySqlCommand inserta(string comand)
         {

@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Diseño princial Wilfredo Chacon 
+ * cambio de diseño y programacion Walter Flores 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,31 +23,49 @@ namespace admin
         {
             InitializeComponent();
         }
-
-        public class Item
+        //Tabla la cual se utiliza para los valores del ComboBox cestadoSucursal el cual
+        //se almacena un 1 si es disponible, 0 si no esta ahun disponible
+        private DataTable Fill()
         {
-            public string Name { get; set; }
-            public int Value { get; set; }
+            DataTable dt = new DataTable();
+            dt.Columns.Add("texto");
+            dt.Columns.Add("valor");
+            DataRow contenido = dt.NewRow();
+            contenido["texto"] = "Disponible";
+            contenido["valor"] = "1";
 
-            public Item(string name, int value)
-            {
-                Name = name;
-                Value = value;
-            }
-            public override string ToString()
-            {
-                return Name;
-            }
+            DataRow contenido2 = dt.NewRow();
+            contenido2["texto"] = "No Disponible";
+            contenido2["valor"] = "0";
+
+            dt.Rows.Add(contenido);
+            dt.Rows.Add(contenido2);
+            cestadoSucursal.DisplayMember = "texto";
+            cestadoSucursal.ValueMember = "valor";
+            return dt;
         }
-
+        //Obtenemos desde la base de datos todas las ciudades registradas
+        //estas se cargan despues a un ComboBox cciudad
+        private DataTable ciudad()
+        {
+            DataTable dat = new DataTable();
+            string query = "SELECT iidCiudad,vnombreCiudad FROM MACIUDAD";
+            MySqlCommand comando = new MySqlCommand(query, clascrearConexion.ObtenerConexion());
+            MySqlDataAdapter da = new MySqlDataAdapter(comando);
+            cciudad.DisplayMember = "vnombreCiudad";
+            cciudad.ValueMember = "iidCiudad";
+            da.Fill(dat);
+            clascrearConexion.ObtenerConexion().Close();
+            return dat;
+        }
+        //Guardado de los datos dentro de la bd
         private void bguardar_Click(object sender, EventArgs e)
         {
-            string query = string.Format("INSERT INTO TRSUCURSAL (vnombre, iestado, vdireccion) VALUES('{0}','{1}','{2}')", txtnombreSucursal.Text, cestadoSucursal.SelectedValue, txtdireccionSucursal.Text);
+            string query = string.Format("INSERT INTO MASUCURSAL (iidciudad, iestado, vnombre) VALUES('{0}','{1}','{2}')", cciudad.SelectedValue, cestadoSucursal.SelectedValue, txtdireccionSucursal.Text);
             try
             {
                 clascrearConexion.inserta(query);
-
-                txtnombreSucursal.ResetText();
+                cciudad.ResetText();
                 cestadoSucursal.ResetText();
                 txtdireccionSucursal.ResetText();
 
@@ -53,17 +76,11 @@ namespace admin
                 MessageBox.Show("Ocurrió un Error");
             }
         }
-
+        //Cargar los datos de los ComboBox al iniciar el formulario
         private void frmingresarSucursal_Load(object sender, EventArgs e)
         {
-            List<Item> lista = new List<Item>();
-            lista.Add(new Item("Estado", 0));
-            lista.Add(new Item("Disponible", 1));
-            lista.Add(new Item("No Disponible", 2));
-
-            cestadoSucursal.DisplayMember = "Name";
-            cestadoSucursal.ValueMember = "Value";
-            cestadoSucursal.DataSource = lista;
+            cestadoSucursal.DataSource= Fill();
+            cciudad.DataSource = ciudad();
         }
     }
 }

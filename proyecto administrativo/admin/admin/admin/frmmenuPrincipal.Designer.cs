@@ -33,6 +33,13 @@
             this.cateleraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarPeliculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editarInformacionDePeliculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ingresarSalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.busquedaDeSalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarCiudadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.busquedaDeSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeAcumuladoDePuntosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeGananciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,12 +47,7 @@
             this.reporteDePeliculasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manualToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.busquedaDeSalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.busquedaDeSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ingresarSalaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,10 +59,12 @@
             this.sucursalToolStripMenuItem,
             this.reportesToolStripMenuItem,
             this.manualToolStripMenuItem,
-            this.ayudaToolStripMenuItem});
+            this.ayudaToolStripMenuItem,
+            this.salirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(541, 27);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(1019, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,6 +94,67 @@
             this.editarInformacionDePeliculaToolStripMenuItem.Size = new System.Drawing.Size(217, 24);
             this.editarInformacionDePeliculaToolStripMenuItem.Text = "Busqueda de Pelicula";
             this.editarInformacionDePeliculaToolStripMenuItem.Click += new System.EventHandler(this.editarInformacionDePeliculaToolStripMenuItem_Click);
+            // 
+            // salaToolStripMenuItem
+            // 
+            this.salaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ingresarSalaToolStripMenuItem,
+            this.busquedaDeSalaToolStripMenuItem});
+            this.salaToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F);
+            this.salaToolStripMenuItem.Image = global::admin.Properties.Resources.cinema_studio;
+            this.salaToolStripMenuItem.Name = "salaToolStripMenuItem";
+            this.salaToolStripMenuItem.Size = new System.Drawing.Size(64, 23);
+            this.salaToolStripMenuItem.Text = "Sala";
+            // 
+            // ingresarSalaToolStripMenuItem
+            // 
+            this.ingresarSalaToolStripMenuItem.Name = "ingresarSalaToolStripMenuItem";
+            this.ingresarSalaToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.ingresarSalaToolStripMenuItem.Text = "Registrar Sala";
+            this.ingresarSalaToolStripMenuItem.Click += new System.EventHandler(this.ingresarSalaToolStripMenuItem_Click);
+            // 
+            // busquedaDeSalaToolStripMenuItem
+            // 
+            this.busquedaDeSalaToolStripMenuItem.Image = global::admin.Properties.Resources.search1;
+            this.busquedaDeSalaToolStripMenuItem.Name = "busquedaDeSalaToolStripMenuItem";
+            this.busquedaDeSalaToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
+            this.busquedaDeSalaToolStripMenuItem.Text = "Busqueda de Sala";
+            this.busquedaDeSalaToolStripMenuItem.Click += new System.EventHandler(this.busquedaDeSalaToolStripMenuItem_Click);
+            // 
+            // sucursalToolStripMenuItem
+            // 
+            this.sucursalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarCiudadToolStripMenuItem,
+            this.registrarSucursalToolStripMenuItem,
+            this.busquedaDeSucursalToolStripMenuItem});
+            this.sucursalToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F);
+            this.sucursalToolStripMenuItem.Image = global::admin.Properties.Resources.cinema_hall;
+            this.sucursalToolStripMenuItem.Name = "sucursalToolStripMenuItem";
+            this.sucursalToolStripMenuItem.Size = new System.Drawing.Size(91, 23);
+            this.sucursalToolStripMenuItem.Text = "Sucursal";
+            // 
+            // registrarCiudadToolStripMenuItem
+            // 
+            this.registrarCiudadToolStripMenuItem.Name = "registrarCiudadToolStripMenuItem";
+            this.registrarCiudadToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
+            this.registrarCiudadToolStripMenuItem.Text = "Registrar Ciudad";
+            this.registrarCiudadToolStripMenuItem.Click += new System.EventHandler(this.registrarCiudadToolStripMenuItem_Click);
+            // 
+            // registrarSucursalToolStripMenuItem
+            // 
+            this.registrarSucursalToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("registrarSucursalToolStripMenuItem.Image")));
+            this.registrarSucursalToolStripMenuItem.Name = "registrarSucursalToolStripMenuItem";
+            this.registrarSucursalToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
+            this.registrarSucursalToolStripMenuItem.Text = "Registrar Sucursal";
+            this.registrarSucursalToolStripMenuItem.Click += new System.EventHandler(this.registrarSucursalToolStripMenuItem_Click);
+            // 
+            // busquedaDeSucursalToolStripMenuItem
+            // 
+            this.busquedaDeSucursalToolStripMenuItem.Image = global::admin.Properties.Resources.search1;
+            this.busquedaDeSucursalToolStripMenuItem.Name = "busquedaDeSucursalToolStripMenuItem";
+            this.busquedaDeSucursalToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
+            this.busquedaDeSucursalToolStripMenuItem.Text = "Busqueda de Sucursal";
+            this.busquedaDeSucursalToolStripMenuItem.Click += new System.EventHandler(this.busquedaDeSucursalToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -149,69 +214,28 @@
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
-            // salaToolStripMenuItem
+            // salirToolStripMenuItem
             // 
-            this.salaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ingresarSalaToolStripMenuItem,
-            this.busquedaDeSalaToolStripMenuItem});
-            this.salaToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F);
-            this.salaToolStripMenuItem.Image = global::admin.Properties.Resources.cinema_studio;
-            this.salaToolStripMenuItem.Name = "salaToolStripMenuItem";
-            this.salaToolStripMenuItem.Size = new System.Drawing.Size(64, 23);
-            this.salaToolStripMenuItem.Text = "Sala";
-            // 
-            // sucursalToolStripMenuItem
-            // 
-            this.sucursalToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarSucursalToolStripMenuItem,
-            this.busquedaDeSucursalToolStripMenuItem});
-            this.sucursalToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F);
-            this.sucursalToolStripMenuItem.Image = global::admin.Properties.Resources.cinema_hall;
-            this.sucursalToolStripMenuItem.Name = "sucursalToolStripMenuItem";
-            this.sucursalToolStripMenuItem.Size = new System.Drawing.Size(91, 23);
-            this.sucursalToolStripMenuItem.Text = "Sucursal";
-            // 
-            // busquedaDeSalaToolStripMenuItem
-            // 
-            this.busquedaDeSalaToolStripMenuItem.Image = global::admin.Properties.Resources.search1;
-            this.busquedaDeSalaToolStripMenuItem.Name = "busquedaDeSalaToolStripMenuItem";
-            this.busquedaDeSalaToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
-            this.busquedaDeSalaToolStripMenuItem.Text = "Busqueda de Sala";
-            this.busquedaDeSalaToolStripMenuItem.Click += new System.EventHandler(this.busquedaDeSalaToolStripMenuItem_Click);
-            // 
-            // busquedaDeSucursalToolStripMenuItem
-            // 
-            this.busquedaDeSucursalToolStripMenuItem.Image = global::admin.Properties.Resources.search1;
-            this.busquedaDeSucursalToolStripMenuItem.Name = "busquedaDeSucursalToolStripMenuItem";
-            this.busquedaDeSucursalToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
-            this.busquedaDeSucursalToolStripMenuItem.Text = "Busqueda de Sucursal";
-            this.busquedaDeSucursalToolStripMenuItem.Click += new System.EventHandler(this.busquedaDeSucursalToolStripMenuItem_Click);
-            // 
-            // ingresarSalaToolStripMenuItem
-            // 
-            this.ingresarSalaToolStripMenuItem.Name = "ingresarSalaToolStripMenuItem";
-            this.ingresarSalaToolStripMenuItem.Size = new System.Drawing.Size(193, 24);
-            this.ingresarSalaToolStripMenuItem.Text = "Registrar Sala";
-            this.ingresarSalaToolStripMenuItem.Click += new System.EventHandler(this.ingresarSalaToolStripMenuItem_Click);
-            // 
-            // registrarSucursalToolStripMenuItem
-            // 
-            this.registrarSucursalToolStripMenuItem.Name = "registrarSucursalToolStripMenuItem";
-            this.registrarSucursalToolStripMenuItem.Size = new System.Drawing.Size(220, 24);
-            this.registrarSucursalToolStripMenuItem.Text = "Registrar Sucursal";
-            this.registrarSucursalToolStripMenuItem.Click += new System.EventHandler(this.registrarSucursalToolStripMenuItem_Click);
+            this.salirToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("salirToolStripMenuItem.Image")));
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(65, 23);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // frmmenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImage = global::admin.Properties.Resources.cinemabackground;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(541, 328);
+            this.ClientSize = new System.Drawing.Size(1019, 624);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmmenuPrincipal";
@@ -244,5 +268,7 @@
         private System.Windows.Forms.ToolStripMenuItem busquedaDeSucursalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ingresarSalaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarSucursalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarCiudadToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
     }
 }
