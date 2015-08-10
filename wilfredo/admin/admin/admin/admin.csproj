@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFF39011-FC34-4373-9374-94A4E574B73F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>admin</RootNamespace>
+    <AssemblyName>admin</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.6\Assemblies\v2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clascrearConexion.cs" />
+    <Compile Include="claseEmp.cs" />
+    <Compile Include="frmbuscarSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarSala.Designer.cs">
+      <DependentUpon>frmbuscarSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuscarSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarSucursal.Designer.cs">
+      <DependentUpon>frmbuscarSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmingresarCiudad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmingresarCiudad.Designer.cs">
+      <DependentUpon>frmingresarCiudad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmingresarPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmingresarPelicula.Designer.cs">
+      <DependentUpon>frmingresarPelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmbuscarPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmbuscarPelicula.Designer.cs">
+      <DependentUpon>frmbuscarPelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmingresarSala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmingresarSala.Designer.cs">
+      <DependentUpon>frmingresarSala.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmingresarSucursal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmingresarSucursal.Designer.cs">
+      <DependentUpon>frmingresarSucursal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminiciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminiciarSesion.Designer.cs">
+      <DependentUpon>frminiciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmenuPrincipal.Designer.cs">
+      <DependentUpon>frmmenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmbuscarSala.resx">
+      <DependentUpon>frmbuscarSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarSucursal.resx">
+      <DependentUpon>frmbuscarSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmingresarCiudad.resx">
+      <DependentUpon>frmingresarCiudad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmingresarPelicula.resx">
+      <DependentUpon>frmingresarPelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmbuscarPelicula.resx">
+      <DependentUpon>frmbuscarPelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmingresarSala.resx">
+      <DependentUpon>frmingresarSala.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmingresarSucursal.resx">
+      <DependentUpon>frmingresarSucursal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminiciarSesion.resx">
+      <DependentUpon>frminiciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmenuPrincipal.resx">
+      <DependentUpon>frmmenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manual user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\club card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register movie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinemabackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema hall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cinema studio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aceptar.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
