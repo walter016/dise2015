@@ -129,6 +129,17 @@ namespace admin
             pelicula.bguardar.Enabled = false;
             pelicula.beditar.Enabled = true;
             pelicula.beliminar.Enabled = true;
+            string query = string.Format("SELECT bimagen FROM mapelicula where iidpelicula ='{0}'", this.grdinformacionPelicula.CurrentRow.Cells[0].Value.ToString());
+            MySqlCommand comando = new MySqlCommand(query, clascrearConexion.Conexion());
+            MySqlDataAdapter da = new MySqlDataAdapter(comando);
+            DataSet ds = new DataSet("mapelicula");
+            da.Fill(ds, "mapelicula");
+            byte[] datos = new byte[0];
+            DataRow dr = ds.Tables["mapelicula"].Rows[0];
+            datos = (byte[])dr["bimagen"];
+            System.IO.MemoryStream ms = new System.IO.MemoryStream(datos);
+            pelicula.pimagenPelicula.Image = System.Drawing.Bitmap.FromStream(ms);
+
             this.Hide();
             pelicula.ShowDialog();
            

@@ -33,11 +33,14 @@
             this.bcancelar = new System.Windows.Forms.Button();
             this.beliminar = new System.Windows.Forms.Button();
             this.beditar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.ccategoriaPelicula = new System.Windows.Forms.ComboBox();
             this.txtpuntosBonificacion = new System.Windows.Forms.TextBox();
             this.lpuntosBonificacion = new System.Windows.Forms.Label();
             this.txtelencoPelicula = new System.Windows.Forms.TextBox();
+            this.txtduracionPelicula = new System.Windows.Forms.TextBox();
             this.lelencoPelicula = new System.Windows.Forms.Label();
+            this.lduracionPelicula = new System.Windows.Forms.Label();
             this.lcategoriaPelicula = new System.Windows.Forms.Label();
             this.bseleccionarImagen = new System.Windows.Forms.Button();
             this.txtrutaImagen = new System.Windows.Forms.TextBox();
@@ -45,26 +48,23 @@
             this.bguardar = new System.Windows.Forms.Button();
             this.csubtitulo = new System.Windows.Forms.ComboBox();
             this.cidioma = new System.Windows.Forms.ComboBox();
+            this.cestablecimiento = new System.Windows.Forms.ComboBox();
+            this.cdepartamento = new System.Windows.Forms.ComboBox();
             this.cclasificacionContenidos = new System.Windows.Forms.ComboBox();
+            this.csalasCine = new System.Windows.Forms.ComboBox();
             this.txtdescuento = new System.Windows.Forms.TextBox();
             this.txtcosto = new System.Windows.Forms.TextBox();
             this.txttitulo = new System.Windows.Forms.TextBox();
             this.lsubtitulo = new System.Windows.Forms.Label();
             this.lidioma = new System.Windows.Forms.Label();
+            this.lestablecimiento = new System.Windows.Forms.Label();
+            this.ldepartamento = new System.Windows.Forms.Label();
             this.lclasificacion = new System.Windows.Forms.Label();
+            this.lsalasCine = new System.Windows.Forms.Label();
             this.ldescuento = new System.Windows.Forms.Label();
             this.lcosto = new System.Windows.Forms.Label();
             this.lnombre = new System.Windows.Forms.Label();
             this.txtidPelicula = new System.Windows.Forms.TextBox();
-            this.lestablecimiento = new System.Windows.Forms.Label();
-            this.ldepartamento = new System.Windows.Forms.Label();
-            this.lsalasCine = new System.Windows.Forms.Label();
-            this.cestablecimiento = new System.Windows.Forms.ComboBox();
-            this.cdepartamento = new System.Windows.Forms.ComboBox();
-            this.csalasCine = new System.Windows.Forms.ComboBox();
-            this.lduracionPelicula = new System.Windows.Forms.Label();
-            this.txtduracionPelicula = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pimagenPelicula)).BeginInit();
             this.SuspendLayout();
@@ -155,6 +155,15 @@
             this.beditar.UseVisualStyleBackColor = true;
             this.beditar.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(327, 135);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 19);
+            this.label1.TabIndex = 38;
+            this.label1.Text = "Hrs.";
+            // 
             // ccategoriaPelicula
             // 
             this.ccategoriaPelicula.FormattingEnabled = true;
@@ -168,14 +177,14 @@
             this.ccategoriaPelicula.Location = new System.Drawing.Point(193, 231);
             this.ccategoriaPelicula.Name = "ccategoriaPelicula";
             this.ccategoriaPelicula.Size = new System.Drawing.Size(236, 27);
-            this.ccategoriaPelicula.TabIndex = 37;
+            this.ccategoriaPelicula.TabIndex = 18;
             // 
             // txtpuntosBonificacion
             // 
             this.txtpuntosBonificacion.Location = new System.Drawing.Point(193, 429);
             this.txtpuntosBonificacion.Name = "txtpuntosBonificacion";
             this.txtpuntosBonificacion.Size = new System.Drawing.Size(236, 27);
-            this.txtpuntosBonificacion.TabIndex = 36;
+            this.txtpuntosBonificacion.TabIndex = 24;
             // 
             // lpuntosBonificacion
             // 
@@ -191,7 +200,14 @@
             this.txtelencoPelicula.Location = new System.Drawing.Point(193, 264);
             this.txtelencoPelicula.Name = "txtelencoPelicula";
             this.txtelencoPelicula.Size = new System.Drawing.Size(236, 27);
-            this.txtelencoPelicula.TabIndex = 32;
+            this.txtelencoPelicula.TabIndex = 19;
+            // 
+            // txtduracionPelicula
+            // 
+            this.txtduracionPelicula.Location = new System.Drawing.Point(193, 132);
+            this.txtduracionPelicula.Name = "txtduracionPelicula";
+            this.txtduracionPelicula.Size = new System.Drawing.Size(119, 27);
+            this.txtduracionPelicula.TabIndex = 14;
             // 
             // lelencoPelicula
             // 
@@ -201,6 +217,15 @@
             this.lelencoPelicula.Size = new System.Drawing.Size(56, 19);
             this.lelencoPelicula.TabIndex = 29;
             this.lelencoPelicula.Text = "Elenco:";
+            // 
+            // lduracionPelicula
+            // 
+            this.lduracionPelicula.AutoSize = true;
+            this.lduracionPelicula.Location = new System.Drawing.Point(113, 132);
+            this.lduracionPelicula.Name = "lduracionPelicula";
+            this.lduracionPelicula.Size = new System.Drawing.Size(71, 19);
+            this.lduracionPelicula.TabIndex = 28;
+            this.lduracionPelicula.Text = "Duración:";
             // 
             // lcategoriaPelicula
             // 
@@ -219,7 +244,7 @@
             this.bseleccionarImagen.Location = new System.Drawing.Point(574, 305);
             this.bseleccionarImagen.Name = "bseleccionarImagen";
             this.bseleccionarImagen.Size = new System.Drawing.Size(110, 50);
-            this.bseleccionarImagen.TabIndex = 26;
+            this.bseleccionarImagen.TabIndex = 25;
             this.bseleccionarImagen.Text = "Seleccion Imagen";
             this.bseleccionarImagen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.bseleccionarImagen.UseVisualStyleBackColor = true;
@@ -231,6 +256,7 @@
             this.txtrutaImagen.Name = "txtrutaImagen";
             this.txtrutaImagen.Size = new System.Drawing.Size(285, 27);
             this.txtrutaImagen.TabIndex = 25;
+            this.txtrutaImagen.Visible = false;
             // 
             // pimagenPelicula
             // 
@@ -238,6 +264,7 @@
             this.pimagenPelicula.Location = new System.Drawing.Point(514, 27);
             this.pimagenPelicula.Name = "pimagenPelicula";
             this.pimagenPelicula.Size = new System.Drawing.Size(220, 231);
+            this.pimagenPelicula.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pimagenPelicula.TabIndex = 24;
             this.pimagenPelicula.TabStop = false;
             // 
@@ -249,7 +276,7 @@
             this.bguardar.Location = new System.Drawing.Point(458, 363);
             this.bguardar.Name = "bguardar";
             this.bguardar.Size = new System.Drawing.Size(110, 50);
-            this.bguardar.TabIndex = 22;
+            this.bguardar.TabIndex = 26;
             this.bguardar.Text = "          Guardar";
             this.bguardar.UseVisualStyleBackColor = true;
             this.bguardar.Click += new System.EventHandler(this.bguardar_Click);
@@ -264,7 +291,7 @@
             this.csubtitulo.Location = new System.Drawing.Point(193, 396);
             this.csubtitulo.Name = "csubtitulo";
             this.csubtitulo.Size = new System.Drawing.Size(236, 27);
-            this.csubtitulo.TabIndex = 21;
+            this.csubtitulo.TabIndex = 23;
             // 
             // cidioma
             // 
@@ -282,7 +309,27 @@
             this.cidioma.Location = new System.Drawing.Point(193, 363);
             this.cidioma.Name = "cidioma";
             this.cidioma.Size = new System.Drawing.Size(236, 27);
-            this.cidioma.TabIndex = 20;
+            this.cidioma.TabIndex = 22;
+            // 
+            // cestablecimiento
+            // 
+            this.cestablecimiento.FormattingEnabled = true;
+            this.cestablecimiento.Location = new System.Drawing.Point(193, 330);
+            this.cestablecimiento.Name = "cestablecimiento";
+            this.cestablecimiento.Size = new System.Drawing.Size(236, 27);
+            this.cestablecimiento.TabIndex = 21;
+            // 
+            // cdepartamento
+            // 
+            this.cdepartamento.FormattingEnabled = true;
+            this.cdepartamento.Items.AddRange(new object[] {
+            "Guatemala",
+            "Escuintla",
+            "Quetzaltenango"});
+            this.cdepartamento.Location = new System.Drawing.Point(193, 297);
+            this.cdepartamento.Name = "cdepartamento";
+            this.cdepartamento.Size = new System.Drawing.Size(236, 27);
+            this.cdepartamento.TabIndex = 20;
             // 
             // cclasificacionContenidos
             // 
@@ -298,6 +345,14 @@
             this.cclasificacionContenidos.Name = "cclasificacionContenidos";
             this.cclasificacionContenidos.Size = new System.Drawing.Size(285, 27);
             this.cclasificacionContenidos.TabIndex = 17;
+            // 
+            // csalasCine
+            // 
+            this.csalasCine.FormattingEnabled = true;
+            this.csalasCine.Location = new System.Drawing.Point(193, 165);
+            this.csalasCine.Name = "csalasCine";
+            this.csalasCine.Size = new System.Drawing.Size(285, 27);
+            this.csalasCine.TabIndex = 16;
             // 
             // txtdescuento
             // 
@@ -340,6 +395,24 @@
             this.lidioma.TabIndex = 9;
             this.lidioma.Text = "Idioma:";
             // 
+            // lestablecimiento
+            // 
+            this.lestablecimiento.AutoSize = true;
+            this.lestablecimiento.Location = new System.Drawing.Point(68, 338);
+            this.lestablecimiento.Name = "lestablecimiento";
+            this.lestablecimiento.Size = new System.Drawing.Size(117, 19);
+            this.lestablecimiento.TabIndex = 8;
+            this.lestablecimiento.Text = "Establecimiento:";
+            // 
+            // ldepartamento
+            // 
+            this.ldepartamento.AutoSize = true;
+            this.ldepartamento.Location = new System.Drawing.Point(79, 305);
+            this.ldepartamento.Name = "ldepartamento";
+            this.ldepartamento.Size = new System.Drawing.Size(106, 19);
+            this.ldepartamento.TabIndex = 7;
+            this.ldepartamento.Text = "Departamento:";
+            // 
             // lclasificacion
             // 
             this.lclasificacion.AutoSize = true;
@@ -348,6 +421,15 @@
             this.lclasificacion.Size = new System.Drawing.Size(185, 19);
             this.lclasificacion.TabIndex = 6;
             this.lclasificacion.Text = "Clasificacion de Contenido:";
+            // 
+            // lsalasCine
+            // 
+            this.lsalasCine.AutoSize = true;
+            this.lsalasCine.Location = new System.Drawing.Point(84, 168);
+            this.lsalasCine.Name = "lsalasCine";
+            this.lsalasCine.Size = new System.Drawing.Size(100, 19);
+            this.lsalasCine.TabIndex = 5;
+            this.lsalasCine.Text = "Salas de Cine:";
             // 
             // ldescuento
             // 
@@ -384,86 +466,6 @@
             this.txtidPelicula.TabIndex = 42;
             this.txtidPelicula.Visible = false;
             // 
-            // lestablecimiento
-            // 
-            this.lestablecimiento.AutoSize = true;
-            this.lestablecimiento.Location = new System.Drawing.Point(68, 338);
-            this.lestablecimiento.Name = "lestablecimiento";
-            this.lestablecimiento.Size = new System.Drawing.Size(117, 19);
-            this.lestablecimiento.TabIndex = 8;
-            this.lestablecimiento.Text = "Establecimiento:";
-            // 
-            // ldepartamento
-            // 
-            this.ldepartamento.AutoSize = true;
-            this.ldepartamento.Location = new System.Drawing.Point(79, 305);
-            this.ldepartamento.Name = "ldepartamento";
-            this.ldepartamento.Size = new System.Drawing.Size(106, 19);
-            this.ldepartamento.TabIndex = 7;
-            this.ldepartamento.Text = "Departamento:";
-            // 
-            // lsalasCine
-            // 
-            this.lsalasCine.AutoSize = true;
-            this.lsalasCine.Location = new System.Drawing.Point(84, 168);
-            this.lsalasCine.Name = "lsalasCine";
-            this.lsalasCine.Size = new System.Drawing.Size(100, 19);
-            this.lsalasCine.TabIndex = 5;
-            this.lsalasCine.Text = "Salas de Cine:";
-            // 
-            // cestablecimiento
-            // 
-            this.cestablecimiento.FormattingEnabled = true;
-            this.cestablecimiento.Location = new System.Drawing.Point(193, 330);
-            this.cestablecimiento.Name = "cestablecimiento";
-            this.cestablecimiento.Size = new System.Drawing.Size(236, 27);
-            this.cestablecimiento.TabIndex = 19;
-            // 
-            // cdepartamento
-            // 
-            this.cdepartamento.FormattingEnabled = true;
-            this.cdepartamento.Items.AddRange(new object[] {
-            "Guatemala",
-            "Escuintla",
-            "Quetzaltenango"});
-            this.cdepartamento.Location = new System.Drawing.Point(193, 297);
-            this.cdepartamento.Name = "cdepartamento";
-            this.cdepartamento.Size = new System.Drawing.Size(236, 27);
-            this.cdepartamento.TabIndex = 18;
-            // 
-            // csalasCine
-            // 
-            this.csalasCine.FormattingEnabled = true;
-            this.csalasCine.Location = new System.Drawing.Point(193, 165);
-            this.csalasCine.Name = "csalasCine";
-            this.csalasCine.Size = new System.Drawing.Size(285, 27);
-            this.csalasCine.TabIndex = 16;
-            // 
-            // lduracionPelicula
-            // 
-            this.lduracionPelicula.AutoSize = true;
-            this.lduracionPelicula.Location = new System.Drawing.Point(113, 132);
-            this.lduracionPelicula.Name = "lduracionPelicula";
-            this.lduracionPelicula.Size = new System.Drawing.Size(71, 19);
-            this.lduracionPelicula.TabIndex = 28;
-            this.lduracionPelicula.Text = "Duración:";
-            // 
-            // txtduracionPelicula
-            // 
-            this.txtduracionPelicula.Location = new System.Drawing.Point(193, 132);
-            this.txtduracionPelicula.Name = "txtduracionPelicula";
-            this.txtduracionPelicula.Size = new System.Drawing.Size(119, 27);
-            this.txtduracionPelicula.TabIndex = 30;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(327, 135);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 19);
-            this.label1.TabIndex = 38;
-            this.label1.Text = "Hrs.";
-            // 
             // frmingresarPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,7 +497,6 @@
         private System.Windows.Forms.Label lcosto;
         private System.Windows.Forms.Label lnombre;
         private System.Windows.Forms.TextBox txtrutaImagen;
-        private System.Windows.Forms.PictureBox pimagenPelicula;
         private System.Windows.Forms.Label lelencoPelicula;
         private System.Windows.Forms.Label lcategoriaPelicula;
         private System.Windows.Forms.Label lpuntosBonificacion;
@@ -523,5 +524,6 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.TextBox txtduracionPelicula;
         private System.Windows.Forms.Label lduracionPelicula;
+        public System.Windows.Forms.PictureBox pimagenPelicula;
     }
 }

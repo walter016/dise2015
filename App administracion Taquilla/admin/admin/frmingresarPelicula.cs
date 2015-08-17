@@ -13,6 +13,7 @@ using MySql.Data.MySqlClient;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace admin
 {
@@ -86,7 +87,7 @@ namespace admin
         //Fecha de entrega: 03/08/2015
         private void bguardar_Click(object sender, EventArgs e)
         {
-            System.IO.MemoryStream ms = new System.IO.MemoryStream();
+
 
             if (String.IsNullOrEmpty(txttitulo.Text) || String.IsNullOrEmpty(txtcosto.Text) || String.IsNullOrEmpty(txtdescuento.Text) || String.IsNullOrEmpty(txtduracionPelicula.Text) || String.IsNullOrEmpty(csalasCine.Text) || String.IsNullOrEmpty(cclasificacionContenidos.Text) || String.IsNullOrEmpty(ccategoriaPelicula.Text) || String.IsNullOrEmpty(txtelencoPelicula.Text) || String.IsNullOrEmpty(cdepartamento.Text) || String.IsNullOrEmpty(cestablecimiento.Text) || String.IsNullOrEmpty(cidioma.Text) || String.IsNullOrEmpty(csubtitulo.Text) || String.IsNullOrEmpty(txtpuntosBonificacion.Text))
             {
@@ -94,33 +95,61 @@ namespace admin
             }
             else
             {
-            try
-            {
-                pimagenPelicula.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
-                string query = string.Format("INSERT INTO MAPELICULA (`vtitulo`, `dcosto`, `ddescuento`, `vduracion`, `vtipoSala`, `vclasificacion`, `vcategoria`, `velenco`, `vdepartamento`, `vestablecimiento`, `vidioma`, `vsubtitulo`, `ipuntos`, `bimagen`) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}','{13}')", txttitulo.Text, txtcosto.Text, txtdescuento.Text, txtduracionPelicula.Text, csalasCine.SelectedValue, cclasificacionContenidos.SelectedItem, ccategoriaPelicula.SelectedItem, txtelencoPelicula.Text, cdepartamento.SelectedValue, cestablecimiento.SelectedValue, cidioma.SelectedItem, csubtitulo.SelectedItem, txtpuntosBonificacion.Text, ms.GetBuffer());
-                clascrearConexion.inserta(query);
-                MessageBox.Show("Pelicula registrada con Exito ");
-                txttitulo.ResetText();
-                txtcosto.ResetText();
-                txtdescuento.ResetText();
-                txtduracionPelicula.ResetText();
-                csalasCine.ResetText();
-                cclasificacionContenidos.ResetText();
-                ccategoriaPelicula.ResetText();
-                txtelencoPelicula.ResetText();
-                cdepartamento.ResetText();
-                cestablecimiento.ResetText();
-                cidioma.ResetText();
-                csubtitulo.ResetText();
-                txtpuntosBonificacion.ResetText();
-                txtrutaImagen.ResetText();
-                pimagenPelicula.ResetText();
-            }
-            catch
-            {
-                MessageBox.Show("Ocurrió un Error");
-            }
-          }    
+                try
+                {
+                    string sdireccion = this.txtrutaImagen.Text;
+                    MySqlCommand cmd = new MySqlCommand();
+                    int iFileSize;
+                    byte[] brawData;
+                    FileStream fs;
+                    try
+                    {
+                        fs = new FileStream(sdireccion, FileMode.Open, FileAccess.Read);
+                        iFileSize = Convert.ToInt32(fs.Length);
+
+                        brawData = new byte[iFileSize];
+                        fs.Read(brawData, 0, iFileSize);
+                        fs.Close();
+
+                        string query = string.Format("INSERT INTO MAPELICULA (`vtitulo`, `dcosto`, `ddescuento`, `vduracion`, `vtipoSala`, `vclasificacion`, `vcategoria`, `velenco`, `vdepartamento`, `vestablecimiento`, `vidioma`, `vsubtitulo`, `ipuntos`, `bimagen`) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}',@FILE)", txttitulo.Text, txtcosto.Text, txtdescuento.Text, txtduracionPelicula.Text, csalasCine.SelectedValue, cclasificacionContenidos.SelectedItem, ccategoriaPelicula.SelectedItem, txtelencoPelicula.Text, cdepartamento.SelectedValue, cestablecimiento.SelectedValue, cidioma.SelectedItem, csubtitulo.SelectedItem, txtpuntosBonificacion.Text);
+
+
+                        cmd.Connection = clascrearConexion.Conexion();
+                        cmd.CommandText = query;
+
+                        cmd.Parameters.AddWithValue("@File", brawData);
+
+                        cmd.ExecuteNonQuery();
+
+
+                        MessageBox.Show("Pelicula registrada con Exito ");
+                        txttitulo.ResetText();
+                        txtcosto.ResetText();
+                        txtdescuento.ResetText();
+                        txtduracionPelicula.ResetText();
+                        csalasCine.ResetText();
+                        cclasificacionContenidos.ResetText();
+                        ccategoriaPelicula.ResetText();
+                        txtelencoPelicula.ResetText();
+                        cdepartamento.ResetText();
+                        cestablecimiento.ResetText();
+                        cidioma.ResetText();
+                        csubtitulo.ResetText();
+                        txtpuntosBonificacion.ResetText();
+                        txtrutaImagen.ResetText();
+                        pimagenPelicula.Image = null;
+
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Ocurrió un Error");
+                    }
+                }
+                catch 
+                {
+                    MessageBox.Show("Ocurrió un Error");
+                }
+            }    
         }
 
         //Programador y Analista: José Wilfredo Chacon Cartagena
@@ -151,8 +180,18 @@ namespace admin
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string updatePeli = ("UPDATE MAPELICULA set vtitulo = '" + txttitulo.Text + "', dcosto = '" + txtcosto.Text + "', ddescuento = '" + txtdescuento.Text + "', vduracion = '" + txtduracionPelicula.Text + "', vsala = '" + csalasCine.Text + "', vclasificacion = '" + cclasificacionContenidos.Text + "', vcategoria = '" + ccategoriaPelicula.Text + "', velenco = '" + txtelencoPelicula.Text + "', vdepartamento = '" + cdepartamento.Text + "', vestablecimiento = '" + cestablecimiento.Text + "', vidioma = '" + cidioma.Text + "', vsubtitulo = '" + csubtitulo.Text + "', ipuntos = '" + txtpuntosBonificacion.Text + "' where iidpelicula ='" + txtidPelicula.Text + "'");
-            clascrearConexion.inserta(updatePeli);
+            MemoryStream ms = new MemoryStream();
+            MySqlCommand cmd = new MySqlCommand();
+            pimagenPelicula.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+
+
+            string updatePeli = ("UPDATE MAPELICULA set vtitulo = '" + txttitulo.Text + "', dcosto = '" + txtcosto.Text + "', ddescuento = '" + txtdescuento.Text + "', vduracion = '" + txtduracionPelicula.Text + "', vtipoSala = '" + csalasCine.Text + "', vclasificacion = '" + cclasificacionContenidos.Text + "', vcategoria = '" + ccategoriaPelicula.Text + "', velenco = '" + txtelencoPelicula.Text + "', vdepartamento = '" + cdepartamento.Text + "', vestablecimiento = '" + cestablecimiento.Text + "', vidioma = '" + cidioma.Text + "', vsubtitulo = '" + csubtitulo.Text + "', ipuntos = '" + txtpuntosBonificacion.Text + "', bimagen = @FILE where iidpelicula ='" + txtidPelicula.Text + "'");
+            cmd.Connection = clascrearConexion.Conexion();
+            cmd.CommandText = updatePeli;
+
+            cmd.Parameters.AddWithValue("@File", ms.GetBuffer());
+
+            cmd.ExecuteNonQuery();
             MessageBox.Show("La pelicula " + txttitulo.Text + " se actualizo correctamente");
             txttitulo.ResetText();
             txtcosto.ResetText();
@@ -168,6 +207,7 @@ namespace admin
             csubtitulo.ResetText();
             txtpuntosBonificacion.ResetText();
             txtrutaImagen.ResetText();
+            pimagenPelicula.Image = null;
         }
 
         private void beliminar_Click(object sender, EventArgs e)
