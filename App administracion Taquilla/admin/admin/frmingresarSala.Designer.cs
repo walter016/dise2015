@@ -34,9 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bguardar = new System.Windows.Forms.Button();
             this.ctipoSala = new System.Windows.Forms.ComboBox();
-            this.txtcapacidadSala = new System.Windows.Forms.TextBox();
             this.ltipoSala = new System.Windows.Forms.Label();
-            this.lcapacidadSala = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,9 +44,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.bguardar);
             this.groupBox1.Controls.Add(this.ctipoSala);
-            this.groupBox1.Controls.Add(this.txtcapacidadSala);
             this.groupBox1.Controls.Add(this.ltipoSala);
-            this.groupBox1.Controls.Add(this.lcapacidadSala);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
@@ -79,7 +75,7 @@
             this.bguardar.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bguardar.Image = global::admin.Properties.Resources.save;
             this.bguardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bguardar.Location = new System.Drawing.Point(175, 148);
+            this.bguardar.Location = new System.Drawing.Point(135, 134);
             this.bguardar.Name = "bguardar";
             this.bguardar.Size = new System.Drawing.Size(110, 50);
             this.bguardar.TabIndex = 4;
@@ -90,39 +86,19 @@
             // ctipoSala
             // 
             this.ctipoSala.FormattingEnabled = true;
-            this.ctipoSala.Items.AddRange(new object[] {
-            "4D",
-            "3D",
-            "IMAX"});
-            this.ctipoSala.Location = new System.Drawing.Point(160, 104);
+            this.ctipoSala.Location = new System.Drawing.Point(160, 80);
             this.ctipoSala.Name = "ctipoSala";
             this.ctipoSala.Size = new System.Drawing.Size(285, 27);
             this.ctipoSala.TabIndex = 3;
             // 
-            // txtcapacidadSala
-            // 
-            this.txtcapacidadSala.Location = new System.Drawing.Point(160, 66);
-            this.txtcapacidadSala.Name = "txtcapacidadSala";
-            this.txtcapacidadSala.Size = new System.Drawing.Size(285, 27);
-            this.txtcapacidadSala.TabIndex = 2;
-            // 
             // ltipoSala
             // 
             this.ltipoSala.AutoSize = true;
-            this.ltipoSala.Location = new System.Drawing.Point(6, 104);
+            this.ltipoSala.Location = new System.Drawing.Point(6, 80);
             this.ltipoSala.Name = "ltipoSala";
             this.ltipoSala.Size = new System.Drawing.Size(92, 19);
             this.ltipoSala.TabIndex = 1;
             this.ltipoSala.Text = "Tipo de Sala:";
-            // 
-            // lcapacidadSala
-            // 
-            this.lcapacidadSala.AutoSize = true;
-            this.lcapacidadSala.Location = new System.Drawing.Point(17, 66);
-            this.lcapacidadSala.Name = "lcapacidadSala";
-            this.lcapacidadSala.Size = new System.Drawing.Size(81, 19);
-            this.lcapacidadSala.TabIndex = 0;
-            this.lcapacidadSala.Text = "Capacidad:";
             // 
             // frmingresarSala
             // 
@@ -148,9 +124,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button bguardar;
         private System.Windows.Forms.ComboBox ctipoSala;
-        private System.Windows.Forms.TextBox txtcapacidadSala;
         private System.Windows.Forms.Label ltipoSala;
-        private System.Windows.Forms.Label lcapacidadSala;
         private System.Windows.Forms.ComboBox csucursal;
         private System.Windows.Forms.Label label1;
     }

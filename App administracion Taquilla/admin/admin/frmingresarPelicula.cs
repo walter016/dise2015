@@ -37,11 +37,11 @@ namespace admin
         public DataTable salasCine()
         {
             DataTable dt = new DataTable();
-            string query = "SELECT DISTINCT vtipo FROM TRSALA;";
+            string query = "SELECT  VTIPOSALA FROM MATIPOSALA;";
             MySqlCommand comando = new MySqlCommand(query, clascrearConexion.Conexion());
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
-            csalasCine.DisplayMember = "vtipo";
-            csalasCine.ValueMember = "vtipo";
+            csalasCine.DisplayMember = "VTIPOSALA";
+            csalasCine.ValueMember = "VTIPOSALA";
             da.Fill(dt);
             clascrearConexion.Conexion().Close();
             return dt;
