@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.9
+-- version 4.4.12
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Aug 17, 2015 at 01:39 AM
--- Server version: 5.6.14
--- PHP Version: 5.5.6
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 17-08-2015 a las 18:56:47
+-- Versión del servidor: 5.6.25
+-- Versión de PHP: 5.6.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -14,26 +14,27 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+/*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `taquilla`
+-- Base de datos: `taquilla`
 --
+CREATE DATABASE IF NOT EXISTS `taquilla` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `taquilla`;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `maciudad`
+-- Estructura de tabla para la tabla `maciudad`
 --
 
 CREATE TABLE IF NOT EXISTS `maciudad` (
-  `iidCiudad` int(11) NOT NULL AUTO_INCREMENT,
-  `vnombreCiudad` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`iidCiudad`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+  `iidCiudad` int(11) NOT NULL,
+  `vnombreCiudad` varchar(20) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `maciudad`
+-- Volcado de datos para la tabla `maciudad`
 --
 
 INSERT INTO `maciudad` (`iidCiudad`, `vnombreCiudad`) VALUES
@@ -45,7 +46,7 @@ INSERT INTO `maciudad` (`iidCiudad`, `vnombreCiudad`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `macliente`
+-- Estructura de tabla para la tabla `macliente`
 --
 
 CREATE TABLE IF NOT EXISTS `macliente` (
@@ -54,14 +55,13 @@ CREATE TABLE IF NOT EXISTS `macliente` (
   `vnombre` varchar(50) DEFAULT NULL,
   `vapellido` varchar(50) DEFAULT NULL,
   `vemail` varchar(50) DEFAULT NULL,
-  `vtipoPago` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`iidCliente`)
+  `vtipoPago` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mafactura`
+-- Estructura de tabla para la tabla `mafactura`
 --
 
 CREATE TABLE IF NOT EXISTS `mafactura` (
@@ -71,18 +71,17 @@ CREATE TABLE IF NOT EXISTS `mafactura` (
   `vfechaFactura` varchar(40) DEFAULT NULL,
   `vnombreCliente` varchar(30) DEFAULT NULL,
   `init` int(11) DEFAULT NULL,
-  `dtotalPago` decimal(18,2) DEFAULT NULL,
-  PRIMARY KEY (`iidFactura`,`iidregistro`)
+  `dtotalPago` decimal(18,2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mapelicula`
+-- Estructura de tabla para la tabla `mapelicula`
 --
 
 CREATE TABLE IF NOT EXISTS `mapelicula` (
-  `iidpelicula` int(10) NOT NULL AUTO_INCREMENT,
+  `iidpelicula` int(10) NOT NULL,
   `vtitulo` varchar(40) DEFAULT NULL,
   `dcosto` decimal(10,2) DEFAULT NULL,
   `ddescuento` decimal(10,2) DEFAULT NULL,
@@ -96,12 +95,11 @@ CREATE TABLE IF NOT EXISTS `mapelicula` (
   `vidioma` varchar(15) DEFAULT NULL,
   `vsubtitulo` varchar(20) DEFAULT NULL,
   `ipuntos` int(10) DEFAULT NULL,
-  `bimagen` mediumblob,
-  PRIMARY KEY (`iidpelicula`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+  `bimagen` mediumblob
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `mapelicula`
+-- Volcado de datos para la tabla `mapelicula`
 --
 
 INSERT INTO `mapelicula` (`iidpelicula`, `vtitulo`, `dcosto`, `ddescuento`, `vduracion`, `vtipoSala`, `vclasificacion`, `vcategoria`, `velenco`, `vdepartamento`, `vestablecimiento`, `vidioma`, `vsubtitulo`, `ipuntos`, `bimagen`) VALUES
@@ -112,21 +110,20 @@ INSERT INTO `mapelicula` (`iidpelicula`, `vtitulo`, `dcosto`, `ddescuento`, `vdu
 -- --------------------------------------------------------
 
 --
--- Table structure for table `maregistropersonal`
+-- Estructura de tabla para la tabla `maregistropersonal`
 --
 
 CREATE TABLE IF NOT EXISTS `maregistropersonal` (
-  `iidregistro` int(11) NOT NULL AUTO_INCREMENT,
+  `iidregistro` int(11) NOT NULL,
   `vnombre` varchar(30) DEFAULT NULL,
   `vapellido` varchar(30) DEFAULT NULL,
   `vtipo` varchar(20) DEFAULT NULL,
   `vusuario` varchar(30) DEFAULT NULL,
-  `vcontrasenia` varchar(30) DEFAULT NULL,
-  PRIMARY KEY (`iidregistro`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+  `vcontrasenia` varchar(30) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `maregistropersonal`
+-- Volcado de datos para la tabla `maregistropersonal`
 --
 
 INSERT INTO `maregistropersonal` (`iidregistro`, `vnombre`, `vapellido`, `vtipo`, `vusuario`, `vcontrasenia`) VALUES
@@ -137,19 +134,18 @@ INSERT INTO `maregistropersonal` (`iidregistro`, `vnombre`, `vapellido`, `vtipo`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `masucursal`
+-- Estructura de tabla para la tabla `masucursal`
 --
 
 CREATE TABLE IF NOT EXISTS `masucursal` (
-  `iidSucursal` int(10) NOT NULL AUTO_INCREMENT,
+  `iidSucursal` int(10) NOT NULL,
   `iidCiudad` int(11) NOT NULL,
   `iestado` int(10) NOT NULL,
-  `vnombre` varchar(30) NOT NULL,
-  PRIMARY KEY (`iidSucursal`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+  `vnombre` varchar(30) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `masucursal`
+-- Volcado de datos para la tabla `masucursal`
 --
 
 INSERT INTO `masucursal` (`iidSucursal`, `iidCiudad`, `iestado`, `vnombre`) VALUES
@@ -162,51 +158,70 @@ INSERT INTO `masucursal` (`iidSucursal`, `iidCiudad`, `iestado`, `vnombre`) VALU
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sala horario`
+-- Estructura de tabla para la tabla `matiposala`
 --
 
-CREATE TABLE IF NOT EXISTS `sala horario` (
-  `iidSala` int(11) NOT NULL,
-  `idSucursal` int(11) NOT NULL,
-  `iidHorario` int(11) NOT NULL,
-  `iidPelicula` int(11) NOT NULL,
-  PRIMARY KEY (`iidSala`,`idSucursal`,`iidHorario`,`iidPelicula`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `matiposala` (
+  `iidTipo` int(11) NOT NULL,
+  `icantidadSala` int(11) NOT NULL,
+  `vtipoSala` varchar(10) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `matiposala`
+--
+
+INSERT INTO `matiposala` (`iidTipo`, `icantidadSala`, `vtipoSala`) VALUES
+(1, 40, '4D'),
+(2, 35, '3D'),
+(3, 20, 'IMAX');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `trasientos`
+-- Estructura de tabla para la tabla `trasientos`
 --
 
 CREATE TABLE IF NOT EXISTS `trasientos` (
+  `iidAsiento` int(11) NOT NULL,
   `iidSala` int(11) NOT NULL,
-  `idSucursal` int(11) NOT NULL,
   `vfila` varchar(20) DEFAULT NULL,
   `icolumna` int(11) DEFAULT NULL,
-  `iestado` int(11) NOT NULL,
-  PRIMARY KEY (`iidSala`,`idSucursal`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `iestado` int(11) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `trasientos`
+--
+
+INSERT INTO `trasientos` (`iidAsiento`, `iidSala`, `vfila`, `icolumna`, `iestado`) VALUES
+(1, 3, 'A', 1, 0),
+(2, 3, 'A', 2, 0),
+(3, 3, 'A', 3, 0),
+(4, 3, 'A', 4, 0),
+(5, 3, 'B', 4, 0),
+(6, 3, 'C', 4, 0),
+(7, 3, 'C', 7, 0),
+(8, 3, 'C', 1, 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `trbitacora`
+-- Estructura de tabla para la tabla `trbitacora`
 --
 
 CREATE TABLE IF NOT EXISTS `trbitacora` (
-  `iidBitacora` int(11) NOT NULL AUTO_INCREMENT,
+  `iidBitacora` int(11) NOT NULL,
   `iidregistro` int(11) NOT NULL,
   `vusuario` varchar(30) DEFAULT NULL,
   `thora` time DEFAULT NULL,
   `dfecha` date DEFAULT NULL,
   `vnombreEquipo` varchar(30) DEFAULT NULL,
-  `vaccion` varchar(40) DEFAULT NULL,
-  PRIMARY KEY (`iidBitacora`,`iidregistro`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=25 ;
+  `vaccion` varchar(40) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `trbitacora`
+-- Volcado de datos para la tabla `trbitacora`
 --
 
 INSERT INTO `trbitacora` (`iidBitacora`, `iidregistro`, `vusuario`, `thora`, `dfecha`, `vnombreEquipo`, `vaccion`) VALUES
@@ -238,11 +253,11 @@ INSERT INTO `trbitacora` (`iidBitacora`, `iidregistro`, `vusuario`, `thora`, `df
 -- --------------------------------------------------------
 
 --
--- Table structure for table `trhorario`
+-- Estructura de tabla para la tabla `trhorario`
 --
 
 CREATE TABLE IF NOT EXISTS `trhorario` (
-  `iidHorario` int(11) NOT NULL AUTO_INCREMENT,
+  `iidHorario` int(11) NOT NULL,
   `idSucursal` int(11) NOT NULL,
   `iidPelicula` int(11) NOT NULL,
   `inumerosala` int(5) DEFAULT NULL,
@@ -250,12 +265,11 @@ CREATE TABLE IF NOT EXISTS `trhorario` (
   `dfecha` date DEFAULT NULL,
   `vestado` varchar(20) DEFAULT NULL,
   `thorainicio` time DEFAULT NULL,
-  `thorafinal` time DEFAULT NULL,
-  PRIMARY KEY (`iidHorario`,`idSucursal`,`iidPelicula`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+  `thorafinal` time DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `trhorario`
+-- Volcado de datos para la tabla `trhorario`
 --
 
 INSERT INTO `trhorario` (`iidHorario`, `idSucursal`, `iidPelicula`, `inumerosala`, `vtiposala`, `dfecha`, `vestado`, `thorainicio`, `thorafinal`) VALUES
@@ -265,7 +279,7 @@ INSERT INTO `trhorario` (`iidHorario`, `idSucursal`, `iidPelicula`, `inumerosala
 -- --------------------------------------------------------
 
 --
--- Table structure for table `trreservacion`
+-- Estructura de tabla para la tabla `trreservacion`
 --
 
 CREATE TABLE IF NOT EXISTS `trreservacion` (
@@ -274,37 +288,36 @@ CREATE TABLE IF NOT EXISTS `trreservacion` (
   `idSucursal` int(11) DEFAULT NULL,
   `iidPelicula` int(11) DEFAULT NULL,
   `iidCliente` int(11) DEFAULT NULL,
-  `iestado` int(11) DEFAULT NULL,
-  PRIMARY KEY (`iidReservacion`)
+  `iestado` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `trsala`
+-- Estructura de tabla para la tabla `trsala`
 --
 
 CREATE TABLE IF NOT EXISTS `trsala` (
-  `iidSala` int(11) NOT NULL AUTO_INCREMENT,
+  `iidSala` int(11) NOT NULL,
   `idSucursal` int(11) NOT NULL,
-  `icapacidad` int(11) DEFAULT NULL,
-  `vtipo` varchar(10) DEFAULT NULL,
-  PRIMARY KEY (`iidSala`,`idSucursal`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+  `itipo` int(10) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `trsala`
+-- Volcado de datos para la tabla `trsala`
 --
 
-INSERT INTO `trsala` (`iidSala`, `idSucursal`, `icapacidad`, `vtipo`) VALUES
-(3, 1, 13, '4D'),
-(4, 1, 12, '4D'),
-(5, 1, 12, 'IMAX');
+INSERT INTO `trsala` (`iidSala`, `idSucursal`, `itipo`) VALUES
+(3, 1, 1),
+(4, 1, 1),
+(5, 1, 1),
+(8, 1, 1),
+(9, 4, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `trtarjeta`
+-- Estructura de tabla para la tabla `trtarjeta`
 --
 
 CREATE TABLE IF NOT EXISTS `trtarjeta` (
@@ -313,10 +326,140 @@ CREATE TABLE IF NOT EXISTS `trtarjeta` (
   `vfechaCaducidad` varchar(30) DEFAULT NULL,
   `inumero` int(11) DEFAULT NULL,
   `vfechaEmision` varchar(10) DEFAULT NULL,
-  `ipuntosAcumulados` int(11) DEFAULT NULL,
-  PRIMARY KEY (`iidTarjeta`,`iidCliente`)
+  `ipuntosAcumulados` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `maciudad`
+--
+ALTER TABLE `maciudad`
+  ADD PRIMARY KEY (`iidCiudad`);
+
+--
+-- Indices de la tabla `macliente`
+--
+ALTER TABLE `macliente`
+  ADD PRIMARY KEY (`iidCliente`);
+
+--
+-- Indices de la tabla `mafactura`
+--
+ALTER TABLE `mafactura`
+  ADD PRIMARY KEY (`iidFactura`,`iidregistro`);
+
+--
+-- Indices de la tabla `mapelicula`
+--
+ALTER TABLE `mapelicula`
+  ADD PRIMARY KEY (`iidpelicula`);
+
+--
+-- Indices de la tabla `maregistropersonal`
+--
+ALTER TABLE `maregistropersonal`
+  ADD PRIMARY KEY (`iidregistro`);
+
+--
+-- Indices de la tabla `masucursal`
+--
+ALTER TABLE `masucursal`
+  ADD PRIMARY KEY (`iidSucursal`);
+
+--
+-- Indices de la tabla `matiposala`
+--
+ALTER TABLE `matiposala`
+  ADD PRIMARY KEY (`iidTipo`);
+
+--
+-- Indices de la tabla `trasientos`
+--
+ALTER TABLE `trasientos`
+  ADD PRIMARY KEY (`iidAsiento`);
+
+--
+-- Indices de la tabla `trbitacora`
+--
+ALTER TABLE `trbitacora`
+  ADD PRIMARY KEY (`iidBitacora`,`iidregistro`);
+
+--
+-- Indices de la tabla `trhorario`
+--
+ALTER TABLE `trhorario`
+  ADD PRIMARY KEY (`iidHorario`,`idSucursal`,`iidPelicula`);
+
+--
+-- Indices de la tabla `trreservacion`
+--
+ALTER TABLE `trreservacion`
+  ADD PRIMARY KEY (`iidReservacion`);
+
+--
+-- Indices de la tabla `trsala`
+--
+ALTER TABLE `trsala`
+  ADD PRIMARY KEY (`iidSala`,`idSucursal`);
+
+--
+-- Indices de la tabla `trtarjeta`
+--
+ALTER TABLE `trtarjeta`
+  ADD PRIMARY KEY (`iidTarjeta`,`iidCliente`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `maciudad`
+--
+ALTER TABLE `maciudad`
+  MODIFY `iidCiudad` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT de la tabla `mapelicula`
+--
+ALTER TABLE `mapelicula`
+  MODIFY `iidpelicula` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT de la tabla `maregistropersonal`
+--
+ALTER TABLE `maregistropersonal`
+  MODIFY `iidregistro` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT de la tabla `masucursal`
+--
+ALTER TABLE `masucursal`
+  MODIFY `iidSucursal` int(10) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT de la tabla `matiposala`
+--
+ALTER TABLE `matiposala`
+  MODIFY `iidTipo` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT de la tabla `trasientos`
+--
+ALTER TABLE `trasientos`
+  MODIFY `iidAsiento` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT de la tabla `trbitacora`
+--
+ALTER TABLE `trbitacora`
+  MODIFY `iidBitacora` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
+--
+-- AUTO_INCREMENT de la tabla `trhorario`
+--
+ALTER TABLE `trhorario`
+  MODIFY `iidHorario` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+--
+-- AUTO_INCREMENT de la tabla `trsala`
+--
+ALTER TABLE `trsala`
+  MODIFY `iidSala` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
