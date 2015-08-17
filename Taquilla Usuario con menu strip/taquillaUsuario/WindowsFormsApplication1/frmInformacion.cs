@@ -20,7 +20,7 @@ namespace WindowsFormsApplication1
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             
-            frmventa ventas = new frmventa();                       
+            frmasientos ventas = new frmasientos();                       
             ventas.Show();
             this.WindowState = FormWindowState.Minimized;
         }
@@ -92,7 +92,7 @@ namespace WindowsFormsApplication1
 
         private void reservarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmventa ventas = new frmventa();
+            frmasientos ventas = new frmasientos();
             ventas.Show();
             this.WindowState = FormWindowState.Minimized;
         }
@@ -100,6 +100,16 @@ namespace WindowsFormsApplication1
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void grbInfo_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

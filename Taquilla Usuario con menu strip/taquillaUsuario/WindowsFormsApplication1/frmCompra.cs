@@ -31,7 +31,7 @@ namespace WindowsFormsApplication1
         {
             this.Close();
             //se localiza el formulario buscandolo entre los forms abiertos 
-            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmventa);
+            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmasientos);
 
             if (frm != null)
             {
@@ -42,7 +42,7 @@ namespace WindowsFormsApplication1
             }
 
             //sino existe la instancia se crea una nueva
-            frm = new frmventa();
+            frm = new frmasientos();
             frm.Show();
         }
 
@@ -50,7 +50,7 @@ namespace WindowsFormsApplication1
         {
             this.Close();
             //se localiza el formulario buscandolo entre los forms abiertos 
-            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmventa);
+            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmasientos);
 
             if (frm != null)
             {
@@ -61,7 +61,7 @@ namespace WindowsFormsApplication1
             }
 
             //sino existe la instancia se crea una nueva
-            frm = new frmventa();
+            frm = new frmasientos();
             frm.Show();
         }
 

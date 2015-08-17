@@ -24,3 +24,22 @@ C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsForms
 C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmventa.resources
 C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.cartelera.resources
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCiudad.resources
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCompra.resources
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmInformacion.resources
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmventa.resources
+C:\Users\Hector Cardona\Desktop\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\melvinalejandro\Documents\Visual Studio 2013\Projects\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\melvinalejandro\Documents\Visual Studio 2013\Projects\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\melvinalejandro\Documents\Visual Studio 2013\Projects\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\melvinalejandro\Documents\GitHub\dise2015\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\melvinalejandro\Documents\GitHub\dise2015\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\melvinalejandro\Documents\GitHub\dise2015\Taquilla Usuario con menu strip\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
