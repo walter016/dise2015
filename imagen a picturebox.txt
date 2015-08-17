@@ -1,0 +1,13 @@
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string query = string.Format("SELECT imagen FROM prueba where id ='{0}'", comboBox1.SelectedValue.ToString());
+            MySqlCommand comando = new MySqlCommand(query, ObtenerConexion());
+            MySqlDataAdapter da = new MySqlDataAdapter(comando);
+            DataSet ds = new DataSet("prueba");
+            da.Fill(ds, "prueba");
+            byte[] datos = new byte[0];
+            DataRow dr = ds.Tables["prueba"].Rows[0];
+            datos = (byte[])dr["imagen"];
+            System.IO.MemoryStream ms = new System.IO.MemoryStream(datos);
+            pictureBox1.Image = System.Drawing.Bitmap.FromStream(ms);
+        }
