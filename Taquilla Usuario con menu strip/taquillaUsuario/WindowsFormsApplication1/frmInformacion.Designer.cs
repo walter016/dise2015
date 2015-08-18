@@ -38,22 +38,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.grbInfo = new System.Windows.Forms.GroupBox();
             this.grbVideo = new System.Windows.Forms.GroupBox();
-            this.btnSala = new System.Windows.Forms.Button();
-            this.btnClasificacion = new System.Windows.Forms.Button();
-            this.baceptarHora = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.BottomToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.TopToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.RightToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
+            this.btnSala = new System.Windows.Forms.Button();
+            this.btnClasificacion = new System.Windows.Forms.Button();
             this.msbarra = new System.Windows.Forms.MenuStrip();
             this.atrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reservarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label8 = new System.Windows.Forms.Label();
+            this.reservarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grbInfo.SuspendLayout();
             this.grbVideo.SuspendLayout();
@@ -69,7 +66,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -139,79 +135,29 @@
             this.grbInfo.Controls.Add(this.label6);
             this.grbInfo.Controls.Add(this.label4);
             this.grbInfo.Controls.Add(this.label3);
-            this.grbInfo.Location = new System.Drawing.Point(347, 88);
+            this.grbInfo.Location = new System.Drawing.Point(383, 130);
             this.grbInfo.Name = "grbInfo";
             this.grbInfo.Size = new System.Drawing.Size(380, 365);
             this.grbInfo.TabIndex = 18;
             this.grbInfo.TabStop = false;
-            this.grbInfo.Enter += new System.EventHandler(this.grbInfo_Enter);
             // 
             // grbVideo
             // 
-            this.grbVideo.Controls.Add(this.btnSala);
-            this.grbVideo.Controls.Add(this.btnClasificacion);
-            this.grbVideo.Controls.Add(this.baceptarHora);
             this.grbVideo.Controls.Add(this.label7);
-            this.grbVideo.Controls.Add(this.comboBox1);
-            this.grbVideo.Location = new System.Drawing.Point(758, 135);
+            this.grbVideo.Location = new System.Drawing.Point(820, 130);
             this.grbVideo.Name = "grbVideo";
-            this.grbVideo.Size = new System.Drawing.Size(424, 241);
+            this.grbVideo.Size = new System.Drawing.Size(424, 365);
             this.grbVideo.TabIndex = 19;
             this.grbVideo.TabStop = false;
-            // 
-            // btnSala
-            // 
-            this.btnSala.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSala.Image = global::WindowsFormsApplication1.Properties.Resources.salas_de_cine;
-            this.btnSala.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSala.Location = new System.Drawing.Point(244, 26);
-            this.btnSala.Name = "btnSala";
-            this.btnSala.Size = new System.Drawing.Size(90, 50);
-            this.btnSala.TabIndex = 51;
-            this.btnSala.Text = "       Sala";
-            this.btnSala.UseVisualStyleBackColor = true;
-            // 
-            // btnClasificacion
-            // 
-            this.btnClasificacion.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClasificacion.Image = global::WindowsFormsApplication1.Properties.Resources.conf_galeria;
-            this.btnClasificacion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClasificacion.Location = new System.Drawing.Point(91, 26);
-            this.btnClasificacion.Name = "btnClasificacion";
-            this.btnClasificacion.Size = new System.Drawing.Size(125, 50);
-            this.btnClasificacion.TabIndex = 50;
-            this.btnClasificacion.Text = "       Clasificacion";
-            this.btnClasificacion.UseVisualStyleBackColor = true;
-            // 
-            // baceptarHora
-            // 
-            this.baceptarHora.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.baceptarHora.Image = global::WindowsFormsApplication1.Properties.Resources.aceptar;
-            this.baceptarHora.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.baceptarHora.Location = new System.Drawing.Point(157, 171);
-            this.baceptarHora.Name = "baceptarHora";
-            this.baceptarHora.Size = new System.Drawing.Size(110, 50);
-            this.baceptarHora.TabIndex = 49;
-            this.baceptarHora.Text = "       Aceptar";
-            this.baceptarHora.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(140, 93);
+            this.label7.Location = new System.Drawing.Point(174, 142);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(156, 26);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Horarios Pelicula";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(118, 135);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 27);
-            this.comboBox1.TabIndex = 0;
+            this.label7.Size = new System.Drawing.Size(51, 19);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "VIDEO";
             // 
             // BottomToolStripPanel
             // 
@@ -249,6 +195,24 @@
             // 
             this.ContentPanel.Size = new System.Drawing.Size(46, 24);
             // 
+            // btnSala
+            // 
+            this.btnSala.Location = new System.Drawing.Point(464, 84);
+            this.btnSala.Name = "btnSala";
+            this.btnSala.Size = new System.Drawing.Size(63, 28);
+            this.btnSala.TabIndex = 21;
+            this.btnSala.Text = "sala";
+            this.btnSala.UseVisualStyleBackColor = true;
+            // 
+            // btnClasificacion
+            // 
+            this.btnClasificacion.Location = new System.Drawing.Point(383, 84);
+            this.btnClasificacion.Name = "btnClasificacion";
+            this.btnClasificacion.Size = new System.Drawing.Size(63, 28);
+            this.btnClasificacion.TabIndex = 20;
+            this.btnClasificacion.Text = "clasificacion";
+            this.btnClasificacion.UseVisualStyleBackColor = true;
+            // 
             // msbarra
             // 
             this.msbarra.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -258,7 +222,7 @@
             this.salirToolStripMenuItem});
             this.msbarra.Location = new System.Drawing.Point(0, 0);
             this.msbarra.Name = "msbarra";
-            this.msbarra.Size = new System.Drawing.Size(1195, 31);
+            this.msbarra.Size = new System.Drawing.Size(1362, 31);
             this.msbarra.TabIndex = 22;
             // 
             // atrasToolStripMenuItem
@@ -279,15 +243,6 @@
             this.menuPrincipalToolStripMenuItem.Text = "Menu Principal";
             this.menuPrincipalToolStripMenuItem.Click += new System.EventHandler(this.menuPrincipalToolStripMenuItem_Click);
             // 
-            // reservarToolStripMenuItem
-            // 
-            this.reservarToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reservarToolStripMenuItem.Image = global::WindowsFormsApplication1.Properties.Resources._1438150008_ticket;
-            this.reservarToolStripMenuItem.Name = "reservarToolStripMenuItem";
-            this.reservarToolStripMenuItem.Size = new System.Drawing.Size(109, 27);
-            this.reservarToolStripMenuItem.Text = "Reservar";
-            this.reservarToolStripMenuItem.Click += new System.EventHandler(this.reservarToolStripMenuItem_Click);
-            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -297,24 +252,23 @@
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
-            // label8
+            // reservarToolStripMenuItem
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(353, 62);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 23);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Titulo:";
+            this.reservarToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reservarToolStripMenuItem.Image = global::WindowsFormsApplication1.Properties.Resources._1438150008_ticket;
+            this.reservarToolStripMenuItem.Name = "reservarToolStripMenuItem";
+            this.reservarToolStripMenuItem.Size = new System.Drawing.Size(109, 27);
+            this.reservarToolStripMenuItem.Text = "Reservar";
+            this.reservarToolStripMenuItem.Click += new System.EventHandler(this.reservarToolStripMenuItem_Click);
             // 
             // frmInformacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1195, 499);
-            this.Controls.Add(this.label8);
+            this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.msbarra);
+            this.Controls.Add(this.btnSala);
+            this.Controls.Add(this.btnClasificacion);
             this.Controls.Add(this.grbVideo);
             this.Controls.Add(this.grbInfo);
             this.Controls.Add(this.pictureBox1);
@@ -351,21 +305,18 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox grbInfo;
         private System.Windows.Forms.GroupBox grbVideo;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStripPanel BottomToolStripPanel;
         private System.Windows.Forms.ToolStripPanel TopToolStripPanel;
         private System.Windows.Forms.ToolStripPanel RightToolStripPanel;
         private System.Windows.Forms.ToolStripPanel LeftToolStripPanel;
         private System.Windows.Forms.ToolStripContentPanel ContentPanel;
+        private System.Windows.Forms.Button btnSala;
+        private System.Windows.Forms.Button btnClasificacion;
         private System.Windows.Forms.MenuStrip msbarra;
         private System.Windows.Forms.ToolStripMenuItem atrasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem menuPrincipalToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reservarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.Button baceptarHora;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button btnSala;
-        private System.Windows.Forms.Button btnClasificacion;
     }
 }

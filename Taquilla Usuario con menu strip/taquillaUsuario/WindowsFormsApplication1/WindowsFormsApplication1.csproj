@@ -47,9 +47,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="itextsharp">
-      <HintPath>..\..\..\..\..\..\Downloads\itextsharp-all-5.5.6\itextsharp.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -80,23 +77,11 @@
     <Compile Include="frmCompra.Designer.cs">
       <DependentUpon>frmCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmgeneraFactura.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmgeneraFactura.Designer.cs">
-      <DependentUpon>frmgeneraFactura.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmInformacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmInformacion.Designer.cs">
       <DependentUpon>frmInformacion.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmreservacion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmreservacion.Designer.cs">
-      <DependentUpon>frmreservacion.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -115,14 +100,8 @@
     <EmbeddedResource Include="frmCompra.resx">
       <DependentUpon>frmCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmgeneraFactura.resx">
-      <DependentUpon>frmgeneraFactura.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmInformacion.resx">
       <DependentUpon>frmInformacion.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmreservacion.resx">
-      <DependentUpon>frmreservacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -279,10 +258,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\salas-de-cine.png" />
-    <None Include="Resources\aceptar.png" />
-    <None Include="Resources\conf_galeria.png" />
-    <None Include="Resources\logo2.jpg" />
     <Content Include="Resources\portada\El-Destino-de-Júpite.jpg" />
     <Content Include="Resources\portada\FF2.jpg" />
     <Content Include="Resources\portada\images.jpg" />
