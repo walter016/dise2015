@@ -32,7 +32,7 @@ namespace admin
                 try
                 {
                     string query = string.Format("INSERT INTO MACIUDAD (vnombreCiudad) VALUES('{0}')", txtnombreCiudad.Text);
-                    clascrearConexion.inserta(query);
+                    dllConexion.dllConexion.inserta(query);
                     MessageBox.Show("La Ciudad se registro exitosamente");
                 }
                 catch

@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace admin
 {
     public partial class frmbuscarPelicula : Form
@@ -39,7 +40,7 @@ namespace admin
                 String puntos = "";
                 
                 string sql = "SELECT IIDPELICULA as 'Id', VTITULO as 'Nombre Pelicula',DCOSTO as 'Costo Pelicula',DDESCUENTO as 'Descuento Pelicula',VDURACION as 'Duracion',VTIPOSALA as 'Sala',VCLASIFICACION as 'Clasificacion',VCATEGORIA as 'Categoria',VELENCO as 'Elenco',VDEPARTAMENTO as 'Departamento',VESTABLECIMIENTO as 'Establecimiento',VIDIOMA as 'Idioma',VSUBTITULO as 'Subtitulo',IPUNTOS as 'Puntos' FROM MAPELICULA WHERE VTITULO ='" + txtbuscarPelicula.Text + "' OR VSUBTITULO = '" + txtbuscarsubtitulo.Text + "' OR VCATEGORIA= '" + txtbuscarGeneroPelicula.Text +"' OR VCLASIFICACION= '" + txtbuscarClasificacionPeli.Text+"'OR VTIPOSALA ='" + txtbuscarFormatoPeli.Text+"'";
-                MySqlCommand cmd = new MySqlCommand(sql, clascrearConexion.Conexion());
+                MySqlCommand cmd = new MySqlCommand(sql, dllConexion.dllConexion.Conexion());
                 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
@@ -130,7 +131,7 @@ namespace admin
             pelicula.beditar.Enabled = true;
             pelicula.beliminar.Enabled = true;
             string query = string.Format("SELECT bimagen FROM mapelicula where iidpelicula ='{0}'", this.grdinformacionPelicula.CurrentRow.Cells[0].Value.ToString());
-            MySqlCommand comando = new MySqlCommand(query, clascrearConexion.Conexion());
+            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
             DataSet ds = new DataSet("mapelicula");
             da.Fill(ds, "mapelicula");

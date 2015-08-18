@@ -22,7 +22,7 @@ namespace admin
         private void sucursales()
         {
             DataSet dsd = new DataSet();
-            MySqlDataAdapter sql2 = new MySqlDataAdapter("SELECT IIDSUCURSAL,VNOMBRE FROM MASUCURSAL", clascrearConexion.Conexion());
+            MySqlDataAdapter sql2 = new MySqlDataAdapter("SELECT IIDSUCURSAL,VNOMBRE FROM MASUCURSAL", dllConexion.dllConexion.Conexion());
             sql2.Fill(dsd, "MASUCURSAL");
             csucursal.DataSource = dsd.Tables[0].DefaultView;
             csucursal.ValueMember = "IIDSUCURSAL";
@@ -31,7 +31,7 @@ namespace admin
         private void salas()
         {
             DataSet dsd = new DataSet();
-            MySqlDataAdapter sql2 = new MySqlDataAdapter("SELECT IIDTIPO,VTIPOSALA FROM MATIPOSALA", clascrearConexion.Conexion());
+            MySqlDataAdapter sql2 = new MySqlDataAdapter("SELECT IIDTIPO,VTIPOSALA FROM MATIPOSALA", dllConexion.dllConexion.Conexion());
             sql2.Fill(dsd, "MATIPOSALA");
             ctipoSala.DataSource = dsd.Tables[0].DefaultView;
             ctipoSala.ValueMember = "IIDTIPO";
@@ -43,7 +43,7 @@ namespace admin
             string query = string.Format("INSERT INTO TRSALA (idSucursal,itipo) VALUES('{0}','{1}')",csucursal.SelectedValue, ctipoSala.SelectedValue);
             try
             {
-                clascrearConexion.inserta(query);
+                dllConexion.dllConexion.inserta(query);
 
 
 

@@ -49,7 +49,7 @@ namespace admin
             fecha = dtpfecha.Value.Year + "/" + dtpfecha.Value.Month + "/" + dtpfecha.Value.Day;
             string query = string.Format("INSERT INTO TRBITACORA (vusuario, thora, dfecha, vNombreEquipo) VALUES('{0}','{1}','{2}','{3}')", txtBxNombre.Text, txthora.Text, fecha, txtname.Text);
 
-            dllConexion.dllConexion.inserta(query);
+            clascrearConexion.inserta(query);
 
 
             }

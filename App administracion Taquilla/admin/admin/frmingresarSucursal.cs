@@ -14,6 +14,7 @@ using MySql.Data.MySqlClient;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dllConexion;
 
 namespace admin
 {
@@ -50,12 +51,12 @@ namespace admin
         {
             DataTable dat = new DataTable();
             string query = "SELECT iidCiudad,vnombreCiudad FROM MACIUDAD";
-            MySqlCommand comando = new MySqlCommand(query, clascrearConexion.Conexion());
+            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
             cciudad.DisplayMember = "vnombreCiudad";
             cciudad.ValueMember = "iidCiudad";
             da.Fill(dat);
-            clascrearConexion.Conexion().Close();
+            dllConexion.dllConexion.Conexion().Close();
             return dat;
         }
         //Guardado de los datos dentro de la bd
@@ -71,7 +72,7 @@ namespace admin
                 string query = string.Format("INSERT INTO MASUCURSAL (iidciudad, iestado, vnombre) VALUES('{0}','{1}','{2}')", cciudad.SelectedValue, cestadoSucursal.SelectedValue, txtdireccionSucursal.Text);
                 try
                 {
-                    clascrearConexion.inserta(query);
+                    dllConexion.dllConexion.inserta(query);
                     cciudad.ResetText();
                     cestadoSucursal.ResetText();
                     txtdireccionSucursal.ResetText();

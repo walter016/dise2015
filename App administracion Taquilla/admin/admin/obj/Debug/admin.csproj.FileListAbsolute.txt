@@ -126,3 +126,24 @@ C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmregistroUsu
 C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.Properties.Resources.resources
 C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
 C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarHorario.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\admin.exe.config
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.exe
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.pdb
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmbitacora.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmingresarCiudad.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmingresarHorario.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmregistroUsuario.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\admin.exe
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\admin.pdb
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\dllConexion.dll

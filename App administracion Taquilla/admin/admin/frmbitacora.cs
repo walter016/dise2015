@@ -9,6 +9,7 @@ using MySql.Data.MySqlClient;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using dllConexion;
 
 namespace admin
 {
@@ -29,7 +30,7 @@ namespace admin
                 string accion = "";
                 
                 string sqlb = "SELECT vusuario as 'Name Usuario', thora as 'hora ingreso',dfecha as 'fecha ingreso',vnombreEquipo as 'Nombre Equipo' FROM TRBITACORA";
-                MySqlCommand cmdl = new MySqlCommand(sqlb, clascrearConexion.Conexion());
+                MySqlCommand cmdl = new MySqlCommand(sqlb, dllConexion.dllConexion.Conexion());
 
                 MySqlDataReader reader = cmdl.ExecuteReader();
 

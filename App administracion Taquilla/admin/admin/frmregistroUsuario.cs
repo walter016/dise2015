@@ -27,8 +27,8 @@ namespace admin
            
             try
             {
-               
-                clascrearConexion.inserta(query);
+
+                dllConexion.dllConexion.inserta(query);
                 txtnombre.ResetText();
                 txtapellido.ResetText();
                 cmbtipousuario.ResetText();
@@ -57,7 +57,7 @@ namespace admin
                 String contrasenia = "";
 
                 string sql = "SELECT IIDREGISTRO,VNOMBRE as 'Nombre Empleado',VAPELLIDO,VTIPO,VUSUARIO,VCONTRASENIA FROM MAREGISTROPERSONAL WHERE IIDREGISTRO ='" + txtbidemp.Text + "' OR VNOMBRE = '" + txtbnombre.Text + "' OR VAPELLIDO= '" + txtbapellido.Text + "'OR VTIPO='" +cmbbtipo.Text + "'OR VUSUARIO='" + txtbusuario.Text + "'OR VCONTRASENIA='" + txtbpassword.Text + "'";
-                MySqlCommand cmd = new MySqlCommand(sql, clascrearConexion.Conexion());
+                MySqlCommand cmd = new MySqlCommand(sql, dllConexion.dllConexion.Conexion());
 
                 MySqlDataReader reader = cmd.ExecuteReader();
 
@@ -138,7 +138,7 @@ namespace admin
         {
             frmregistroUsuario regempleado = new frmregistroUsuario();
             string updateRegistro = ("UPDATE MAREGISTROPERSONAL set vnombre = '" + txtnombre.Text + "', vapellido = '" + txtapellido.Text + "', vtipo = '" + cmbtipousuario.Text + "', vusuario = '" + txtusuario.Text + "', vcontrasenia = '" + txtpassword.Text +"' WHERE iidregistro = '" + txtidempleado.Text + "'");
-            clascrearConexion.inserta(updateRegistro);
+            dllConexion.dllConexion.inserta(updateRegistro);
             MessageBox.Show("El empleado " + txtnombre.Text + " se actualizo correctamente");
             
             txtidempleado.ResetText();
@@ -161,7 +161,7 @@ namespace admin
         {
             frmregistroUsuario regempleado = new frmregistroUsuario();
             String delete = "Delete from MAREGISTROPERSONAL WHERE IIDREGISTRO ='" + txtidempleado.Text + "'";
-            clascrearConexion.inserta(delete);
+            dllConexion.dllConexion.inserta(delete);
             MessageBox.Show("El empleado " + txtnombre.Text + " se eliminó correctamente");
             txtidempleado.ResetText();
             txtnombre.ResetText(); 
@@ -193,7 +193,7 @@ namespace admin
                 try
                 {
 
-                    clascrearConexion.inserta(query);
+                    dllConexion.dllConexion.inserta(query);
 
                     txtnombre.ResetText();
                     txtapellido.ResetText();

@@ -32,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="dllConexion">
+      <HintPath>..\..\dllConexion.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.6\Assemblies\v2.0\MySql.Data.dll</HintPath>
@@ -48,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clascrearConexion.cs" />
     <Compile Include="claseEmp.cs" />
     <Compile Include="frmbitacora.cs">
       <SubType>Form</SubType>

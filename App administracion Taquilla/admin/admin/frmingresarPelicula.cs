@@ -38,12 +38,12 @@ namespace admin
         {
             DataTable dt = new DataTable();
             string query = "SELECT  VTIPOSALA FROM MATIPOSALA;";
-            MySqlCommand comando = new MySqlCommand(query, clascrearConexion.Conexion());
+            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
             csalasCine.DisplayMember = "VTIPOSALA";
             csalasCine.ValueMember = "VTIPOSALA";
             da.Fill(dt);
-            clascrearConexion.Conexion().Close();
+            dllConexion.dllConexion.Conexion().Close();
             return dt;
         }
 
@@ -55,12 +55,12 @@ namespace admin
         {
             DataTable dt = new DataTable();
             string query = "SELECT vnombreCiudad FROM MACIUDAD;";
-            MySqlCommand comando = new MySqlCommand(query, clascrearConexion.Conexion());
+            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
             cdepartamento.DisplayMember = "vnombreCiudad";
             cdepartamento.ValueMember = "vnombreCiudad";
             da.Fill(dt);
-            clascrearConexion.Conexion().Close();
+            dllConexion.dllConexion.Conexion().Close();
             return dt;
         }
 
@@ -72,12 +72,12 @@ namespace admin
         {
             DataTable dt = new DataTable();
             string query = "SELECT vnombre FROM MASUCURSAL;";
-            MySqlCommand comando = new MySqlCommand(query, clascrearConexion.Conexion());
+            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
             cestablecimiento.DisplayMember = "vnombre";
             cestablecimiento.ValueMember = "vnombre";
             da.Fill(dt);
-            clascrearConexion.Conexion().Close();
+            dllConexion.dllConexion.Conexion().Close();
             return dt;
         }
 
@@ -114,7 +114,7 @@ namespace admin
                         string query = string.Format("INSERT INTO MAPELICULA (`vtitulo`, `dcosto`, `ddescuento`, `vduracion`, `vtipoSala`, `vclasificacion`, `vcategoria`, `velenco`, `vdepartamento`, `vestablecimiento`, `vidioma`, `vsubtitulo`, `ipuntos`, `bimagen`) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}',@FILE)", txttitulo.Text, txtcosto.Text, txtdescuento.Text, txtduracionPelicula.Text, csalasCine.SelectedValue, cclasificacionContenidos.SelectedItem, ccategoriaPelicula.SelectedItem, txtelencoPelicula.Text, cdepartamento.SelectedValue, cestablecimiento.SelectedValue, cidioma.SelectedItem, csubtitulo.SelectedItem, txtpuntosBonificacion.Text);
 
 
-                        cmd.Connection = clascrearConexion.Conexion();
+                        cmd.Connection = dllConexion.dllConexion.Conexion();
                         cmd.CommandText = query;
 
                         cmd.Parameters.AddWithValue("@File", brawData);
@@ -186,7 +186,7 @@ namespace admin
 
 
             string updatePeli = ("UPDATE MAPELICULA set vtitulo = '" + txttitulo.Text + "', dcosto = '" + txtcosto.Text + "', ddescuento = '" + txtdescuento.Text + "', vduracion = '" + txtduracionPelicula.Text + "', vtipoSala = '" + csalasCine.Text + "', vclasificacion = '" + cclasificacionContenidos.Text + "', vcategoria = '" + ccategoriaPelicula.Text + "', velenco = '" + txtelencoPelicula.Text + "', vdepartamento = '" + cdepartamento.Text + "', vestablecimiento = '" + cestablecimiento.Text + "', vidioma = '" + cidioma.Text + "', vsubtitulo = '" + csubtitulo.Text + "', ipuntos = '" + txtpuntosBonificacion.Text + "', bimagen = @FILE where iidpelicula ='" + txtidPelicula.Text + "'");
-            cmd.Connection = clascrearConexion.Conexion();
+            cmd.Connection = dllConexion.dllConexion.Conexion();
             cmd.CommandText = updatePeli;
 
             cmd.Parameters.AddWithValue("@File", ms.GetBuffer());
@@ -216,7 +216,7 @@ namespace admin
             {
 
                 String delete = "Delete from MAPELICULA WHERE IIDPELICULA ='" + txtidPelicula.Text + "'";
-                clascrearConexion.inserta(delete);
+                dllConexion.dllConexion.inserta(delete);
                 MessageBox.Show("La pelicula " + txttitulo.Text + " se eliminó correctamente");
                 txttitulo.ResetText();
                 txtcosto.ResetText();
@@ -239,7 +239,7 @@ namespace admin
             }
             finally
             {
-                clascrearConexion.Conexion().Close();
+                dllConexion.dllConexion.Conexion().Close();
             }
 
         }

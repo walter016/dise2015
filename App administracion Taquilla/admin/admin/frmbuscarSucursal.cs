@@ -31,7 +31,7 @@ namespace admin
             string box = string.Format("SELECT CID.vnombreCiudad AS Ciudad,SUC.vnombre AS Sucursal, CASE WHEN SUC.iestado <=0 THEN 'No Disponible' ELSE 'Disponible' END Estado FROM MASUCURSAL SUC, MACIUDAD CID WHERE SUC.iidCiudad=CID.iidCiudad AND SUC.vnombre COLLATE latin1_bin ='{0}'", txtbuscarSucursal.Text);
             try
             {
-                MySqlCommand com = new MySqlCommand(box, clascrearConexion.Conexion());
+                MySqlCommand com = new MySqlCommand(box, dllConexion.dllConexion.Conexion());
                 MySqlDataAdapter da = new MySqlDataAdapter();
                 da.SelectCommand = com;
                 da.Fill(ds);

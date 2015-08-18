@@ -27,12 +27,12 @@ namespace admin
         {
             DataTable dt = new DataTable();
             string query = "SELECT iidpelicula,vtitulo from MAPELICULA;";
-            MySqlCommand comando = new MySqlCommand(query, clascrearConexion.Conexion());
+            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
             cnombrePelicula.DisplayMember = "vtitulo";
             cnombrePelicula.ValueMember = "iidpelicula";
             da.Fill(dt);
-            clascrearConexion.Conexion().Close();
+            dllConexion.dllConexion.Conexion().Close();
             return dt;
         }
 
@@ -40,12 +40,12 @@ namespace admin
         {
             DataTable dt = new DataTable();
             string query = "SELECT iidsucursal,vnombre from MASUCURSAL;";
-            MySqlCommand comando = new MySqlCommand(query, clascrearConexion.Conexion());
+            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
             csucursal.DisplayMember = "vnombre";
             csucursal.ValueMember = "iidsucursal";
             da.Fill(dt);
-            clascrearConexion.Conexion().Close();
+            dllConexion.dllConexion.Conexion().Close();
             return dt;
         }
 
@@ -53,12 +53,12 @@ namespace admin
         {
             DataTable dt = new DataTable();
             string query = "SELECT iidsala from TRSALA;";
-            MySqlCommand comando = new MySqlCommand(query, clascrearConexion.Conexion());
+            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
             cnoSala.DisplayMember = "iidsala";
             cnoSala.ValueMember = "iidsala";
             da.Fill(dt);
-            clascrearConexion.Conexion().Close();
+            dllConexion.dllConexion.Conexion().Close();
             return dt;
         }
 
@@ -82,7 +82,7 @@ namespace admin
             string shorainicio;
             string shorafinal;
             string sqlb = "SELECT trhora.iidHorario as 'No.',mapeli.vtitulo AS 'Nombre Pelicula',masoc.vnombre AS 'Nombre Sucursal',trhora.inumerosala AS 'Numero Sala',trhora.vtiposala AS 'Tipo Sala',trhora.dfecha as 'Fecha',trhora.vestado AS 'Estado Pelicula',trhora.thorainicio as 'Hora Inicio',trhora.thorafinal as 'Hora Final' From MAPELICULA mapeli, MASUCURSAL masoc, TRHORARIO trhora WHERE mapeli.iidpelicula = trhora.iidpelicula AND masoc.iidsucursal=trhora.idSucursal";
-            MySqlCommand cmdl = new MySqlCommand(sqlb, clascrearConexion.Conexion());
+            MySqlCommand cmdl = new MySqlCommand(sqlb, dllConexion.dllConexion.Conexion());
 
             MySqlDataReader reader = cmdl.ExecuteReader();
 
@@ -135,7 +135,7 @@ namespace admin
             string shorainicio;
             string shorafinal;
             string sqlb = "SELECT trhora.iidHorario as 'No.',mapeli.vtitulo AS 'Nombre Pelicula',masoc.vnombre AS 'Nombre Sucursal',trhora.inumerosala AS 'Numero Sala',trhora.vtiposala AS 'Tipo Sala',trhora.dfecha as 'Fecha',trhora.vestado AS 'Estado Pelicula',trhora.thorainicio as 'Hora Inicio',trhora.thorafinal as 'Hora Final' From MAPELICULA mapeli, MASUCURSAL masoc, TRHORARIO trhora WHERE mapeli.iidpelicula = trhora.iidpelicula AND masoc.iidsucursal=trhora.idSucursal";
-            MySqlCommand cmdl = new MySqlCommand(sqlb, clascrearConexion.Conexion());
+            MySqlCommand cmdl = new MySqlCommand(sqlb, dllConexion.dllConexion.Conexion());
 
             MySqlDataReader reader = cmdl.ExecuteReader();
 
@@ -180,8 +180,8 @@ namespace admin
         private void cnoSala_TextChanged(object sender, EventArgs e)
         {
             string query = "select iidsala,vtipo from TRSALA where iidsala ='" + cnoSala.Text + "';";
-           
-            MySqlCommand cmd = new MySqlCommand(query, clascrearConexion.Conexion());
+
+            MySqlCommand cmd = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
             MySqlDataReader myreader;
 
             try
@@ -225,7 +225,7 @@ namespace admin
                 string horainicio = str[0];
                 string horafinal = str[6];
                 string sqlb = "SELECT mapeli.vtitulo AS 'Nombre Pelicula',masoc.vnombre AS 'Nombre Sucursal',trhora.inumerosala AS 'Numero Sala',trhora.vtiposala AS 'Tipo Sala',trhora.dfecha as 'Fecha',trhora.vestado AS 'Estado Pelicula',trhora.thorainicio as 'Hora Inicio',trhora.thorafinal as 'Hora Final' From MAPELICULA mapeli, MASUCURSAL masoc, TRHORARIO trhora WHERE mapeli.iidpelicula = trhora.iidpelicula AND masoc.iidsucursal=trhora.idSucursal AND trhora.inumerosala='" + cnoSala.Text + "' AND trhora.thorainicio ='" + horainicio + "'AND trhora.thorafinal ='" + horafinal + "'";
-                MySqlCommand cmdl = new MySqlCommand(sqlb, clascrearConexion.Conexion());
+                MySqlCommand cmdl = new MySqlCommand(sqlb, dllConexion.dllConexion.Conexion());
 
                 MySqlDataReader reader = cmdl.ExecuteReader();
 
@@ -272,7 +272,7 @@ namespace admin
                         string fecha;
                         fecha = dtpfecha.Value.Year + "/" + dtpfecha.Value.Month + "/" + dtpfecha.Value.Day;
                         string query = string.Format("INSERT INTO TRHORARIO (idSucursal,iidPelicula,inumerosala,vtiposala,dfecha,vestado,thorainicio,thorafinal) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", csucursal.SelectedValue, cnombrePelicula.SelectedValue, cnoSala.SelectedValue, txttipoSala.Text, fecha, cestadopeli.SelectedItem, horainicio, horafinal);
-                        clascrearConexion.inserta(query);
+                        dllConexion.dllConexion.inserta(query);
                         MessageBox.Show("el registro se inserto exitosamente");
 
                         refrescarhorario();
@@ -332,7 +332,7 @@ namespace admin
         private void beliminar_Click(object sender, EventArgs e)
         {
             String delete = "Delete from TRHORARIO WHERE iidHorario ='" + txtid.Text + "'";
-            clascrearConexion.inserta(delete);
+            dllConexion.dllConexion.inserta(delete);
             MessageBox.Show("Registro Eliminado Exitosamente");
             refrescarhorario();
             beditar.Enabled = false;
@@ -357,7 +357,7 @@ namespace admin
             string fecha;
             fecha = dtpfecha.Value.Year + "/" + dtpfecha.Value.Month + "/" + dtpfecha.Value.Day;
             string updatePeli = ("UPDATE TRHORARIO set iidPelicula = '" + cnombrePelicula.SelectedValue + "', idSucursal = '" + csucursal.SelectedValue + "', inumerosala = '" + cnoSala.SelectedValue + "', vtiposala = '" + txttipoSala.Text + "', dfecha = '" + fecha + "', vestado = '" + cestadopeli.SelectedItem + "', thorainicio = '" + horainicio + "', thorafinal = '" + horafinal  + "' where iidHorario ='" + txtid.Text + "'");
-            clascrearConexion.inserta(updatePeli);
+            dllConexion.dllConexion.inserta(updatePeli);
             MessageBox.Show("Registro Editado Exitosamente");
             refrescarhorario();
             beditar.Enabled = false;

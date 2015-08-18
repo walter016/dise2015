@@ -13,7 +13,7 @@ namespace admin
         {
             int resultado = -1;
 
-            MySqlConnection conexion = clascrearConexion.Conexion();
+            MySqlConnection conexion = dllConexion.dllConexion.Conexion();
 
             MySqlCommand comando = new MySqlCommand(String.Format("SELECT * FROM MAREGISTROPERSONAL WHERE vusuario COLLATE latin1_bin = '{0}' AND vcontrasenia COLLATE latin1_bin = '{1}'", txtUsuario, txtContra), conexion);
 

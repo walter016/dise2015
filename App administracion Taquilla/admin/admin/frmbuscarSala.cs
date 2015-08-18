@@ -30,7 +30,7 @@ namespace admin
 
 
                 string sql = "SELECT IIDSALA as 'Id Sala Cine', IDSUCURSAL as 'Id Sucursal Cine',ICAPACIDAD as 'Capacidad',VTIPO as 'Tipo' FROM TRSALA WHERE VTIPO ='" + txtbuscarSala.Text + "'OR ICAPACIDAD ='" + txtcapacidadSala.Text + "'";
-                MySqlCommand cmd = new MySqlCommand(sql, clascrearConexion.Conexion());
+                MySqlCommand cmd = new MySqlCommand(sql, dllConexion.dllConexion.Conexion());
          
 
                 MySqlDataReader reader = cmd.ExecuteReader();
