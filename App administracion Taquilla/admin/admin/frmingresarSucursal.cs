@@ -76,8 +76,10 @@ namespace admin
                     cciudad.ResetText();
                     cestadoSucursal.ResetText();
                     txtdireccionSucursal.ResetText();
-
+                    
                     MessageBox.Show("Sucursal registrada con Exito");
+                    //Ingreso de sucursal en la bitacora
+                    claseEmp.Bita(claseEmp.MyUserName, 2, "MASUCURSAL");
                 }
                 catch
                 {

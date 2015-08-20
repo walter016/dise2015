@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Diseño:  Luis Fernando Linares
+//Fecha de asignación: 05/08/2015
+//Fecha de entrega: 05/08/2015
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,7 +26,10 @@ namespace admin
             form.Show();
         }
 
-
+        //Programador y Analista: Luis Fernando Linares Garzaro
+        //Esta funcion es la seguridad del sistema en el cual solo usuarios verificados pueden entrar
+        //Fecha de asignación: 10/08/2015
+        //Fecha de entrega: 10/08/2015
 
         private void biniciarSesion_Click_1(object sender, EventArgs e)
         {
@@ -40,16 +46,12 @@ namespace admin
                     this.Hide();
                     frmmenuPrincipal Menu = new frmmenuPrincipal();
                     Menu.Show();
+                    claseEmp.MyUserName = txtBxNombre.Text;
+
+                    claseEmp.Bita(txtBxNombre.Text, 1, "");
                 }
                 else
                     MessageBox.Show("Usuario y Contraseña Incorrectos");
-
-
-            string fecha;
-            fecha = dtpfecha.Value.Year + "/" + dtpfecha.Value.Month + "/" + dtpfecha.Value.Day;
-            string query = string.Format("INSERT INTO TRBITACORA (vusuario, thora, dfecha, vNombreEquipo) VALUES('{0}','{1}','{2}','{3}')", txtBxNombre.Text, txthora.Text, fecha, txtname.Text);
-
-            dllConexion.dllConexion.inserta(query);
 
 
             }

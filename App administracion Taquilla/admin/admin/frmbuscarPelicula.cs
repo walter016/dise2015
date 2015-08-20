@@ -24,6 +24,8 @@ namespace admin
         {
             try
             {
+                //Ingreso de busqueda de pelicula en la bitacora
+                claseEmp.Bita(claseEmp.MyUserName, 3, "MAPELICULA");
                 String idPelicula = "";   //Variables para el Almacenamineto de resultados de los Querys
                 String titulo = "";
                 String costo = "";

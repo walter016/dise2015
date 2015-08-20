@@ -274,7 +274,8 @@ namespace admin
                         string query = string.Format("INSERT INTO TRHORARIO (idSucursal,iidPelicula,inumerosala,vtiposala,dfecha,vestado,thorainicio,thorafinal) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", csucursal.SelectedValue, cnombrePelicula.SelectedValue, cnoSala.SelectedValue, txttipoSala.Text, fecha, cestadopeli.SelectedItem, horainicio, horafinal);
                         dllConexion.dllConexion.inserta(query);
                         MessageBox.Show("el registro se inserto exitosamente");
-
+                        //Ingreso de horario en la bitacora
+                        claseEmp.Bita(claseEmp.MyUserName, 2, "TRHORARIO");
                         refrescarhorario();
                         cnombrePelicula.ResetText();
                         csucursal.ResetText();

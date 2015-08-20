@@ -23,6 +23,8 @@ namespace admin
         {
             try
             {
+                //Ingreso de busqueda de sala en la bitacora
+                claseEmp.Bita(claseEmp.MyUserName, 3, "TRSALA");
                 String idSala = "";   //Variables para el Almacenamineto de resultados de los Querys
                 String idSucursal = "";
                 String capacidad = "";

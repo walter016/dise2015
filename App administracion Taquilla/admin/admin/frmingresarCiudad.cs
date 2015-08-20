@@ -34,6 +34,8 @@ namespace admin
                     string query = string.Format("INSERT INTO MACIUDAD (vnombreCiudad) VALUES('{0}')", txtnombreCiudad.Text);
                     dllConexion.dllConexion.inserta(query);
                     MessageBox.Show("La Ciudad se registro exitosamente");
+                    //Ingreso de cuidad en laa bitacora
+                    claseEmp.Bita(claseEmp.MyUserName, 2, "MACIUDAD");
                 }
                 catch
                 {

@@ -120,7 +120,8 @@ namespace admin
                         cmd.Parameters.AddWithValue("@File", brawData);
 
                         cmd.ExecuteNonQuery();
-
+                        //Ingreso de cuidad en laa bitacora
+                        claseEmp.Bita(claseEmp.MyUserName, 2, "MAPELICULA");
 
                         MessageBox.Show("Pelicula registrada con Exito ");
                         txttitulo.ResetText();

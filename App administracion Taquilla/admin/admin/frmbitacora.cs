@@ -39,7 +39,7 @@ namespace admin
                 bitacora.Columns.Add("hora ingreso", typeof(string));
                 bitacora.Columns.Add("fecha ingreso", typeof(string));
                 bitacora.Columns.Add("Nombre Equipo", typeof(string));
-               // bitacora.Columns.Add("Accion Realizada", typeof(string));
+                bitacora.Columns.Add("Accion Realizada", typeof(string));
 
                 //bitacora.Rows.Clear();                              //Limpia datos de la Tabla
                 while (reader.Read())
@@ -48,9 +48,9 @@ namespace admin
                     hora = reader.GetString(1).ToString();
                     fecha = reader.GetString(2).ToString();
                     nombre = reader.GetString(3).ToString();
-                   // accion = reader.GetString(4).ToString();
+                    accion = reader.GetString(4).ToString();
 
-                    bitacora.Rows.Add(usuario, hora, fecha, nombre);
+                    bitacora.Rows.Add(usuario, hora, fecha, nombre, accion);
 
 
                     

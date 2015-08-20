@@ -49,6 +49,8 @@ namespace admin
 
 
                 MessageBox.Show("Sala registrada con Exito");
+                //Ingreso de cuidad en laa bitacora
+                claseEmp.Bita(claseEmp.MyUserName, 2, "TRSALA");
             }
             catch
             {

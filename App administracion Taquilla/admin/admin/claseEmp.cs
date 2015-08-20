@@ -8,7 +8,7 @@ namespace admin
 {
     class claseEmp
     {
-
+        public static string MyUserName;
         public static int Autentificar (String txtUsuario, String txtContra)
         {
             int resultado = -1;
@@ -25,6 +25,13 @@ namespace admin
             }
             conexion.Close();
             return resultado;
+        }
+        public static void Bita(String txtUsuario, int Accion, String table)
+        {
+            string sMachineName = Environment.MachineName;
+            string query = string.Format("INSERT INTO TRBITACORA (vusuario, thora, dfecha, vNombreEquipo,vaccion,vTabla) VALUES('{0}',DATE_FORMAT(CURTIME(), '%h:%i:%s'),CURDATE(),'{1}',{2},'{3}')", txtUsuario, sMachineName, Accion, table);
+            dllConexion.dllConexion.inserta(query);
+
         }
 
     }

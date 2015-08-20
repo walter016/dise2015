@@ -147,3 +147,6 @@ C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.csproj
 C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\admin.exe
 C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\admin.pdb
 C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\dllConexion.dll
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\bin\Debug\admin.exe.config
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.exe
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.pdb

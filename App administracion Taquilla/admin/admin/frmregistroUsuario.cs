@@ -36,6 +36,8 @@ namespace admin
                 txtpassword.ResetText();
               
                 MessageBox.Show("Usuario registrado Exitosamente");
+                //Ingreso de Usuario en laa bitacora
+                claseEmp.Bita(claseEmp.MyUserName, 2, "MAREGISTROPERSONAL");
             }
             catch
             {
