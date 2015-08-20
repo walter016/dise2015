@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmingresarSucursal));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cciudad = new System.Windows.Forms.ComboBox();
             this.bguardar = new System.Windows.Forms.Button();
             this.cestadoSucursal = new System.Windows.Forms.ComboBox();
             this.txtdireccionSucursal = new System.Windows.Forms.TextBox();
             this.lestadoSucursal = new System.Windows.Forms.Label();
             this.lciudad = new System.Windows.Forms.Label();
             this.lnombreSucursal = new System.Windows.Forms.Label();
-            this.cciudad = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,6 +56,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Detalles";
+            // 
+            // cciudad
+            // 
+            this.cciudad.FormattingEnabled = true;
+            this.cciudad.Location = new System.Drawing.Point(160, 32);
+            this.cciudad.Name = "cciudad";
+            this.cciudad.Size = new System.Drawing.Size(285, 27);
+            this.cciudad.TabIndex = 0;
             // 
             // bguardar
             // 
@@ -84,6 +92,7 @@
             this.txtdireccionSucursal.Name = "txtdireccionSucursal";
             this.txtdireccionSucursal.Size = new System.Drawing.Size(285, 27);
             this.txtdireccionSucursal.TabIndex = 1;
+            this.txtdireccionSucursal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtdireccionSucursal_KeyPress);
             // 
             // lestadoSucursal
             // 
@@ -111,14 +120,6 @@
             this.lnombreSucursal.Size = new System.Drawing.Size(64, 19);
             this.lnombreSucursal.TabIndex = 0;
             this.lnombreSucursal.Text = "Nombre:";
-            // 
-            // cciudad
-            // 
-            this.cciudad.FormattingEnabled = true;
-            this.cciudad.Location = new System.Drawing.Point(160, 32);
-            this.cciudad.Name = "cciudad";
-            this.cciudad.Size = new System.Drawing.Size(285, 27);
-            this.cciudad.TabIndex = 0;
             // 
             // frmingresarSucursal
             // 

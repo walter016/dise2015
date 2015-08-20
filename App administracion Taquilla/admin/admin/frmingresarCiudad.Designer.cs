@@ -68,6 +68,7 @@
             this.txtnombreCiudad.Name = "txtnombreCiudad";
             this.txtnombreCiudad.Size = new System.Drawing.Size(285, 27);
             this.txtnombreCiudad.TabIndex = 3;
+            this.txtnombreCiudad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombreCiudad_KeyPress);
             // 
             // lnombreCiudad
             // 
