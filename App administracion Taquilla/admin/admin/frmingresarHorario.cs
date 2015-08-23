@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Diseño y Creacion: Hector Joannes Gil Cardona
+//Fecha de asignación: 03/08/2015
+//Fecha de entrega: 07/08/2015
+//modificacion: 19/08/2015
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,53 +20,87 @@ namespace admin
         public frmingresarHorario()
         {
             InitializeComponent();
+            //Diseño y Creacion: Hector Joannes Gil Cardona
+            //Fecha de asignación: 03/08/2015
+            //Fecha de entrega: 07/08/2015
+            //modificacion: 19/08/2015
+            //carga de los datasource para cuando muestra los datos de la pelicula, ciudad y sala, llamando a los datatables
             cnombrePelicula.DataSource = nombrePelicula();
-            csucursal.DataSource = nombreSucursal();
+            cbCiudad.DataSource = nombreCiudad();
             cnoSala.DataSource = numeroSala();
 
         }
 
-
+        //Diseño y Creacion: Hector Joannes Gil Cardona
+        //Fecha de asignación: 03/08/2015
+        //Fecha de entrega: 07/08/2015
+        // Datatabel para la carga de la pelicula las cuales son ingreados desde el form de ingreso pelicula
         public DataTable nombrePelicula()
         {
+            DataTable dt = new DataTable(); // se crea la variable para el datatable
+            string query = "SELECT iidpelicula,vtitulo from MAPELICULA;"; // query de seleccion
+            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion()); //ejecucion del query
+            MySqlDataAdapter da = new MySqlDataAdapter(comando); // ejecucion del comando
+            cnombrePelicula.DisplayMember = "vtitulo"; // muestra el nombre de la pelicula
+            cnombrePelicula.ValueMember = "iidpelicula"; // al momento de seleccionar la pelicula se seleccionara el ID
+            da.Fill(dt); // llena cada columna
+            dllConexion.dllConexion.Conexion().Close(); // ciere de conexion
+            return dt;
+        }
+
+        public DataTable nombreCiudad()
+        {
+            //Diseño y Creacion: Hector Joannes Gil Cardona
+            //Fecha de asignación: 03/08/2015
+            //Fecha de entrega: 07/08/2015
+
             DataTable dt = new DataTable();
-            string query = "SELECT iidpelicula,vtitulo from MAPELICULA;";
+            string query = "SELECT iidCiudad,vnombreCiudad from MACIUDAD;"; //seleccion para la carga de los nombres de ciudades
             MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
-            cnombrePelicula.DisplayMember = "vtitulo";
-            cnombrePelicula.ValueMember = "iidpelicula";
+            cbCiudad.DisplayMember = "vnombreCiudad"; // muestra el nombre de la ciudad
+            cbCiudad.ValueMember = "iidCiudad";// se selecciona el id de la ciudad para un mejor control
             da.Fill(dt);
             dllConexion.dllConexion.Conexion().Close();
             return dt;
         }
 
-        public DataTable nombreSucursal()
-        {
-            DataTable dt = new DataTable();
-            string query = "SELECT iidsucursal,vnombre from MASUCURSAL;";
-            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
-            MySqlDataAdapter da = new MySqlDataAdapter(comando);
-            csucursal.DisplayMember = "vnombre";
-            csucursal.ValueMember = "iidsucursal";
-            da.Fill(dt);
-            dllConexion.dllConexion.Conexion().Close();
-            return dt;
-        }
+        //Diseño y Creacion: Hector Joannes Gil Cardona
+        //Fecha de asignación: 03/08/2015
+        //Fecha de entrega: 07/08/2015
 
         public DataTable numeroSala()
         {
             DataTable dt = new DataTable();
-            string query = "SELECT iidsala from TRSALA;";
+            string query = "SELECT iidsala from TRSALA;"; //select para la busqueda de las salas de cine
             MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
             MySqlDataAdapter da = new MySqlDataAdapter(comando);
-            cnoSala.DisplayMember = "iidsala";
+            cnoSala.DisplayMember = "iidsala"; // muestra el numero de sala para cada pelicula
             cnoSala.ValueMember = "iidsala";
             da.Fill(dt);
             dllConexion.dllConexion.Conexion().Close();
             return dt;
         }
+        //Diseño y Creacion: Hector Joannes Gil Cardona
+        //Fecha de asignación: 03/08/2015
+        //Fecha de entrega: 07/08/2015
+        //modificacion: 19/08/2015
+        public DataTable nombreSucursal()
+        {
+            DataTable dt = new DataTable();
+            string query = "select iidSucursal,iidCiudad,vnombre from MASUCURSAL where iidciudad ='" + cbCiudad.SelectedValue + "'"; // hace un select de la ciudad el cual jala el id para mostrar el combobox
+            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
+            MySqlDataAdapter da = new MySqlDataAdapter(comando);
+            csucursal.DisplayMember = "vnombre";// muestra el nombre de la ciudad
+            csucursal.ValueMember = "iidSucursal"; // se guardara el nomuero de sucursal
+            da.Fill(dt);
+            dllConexion.dllConexion.Conexion().Close();
+            return dt;
+        }
 
-        
+
+
+
 
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -70,8 +108,13 @@ namespace admin
 
         }
 
+
+        //Diseño y Creacion: Hector Joannes Gil Cardona
+        //Fecha de asignación: 03/08/2015
+        //Fecha de entrega: 07/08/2015
         private void frmingresarHorario_Load(object sender, EventArgs e)
         {
+            // variables para mostrar los datos al datagridview
             string nopeli;
             string snombrepeli;
             string snombresucursal;
@@ -86,8 +129,8 @@ namespace admin
 
             MySqlDataReader reader = cmdl.ExecuteReader();
 
-            DataTable horario = new DataTable();    
-           //Creacion de objeto de una tabla auxiliar para sustituir por la tabla real
+            DataTable horario = new DataTable();
+            //Creacion de objeto de una tabla auxiliar para sustituir por la tabla real
             horario.Columns.Add("No.", typeof(string));
             horario.Columns.Add("Nombre Pelicula", typeof(string));
             horario.Columns.Add("Nombre Sucursal", typeof(string));
@@ -99,8 +142,7 @@ namespace admin
             horario.Columns.Add("Hora Final", typeof(string));
 
 
-
-            //horario.Rows.Clear();                              //Limpia datos de la Tabla
+            //muestra los datos encontrados por medio de la busqueda
             while (reader.Read())
             {
                 nopeli = reader.GetString(0).ToString();
@@ -114,7 +156,7 @@ namespace admin
                 shorafinal = reader.GetString(8).ToString();
 
 
-                horario.Rows.Add(nopeli,snombrepeli, snombresucursal, snumerosala, stiposala, sfecha, sestadopeli, shorainicio, shorafinal);
+                horario.Rows.Add(nopeli, snombrepeli, snombresucursal, snumerosala, stiposala, sfecha, sestadopeli, shorainicio, shorafinal);
 
 
 
@@ -122,9 +164,13 @@ namespace admin
             }
             dgvinfoPeliculas.DataSource = horario;
         }
+        //Diseño y Creacion: Hector Joannes Gil Cardona
+        //Fecha de asignación: 03/08/2015
+        //Fecha de entrega: 07/08/2015
 
         private void refrescarhorario()
         {
+            // variabls para cada campo de la tabla
             string nopeli;
             string snombrepeli;
             string snombresucursal;
@@ -154,6 +200,7 @@ namespace admin
 
 
             //horario.Rows.Clear();                              //Limpia datos de la Tabla
+            // el while nos sirve para mostrar las busquedas ene l datagridview
             while (reader.Read())
             {
                 nopeli = reader.GetString(0).ToString();
@@ -178,7 +225,12 @@ namespace admin
 
 
         private void cnoSala_TextChanged(object sender, EventArgs e)
+        //Diseño y Creacion: Hector Joannes Gil Cardona
+        //Fecha de asignación: 03/08/2015
+        //Fecha de entrega: 07/08/2015
+        //modificacion: 19/08/2015
         {
+            //query para seleccionar datos busqcado
             string query = "select iidsala,vtipo from TRSALA where iidsala ='" + cnoSala.Text + "';";
 
             MySqlCommand cmd = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
@@ -186,14 +238,14 @@ namespace admin
 
             try
             {
-                
+
                 myreader = cmd.ExecuteReader();
 
-                while (myreader.Read())
+                while (myreader.Read())// si lee los datos los muestra consecutivamente
                 {
                     string tiposala = myreader.GetString("vtipo").ToString();
                     txttipoSala.Text = tiposala;
-                    
+
                 }
             }
             catch (MySqlException ex)
@@ -203,9 +255,9 @@ namespace admin
 
         private void bguardar_Click(object sender, EventArgs e)
         {
-            
 
-            if (String.IsNullOrEmpty(cestadopeli.Text) || String.IsNullOrEmpty(chorarioPelicula.Text)) 
+            // validacion de los campos de estado pelicula y horario para que no se ingresen en blanco
+            if (String.IsNullOrEmpty(cestadopeli.Text) || String.IsNullOrEmpty(chorarioPelicula.Text))
             {
                 MessageBox.Show("Debe ingresar estado o horario de pelicula");
             }
@@ -228,7 +280,7 @@ namespace admin
                 MySqlCommand cmdl = new MySqlCommand(sqlb, dllConexion.dllConexion.Conexion());
 
                 MySqlDataReader reader = cmdl.ExecuteReader();
-
+                //datatable para horario
                 DataTable horario = new DataTable();               //Creacion de objeto de una tabla auxiliar para sustituir por la tabla real
                 horario.Columns.Add("Nombre Pelicula", typeof(string));
                 horario.Columns.Add("Nombre Sucursal", typeof(string));
@@ -266,8 +318,8 @@ namespace admin
                     // si en tal caso la sala y el horario no son iguales guarda la pelicula
                     try
                     {
-                        
-                       
+
+
 
                         string fecha;
                         fecha = dtpfecha.Value.Year + "/" + dtpfecha.Value.Month + "/" + dtpfecha.Value.Day;
@@ -303,10 +355,11 @@ namespace admin
 
         }
 
-        
+
 
         private void baceptarPelicula_Click(object sender, EventArgs e)
         {
+            //modulo para seleccionar una pelicula
             frmingresarHorario horario = new frmingresarHorario();
             string noid = this.dgvinfoPeliculas.CurrentRow.Cells[0].Value.ToString();
             txtid.Text = noid;
@@ -321,17 +374,18 @@ namespace admin
             dtpfecha.Text = fecha;
             string estado = this.dgvinfoPeliculas.CurrentRow.Cells[6].Value.ToString();
             cestadopeli.Text = estado;
-            String hora = this.dgvinfoPeliculas.CurrentRow.Cells[7].Value.ToString() +" - "+ this.dgvinfoPeliculas.CurrentRow.Cells[8].Value.ToString();
+            String hora = this.dgvinfoPeliculas.CurrentRow.Cells[7].Value.ToString() + " - " + this.dgvinfoPeliculas.CurrentRow.Cells[8].Value.ToString();
             chorarioPelicula.Text = hora;
             beditar.Enabled = true;
             beliminar.Enabled = true;
             bcancelar.Enabled = true;
 
-            
+
         }
 
         private void beliminar_Click(object sender, EventArgs e)
         {
+            //eliminacion de un horario seleccionado
             String delete = "Delete from TRHORARIO WHERE iidHorario ='" + txtid.Text + "'";
             dllConexion.dllConexion.inserta(delete);
             MessageBox.Show("Registro Eliminado Exitosamente");
@@ -351,13 +405,14 @@ namespace admin
 
         private void beditar_Click(object sender, EventArgs e)
         {
+            //edicion del horario
             string[] str;
             str = chorarioPelicula.Text.Split(' ', '-', 'P', 'M');
             string horainicio = str[0];
             string horafinal = str[6];
             string fecha;
             fecha = dtpfecha.Value.Year + "/" + dtpfecha.Value.Month + "/" + dtpfecha.Value.Day;
-            string updatePeli = ("UPDATE TRHORARIO set iidPelicula = '" + cnombrePelicula.SelectedValue + "', idSucursal = '" + csucursal.SelectedValue + "', inumerosala = '" + cnoSala.SelectedValue + "', vtiposala = '" + txttipoSala.Text + "', dfecha = '" + fecha + "', vestado = '" + cestadopeli.SelectedItem + "', thorainicio = '" + horainicio + "', thorafinal = '" + horafinal  + "' where iidHorario ='" + txtid.Text + "'");
+            string updatePeli = ("UPDATE TRHORARIO set iidPelicula = '" + cnombrePelicula.SelectedValue + "', idSucursal = '" + csucursal.SelectedValue + "', inumerosala = '" + cnoSala.SelectedValue + "', vtiposala = '" + txttipoSala.Text + "', dfecha = '" + fecha + "', vestado = '" + cestadopeli.SelectedItem + "', thorainicio = '" + horainicio + "', thorafinal = '" + horafinal + "' where iidHorario ='" + txtid.Text + "'");
             dllConexion.dllConexion.inserta(updatePeli);
             MessageBox.Show("Registro Editado Exitosamente");
             refrescarhorario();
@@ -377,6 +432,7 @@ namespace admin
 
         private void bcancelar_Click(object sender, EventArgs e)
         {
+            // cancelacion de la seleccion de horario
             beditar.Enabled = false;
             beliminar.Enabled = false;
             cnombrePelicula.ResetText();
@@ -389,7 +445,32 @@ namespace admin
             chorarioPelicula.ResetText();
         }
 
-       
+        private void csucursal_TextChanged(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void cbCiudad_TextChanged(object sender, EventArgs e)
+        {
+            //filtro al momento de seleccionar una ciudad muestra las sucursales correspondientes
+            DataSet data = new DataSet();
+            MySqlDataAdapter query = new MySqlDataAdapter("select iidSucursal,iidCiudad,vnombre from MASUCURSAL where iidciudad ='" + cbCiudad.SelectedValue.ToString() + "'",dllConexion.dllConexion.Conexion());
+
+            query.Fill(data, "MASUCURSAL");
+            csucursal.DataSource = data.Tables[0].DefaultView;
+            csucursal.ValueMember = "iidSucursal";
+            csucursal.DisplayMember = "vnombre";
+
+        }
+
+        private void cbCiudad_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
 

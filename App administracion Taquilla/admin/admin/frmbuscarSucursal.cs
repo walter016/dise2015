@@ -59,5 +59,14 @@ namespace admin
                 MessageBox.Show("Ocurrio algun error! Lo sentimos");
             }
         }
+
+        private void bnuevabusqueda_Click(object sender, EventArgs e)
+        {
+            txtbuscarSucursal.ResetText();
+
+            grdinformacionSucursal.DataSource = null;
+            grdinformacionSucursal.Rows.Clear();
+            grdinformacionSucursal.Refresh();
+        }
     }
 }

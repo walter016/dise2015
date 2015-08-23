@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmbuscarPelicula));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bcancelarPelicula = new System.Windows.Forms.Button();
+            this.baceptarPelicula = new System.Windows.Forms.Button();
             this.txtbuscarFormatoPeli = new System.Windows.Forms.TextBox();
             this.lformatoPelicula = new System.Windows.Forms.Label();
             this.txtbuscarClasificacionPeli = new System.Windows.Forms.TextBox();
@@ -38,18 +40,18 @@
             this.txtbuscarGeneroPelicula = new System.Windows.Forms.TextBox();
             this.txtbuscarsubtitulo = new System.Windows.Forms.TextBox();
             this.lpeliculaSubtitulada = new System.Windows.Forms.Label();
+            this.bbuscarPelicula = new System.Windows.Forms.Button();
             this.grdinformacionPelicula = new System.Windows.Forms.DataGridView();
             this.txtbuscarPelicula = new System.Windows.Forms.TextBox();
             this.lnombrePelicula = new System.Windows.Forms.Label();
-            this.bcancelarPelicula = new System.Windows.Forms.Button();
-            this.baceptarPelicula = new System.Windows.Forms.Button();
-            this.bbuscarPelicula = new System.Windows.Forms.Button();
+            this.bnuevabusqueda = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdinformacionPelicula)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.bnuevabusqueda);
             this.groupBox1.Controls.Add(this.bcancelarPelicula);
             this.groupBox1.Controls.Add(this.baceptarPelicula);
             this.groupBox1.Controls.Add(this.txtbuscarFormatoPeli);
@@ -72,6 +74,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Busqueda";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // bcancelarPelicula
+            // 
+            this.bcancelarPelicula.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bcancelarPelicula.Image = global::admin.Properties.Resources.cancelar;
+            this.bcancelarPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bcancelarPelicula.Location = new System.Drawing.Point(436, 434);
+            this.bcancelarPelicula.Name = "bcancelarPelicula";
+            this.bcancelarPelicula.Size = new System.Drawing.Size(110, 40);
+            this.bcancelarPelicula.TabIndex = 13;
+            this.bcancelarPelicula.Text = "       Cancelar";
+            this.bcancelarPelicula.UseVisualStyleBackColor = true;
+            this.bcancelarPelicula.Click += new System.EventHandler(this.bcancelarPelicula_Click);
+            // 
+            // baceptarPelicula
+            // 
+            this.baceptarPelicula.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.baceptarPelicula.Image = global::admin.Properties.Resources.aceptar;
+            this.baceptarPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.baceptarPelicula.Location = new System.Drawing.Point(195, 435);
+            this.baceptarPelicula.Name = "baceptarPelicula";
+            this.baceptarPelicula.Size = new System.Drawing.Size(110, 40);
+            this.baceptarPelicula.TabIndex = 12;
+            this.baceptarPelicula.Text = "       Aceptar";
+            this.baceptarPelicula.UseVisualStyleBackColor = true;
+            this.baceptarPelicula.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtbuscarFormatoPeli
             // 
@@ -137,6 +165,19 @@
             this.lpeliculaSubtitulada.TabIndex = 4;
             this.lpeliculaSubtitulada.Text = "Subtitulo:";
             // 
+            // bbuscarPelicula
+            // 
+            this.bbuscarPelicula.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bbuscarPelicula.Image = global::admin.Properties.Resources.search1;
+            this.bbuscarPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bbuscarPelicula.Location = new System.Drawing.Point(650, 23);
+            this.bbuscarPelicula.Name = "bbuscarPelicula";
+            this.bbuscarPelicula.Size = new System.Drawing.Size(110, 48);
+            this.bbuscarPelicula.TabIndex = 3;
+            this.bbuscarPelicula.Text = "       Buscar";
+            this.bbuscarPelicula.UseVisualStyleBackColor = true;
+            this.bbuscarPelicula.Click += new System.EventHandler(this.bbuscarPelicula_Click);
+            // 
             // grdinformacionPelicula
             // 
             this.grdinformacionPelicula.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -162,43 +203,19 @@
             this.lnombrePelicula.TabIndex = 0;
             this.lnombrePelicula.Text = "Nombre de la Pelicula:";
             // 
-            // bcancelarPelicula
+            // bnuevabusqueda
             // 
-            this.bcancelarPelicula.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bcancelarPelicula.Image = global::admin.Properties.Resources.cancelar;
-            this.bcancelarPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bcancelarPelicula.Location = new System.Drawing.Point(436, 434);
-            this.bcancelarPelicula.Name = "bcancelarPelicula";
-            this.bcancelarPelicula.Size = new System.Drawing.Size(110, 40);
-            this.bcancelarPelicula.TabIndex = 13;
-            this.bcancelarPelicula.Text = "       Cancelar";
-            this.bcancelarPelicula.UseVisualStyleBackColor = true;
-            // 
-            // baceptarPelicula
-            // 
-            this.baceptarPelicula.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.baceptarPelicula.Image = global::admin.Properties.Resources.aceptar;
-            this.baceptarPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.baceptarPelicula.Location = new System.Drawing.Point(195, 435);
-            this.baceptarPelicula.Name = "baceptarPelicula";
-            this.baceptarPelicula.Size = new System.Drawing.Size(110, 40);
-            this.baceptarPelicula.TabIndex = 12;
-            this.baceptarPelicula.Text = "       Aceptar";
-            this.baceptarPelicula.UseVisualStyleBackColor = true;
-            this.baceptarPelicula.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // bbuscarPelicula
-            // 
-            this.bbuscarPelicula.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bbuscarPelicula.Image = global::admin.Properties.Resources.search1;
-            this.bbuscarPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bbuscarPelicula.Location = new System.Drawing.Point(616, 23);
-            this.bbuscarPelicula.Name = "bbuscarPelicula";
-            this.bbuscarPelicula.Size = new System.Drawing.Size(110, 40);
-            this.bbuscarPelicula.TabIndex = 3;
-            this.bbuscarPelicula.Text = "       Buscar";
-            this.bbuscarPelicula.UseVisualStyleBackColor = true;
-            this.bbuscarPelicula.Click += new System.EventHandler(this.bbuscarPelicula_Click);
+            this.bnuevabusqueda.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnuevabusqueda.Image = global::admin.Properties.Resources.icono_busqueda;
+            this.bnuevabusqueda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnuevabusqueda.Location = new System.Drawing.Point(652, 77);
+            this.bnuevabusqueda.Name = "bnuevabusqueda";
+            this.bnuevabusqueda.Size = new System.Drawing.Size(108, 50);
+            this.bnuevabusqueda.TabIndex = 15;
+            this.bnuevabusqueda.Text = " Nueva Busqueda";
+            this.bnuevabusqueda.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bnuevabusqueda.UseVisualStyleBackColor = true;
+            this.bnuevabusqueda.Click += new System.EventHandler(this.bnuevabusqueda_Click);
             // 
             // frmbuscarPelicula
             // 
@@ -238,5 +255,6 @@
         private System.Windows.Forms.Label lpeliculaSubtitulada;
         private System.Windows.Forms.Button bcancelarPelicula;
         private System.Windows.Forms.Button baceptarPelicula;
+        private System.Windows.Forms.Button bnuevabusqueda;
     }
 }

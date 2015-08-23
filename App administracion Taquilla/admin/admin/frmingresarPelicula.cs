@@ -22,12 +22,11 @@ namespace admin
         public frmingresarPelicula()
         {
             InitializeComponent();
-            //con.ConnectionString = ora_connect;
+           
 
             //el combobox se llena con los datos que trae de las tablas el datatable
             csalasCine.DataSource = salasCine();
-            cdepartamento.DataSource = departamento();
-            cestablecimiento.DataSource = esablecimiento();
+           
         }
 
         //Programador y Analista: José Wilfredo Chacon Cartagena
@@ -47,39 +46,10 @@ namespace admin
             return dt;
         }
 
-        //Programador y Analista: José Wilfredo Chacon Cartagena
-        //La siguiente función se utiliza para poder obtener el id y el departamento para luego poder cargarlo a un combobox
-        //Fecha de asignación: 10/08/2015
-        //Fecha de entrega: 10/08/2015
-        public DataTable departamento()
-        {
-            DataTable dt = new DataTable();
-            string query = "SELECT vnombreCiudad FROM MACIUDAD;";
-            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
-            MySqlDataAdapter da = new MySqlDataAdapter(comando);
-            cdepartamento.DisplayMember = "vnombreCiudad";
-            cdepartamento.ValueMember = "vnombreCiudad";
-            da.Fill(dt);
-            dllConexion.dllConexion.Conexion().Close();
-            return dt;
-        }
+       
+       
 
-        //Programador y Analista: José Wilfredo Chacon Cartagena
-        //La siguiente función se utiliza para poder obtener el id y el nombre de la ubicacion del cine para luego poder cargarlo a un combobox
-        //Fecha de asignación: 10/08/2015
-        //Fecha de entrega: 10/08/2015
-        public DataTable esablecimiento()
-        {
-            DataTable dt = new DataTable();
-            string query = "SELECT vnombre FROM MASUCURSAL;";
-            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
-            MySqlDataAdapter da = new MySqlDataAdapter(comando);
-            cestablecimiento.DisplayMember = "vnombre";
-            cestablecimiento.ValueMember = "vnombre";
-            da.Fill(dt);
-            dllConexion.dllConexion.Conexion().Close();
-            return dt;
-        }
+        
 
         //Programador y Analista: José Wilfredo Chacon Cartagena
         //La siguiente función se utiliza para poder insertar los datos ingresados de la pelicula dentro de la base de datos
@@ -89,7 +59,7 @@ namespace admin
         {
 
 
-            if (String.IsNullOrEmpty(txttitulo.Text) || String.IsNullOrEmpty(txtcosto.Text) || String.IsNullOrEmpty(txtdescuento.Text) || String.IsNullOrEmpty(txtduracionPelicula.Text) || String.IsNullOrEmpty(csalasCine.Text) || String.IsNullOrEmpty(cclasificacionContenidos.Text) || String.IsNullOrEmpty(ccategoriaPelicula.Text) || String.IsNullOrEmpty(txtelencoPelicula.Text) || String.IsNullOrEmpty(cdepartamento.Text) || String.IsNullOrEmpty(cestablecimiento.Text) || String.IsNullOrEmpty(cidioma.Text) || String.IsNullOrEmpty(csubtitulo.Text) || String.IsNullOrEmpty(txtpuntosBonificacion.Text))
+            if (String.IsNullOrEmpty(txttitulo.Text) || String.IsNullOrEmpty(txtcosto.Text) || String.IsNullOrEmpty(txtdescuento.Text) || String.IsNullOrEmpty(csalasCine.Text) || String.IsNullOrEmpty(cclasificacionContenidos.Text) || String.IsNullOrEmpty(ccategoriaPelicula.Text) || String.IsNullOrEmpty(txtelencoPelicula.Text) || String.IsNullOrEmpty(cidioma.Text) || String.IsNullOrEmpty(csubtitulo.Text) || String.IsNullOrEmpty(txtpuntosBonificacion.Text))
             {
                 MessageBox.Show("Debe de ingresar una Ciudad"); 
             }
@@ -111,7 +81,7 @@ namespace admin
                         fs.Read(brawData, 0, iFileSize);
                         fs.Close();
 
-                        string query = string.Format("INSERT INTO MAPELICULA (`vtitulo`, `dcosto`, `ddescuento`, `vduracion`, `vtipoSala`, `vclasificacion`, `vcategoria`, `velenco`, `vdepartamento`, `vestablecimiento`, `vidioma`, `vsubtitulo`, `ipuntos`, `bimagen`) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}','{11}','{12}',@FILE)", txttitulo.Text, txtcosto.Text, txtdescuento.Text, txtduracionPelicula.Text, csalasCine.SelectedValue, cclasificacionContenidos.SelectedItem, ccategoriaPelicula.SelectedItem, txtelencoPelicula.Text, cdepartamento.SelectedValue, cestablecimiento.SelectedValue, cidioma.SelectedItem, csubtitulo.SelectedItem, txtpuntosBonificacion.Text);
+                        string query = string.Format("INSERT INTO MAPELICULA (`vtitulo`, `dcosto`, `ddescuento`, `vtipoSala`, `vclasificacion`, `vcategoria`, `velenco`, `vidioma`, `vsubtitulo`, `ipuntos`, `bimagen`) VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}',@FILE)", txttitulo.Text, txtcosto.Text, txtdescuento.Text, csalasCine.SelectedValue, cclasificacionContenidos.SelectedItem, ccategoriaPelicula.SelectedItem, txtelencoPelicula.Text, cidioma.SelectedItem, csubtitulo.SelectedItem, txtpuntosBonificacion.Text);
 
 
                         cmd.Connection = dllConexion.dllConexion.Conexion();
@@ -127,13 +97,10 @@ namespace admin
                         txttitulo.ResetText();
                         txtcosto.ResetText();
                         txtdescuento.ResetText();
-                        txtduracionPelicula.ResetText();
                         csalasCine.ResetText();
                         cclasificacionContenidos.ResetText();
                         ccategoriaPelicula.ResetText();
                         txtelencoPelicula.ResetText();
-                        cdepartamento.ResetText();
-                        cestablecimiento.ResetText();
                         cidioma.ResetText();
                         csubtitulo.ResetText();
                         txtpuntosBonificacion.ResetText();
@@ -186,7 +153,7 @@ namespace admin
             pimagenPelicula.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
 
 
-            string updatePeli = ("UPDATE MAPELICULA set vtitulo = '" + txttitulo.Text + "', dcosto = '" + txtcosto.Text + "', ddescuento = '" + txtdescuento.Text + "', vduracion = '" + txtduracionPelicula.Text + "', vtipoSala = '" + csalasCine.Text + "', vclasificacion = '" + cclasificacionContenidos.Text + "', vcategoria = '" + ccategoriaPelicula.Text + "', velenco = '" + txtelencoPelicula.Text + "', vdepartamento = '" + cdepartamento.Text + "', vestablecimiento = '" + cestablecimiento.Text + "', vidioma = '" + cidioma.Text + "', vsubtitulo = '" + csubtitulo.Text + "', ipuntos = '" + txtpuntosBonificacion.Text + "', bimagen = @FILE where iidpelicula ='" + txtidPelicula.Text + "'");
+            string updatePeli = ("UPDATE MAPELICULA set vtitulo = '" + txttitulo.Text + "', dcosto = '" + txtcosto.Text + "', ddescuento = '" + txtdescuento.Text + "', vtipoSala = '" + csalasCine.Text + "', vclasificacion = '" + cclasificacionContenidos.Text + "', vcategoria = '" + ccategoriaPelicula.Text + "', velenco = '" + txtelencoPelicula.Text + "', vidioma = '" + cidioma.Text + "', vsubtitulo = '" + csubtitulo.Text + "', ipuntos = '" + txtpuntosBonificacion.Text + "', bimagen = @FILE where iidpelicula ='" + txtidPelicula.Text + "'");
             cmd.Connection = dllConexion.dllConexion.Conexion();
             cmd.CommandText = updatePeli;
 
@@ -197,13 +164,10 @@ namespace admin
             txttitulo.ResetText();
             txtcosto.ResetText();
             txtdescuento.ResetText();
-            txtduracionPelicula.ResetText();
             csalasCine.ResetText();
             cclasificacionContenidos.ResetText();
             ccategoriaPelicula.ResetText();
             txtelencoPelicula.ResetText();
-            cdepartamento.ResetText();
-            cestablecimiento.ResetText();
             cidioma.ResetText();
             csubtitulo.ResetText();
             txtpuntosBonificacion.ResetText();
@@ -222,13 +186,10 @@ namespace admin
                 txttitulo.ResetText();
                 txtcosto.ResetText();
                 txtdescuento.ResetText();
-                txtduracionPelicula.ResetText();
                 csalasCine.ResetText();
                 cclasificacionContenidos.ResetText();
                 ccategoriaPelicula.ResetText();
                 txtelencoPelicula.ResetText();
-                cdepartamento.ResetText();
-                cestablecimiento.ResetText();
                 cidioma.ResetText();
                 csubtitulo.ResetText();
                 txtpuntosBonificacion.ResetText();
@@ -250,13 +211,10 @@ namespace admin
             txttitulo.ResetText();
             txtcosto.ResetText();
             txtdescuento.ResetText();
-            txtduracionPelicula.ResetText();
             csalasCine.ResetText();
             cclasificacionContenidos.ResetText();
             ccategoriaPelicula.ResetText();
             txtelencoPelicula.ResetText();
-            cdepartamento.ResetText();
-            cestablecimiento.ResetText();
             cidioma.ResetText();
             csubtitulo.ResetText();
             txtpuntosBonificacion.ResetText();
@@ -325,33 +283,6 @@ namespace admin
                 e.Handled = true; 
         }
 
-        private void txtduracionPelicula_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 8)
-            {
-                e.Handled = false;
-                return;
-            }
-            bool IsDec = false;
-            int nroDec = 0;
 
-            for (int i = 0; i < txtduracionPelicula.Text.Length; i++)
-            {
-                if (txtduracionPelicula.Text[i] == '.')
-                    IsDec = true;
-
-                if (IsDec && nroDec++ >= 2)
-                {
-                    e.Handled = true;
-                    return;
-                }
-            }
-            if (e.KeyChar >= 48 && e.KeyChar <= 57)
-                e.Handled = false;
-            else if (e.KeyChar == 46)
-                e.Handled = (IsDec) ? true : false;
-            else
-                e.Handled = true; 
-        }
     }
 }

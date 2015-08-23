@@ -34,12 +34,14 @@
             this.lnombreSucursal = new System.Windows.Forms.Label();
             this.txtbuscarSucursal = new System.Windows.Forms.TextBox();
             this.bbuscarSucursal = new System.Windows.Forms.Button();
+            this.bnuevabusqueda = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdinformacionSucursal)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.bnuevabusqueda);
             this.groupBox1.Controls.Add(this.grdinformacionSucursal);
             this.groupBox1.Controls.Add(this.lnombreSucursal);
             this.groupBox1.Controls.Add(this.txtbuscarSucursal);
@@ -73,7 +75,7 @@
             // 
             this.txtbuscarSucursal.Location = new System.Drawing.Point(169, 27);
             this.txtbuscarSucursal.Name = "txtbuscarSucursal";
-            this.txtbuscarSucursal.Size = new System.Drawing.Size(385, 27);
+            this.txtbuscarSucursal.Size = new System.Drawing.Size(274, 27);
             this.txtbuscarSucursal.TabIndex = 1;
             // 
             // bbuscarSucursal
@@ -81,7 +83,7 @@
             this.bbuscarSucursal.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bbuscarSucursal.Image = global::admin.Properties.Resources.search;
             this.bbuscarSucursal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bbuscarSucursal.Location = new System.Drawing.Point(560, 14);
+            this.bbuscarSucursal.Location = new System.Drawing.Point(449, 15);
             this.bbuscarSucursal.Name = "bbuscarSucursal";
             this.bbuscarSucursal.Size = new System.Drawing.Size(110, 50);
             this.bbuscarSucursal.TabIndex = 0;
@@ -89,12 +91,26 @@
             this.bbuscarSucursal.UseVisualStyleBackColor = true;
             this.bbuscarSucursal.Click += new System.EventHandler(this.bbuscarSucursal_Click);
             // 
+            // bnuevabusqueda
+            // 
+            this.bnuevabusqueda.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bnuevabusqueda.Image = global::admin.Properties.Resources.icono_busqueda;
+            this.bnuevabusqueda.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bnuevabusqueda.Location = new System.Drawing.Point(565, 15);
+            this.bnuevabusqueda.Name = "bnuevabusqueda";
+            this.bnuevabusqueda.Size = new System.Drawing.Size(108, 50);
+            this.bnuevabusqueda.TabIndex = 16;
+            this.bnuevabusqueda.Text = " Nueva Busqueda";
+            this.bnuevabusqueda.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.bnuevabusqueda.UseVisualStyleBackColor = true;
+            this.bnuevabusqueda.Click += new System.EventHandler(this.bnuevabusqueda_Click);
+            // 
             // frmbuscarSucursal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(704, 368);
+            this.ClientSize = new System.Drawing.Size(699, 368);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -116,5 +132,6 @@
         private System.Windows.Forms.TextBox txtbuscarSucursal;
         private System.Windows.Forms.Label lnombreSucursal;
         private System.Windows.Forms.DataGridView grdinformacionSucursal;
+        private System.Windows.Forms.Button bnuevabusqueda;
     }
 }
