@@ -27,9 +27,10 @@ namespace admin
                 String hora = "";
                 String  fecha = "";
                 String nombre = "";
-                string accion = "";
+                String accion = "";
+                String tabla = "";
                 
-                string sqlb = "SELECT vusuario as 'Name Usuario', thora as 'hora ingreso',dfecha as 'fecha ingreso',vnombreEquipo as 'Nombre Equipo' FROM TRBITACORA";
+                string sqlb = "SELECT vusuario as 'Name Usuario', thora as 'hora ingreso',dfecha as 'fecha ingreso',vnombreEquipo as 'Nombre Equipo', vaccion as 'Accion Realizada', vTabla as 'Tabla' FROM TRBITACORA";
                 MySqlCommand cmdl = new MySqlCommand(sqlb, dllConexion.dllConexion.Conexion());
 
                 MySqlDataReader reader = cmdl.ExecuteReader();
@@ -40,6 +41,7 @@ namespace admin
                 bitacora.Columns.Add("fecha ingreso", typeof(string));
                 bitacora.Columns.Add("Nombre Equipo", typeof(string));
                 bitacora.Columns.Add("Accion Realizada", typeof(string));
+                bitacora.Columns.Add("Tabla", typeof(string));
 
                 //bitacora.Rows.Clear();                              //Limpia datos de la Tabla
                 while (reader.Read())
@@ -49,8 +51,9 @@ namespace admin
                     fecha = reader.GetString(2).ToString();
                     nombre = reader.GetString(3).ToString();
                     accion = reader.GetString(4).ToString();
+                    tabla = reader.GetString(5).ToString();
 
-                    bitacora.Rows.Add(usuario, hora, fecha, nombre, accion);
+                    bitacora.Rows.Add(usuario, hora, fecha, nombre, accion,tabla);
 
 
                     
