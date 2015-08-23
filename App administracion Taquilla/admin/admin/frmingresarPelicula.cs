@@ -1,4 +1,4 @@
-﻿//Diseño: José Wilfredo Chacón Cartagena
+//Diseño: José Wilfredo Chacón Cartagena
 //Fecha de asignación: 05/08/2015
 //Fecha de entrega: 05/08/2015
 
@@ -61,7 +61,7 @@ namespace admin
 
             if (String.IsNullOrEmpty(txttitulo.Text) || String.IsNullOrEmpty(txtcosto.Text) || String.IsNullOrEmpty(txtdescuento.Text) || String.IsNullOrEmpty(csalasCine.Text) || String.IsNullOrEmpty(cclasificacionContenidos.Text) || String.IsNullOrEmpty(ccategoriaPelicula.Text) || String.IsNullOrEmpty(txtelencoPelicula.Text) || String.IsNullOrEmpty(cidioma.Text) || String.IsNullOrEmpty(csubtitulo.Text) || String.IsNullOrEmpty(txtpuntosBonificacion.Text))
             {
-                MessageBox.Show("Debe de ingresar una Ciudad"); 
+                MessageBox.Show("Debe llenar todos los datos"); 
             }
             else
             {
