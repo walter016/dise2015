@@ -1,4 +1,4 @@
-﻿//Diseño y Creacion: Hector Joannes Gil Cardona
+//Diseño y Creacion: Hector Joannes Gil Cardona
 //Fecha de asignación: 03/08/2015
 //Fecha de entrega: 07/08/2015
 //Modificacion: Luis Linares - Acciones a Bitacora
@@ -146,14 +146,14 @@ namespace admin
             pelicula.txtcosto.Text = this.grdinformacionPelicula.CurrentRow.Cells[2].Value.ToString();
             pelicula.txtdescuento.Text = this.grdinformacionPelicula.CurrentRow.Cells[3].Value.ToString();
     
-            pelicula.csalasCine.Text = this.grdinformacionPelicula.CurrentRow.Cells[5].Value.ToString();
-            pelicula.cclasificacionContenidos.Text = this.grdinformacionPelicula.CurrentRow.Cells[6].Value.ToString();
-            pelicula.ccategoriaPelicula.Text = this.grdinformacionPelicula.CurrentRow.Cells[7].Value.ToString();
-            pelicula.txtelencoPelicula.Text = this.grdinformacionPelicula.CurrentRow.Cells[8].Value.ToString();
+            pelicula.csalasCine.Text = this.grdinformacionPelicula.CurrentRow.Cells[4].Value.ToString();
+            pelicula.cclasificacionContenidos.Text = this.grdinformacionPelicula.CurrentRow.Cells[5].Value.ToString();
+            pelicula.ccategoriaPelicula.Text = this.grdinformacionPelicula.CurrentRow.Cells[6].Value.ToString();
+            pelicula.txtelencoPelicula.Text = this.grdinformacionPelicula.CurrentRow.Cells[7].Value.ToString();
            
-            pelicula.cidioma.Text = this.grdinformacionPelicula.CurrentRow.Cells[11].Value.ToString();
-            pelicula.csubtitulo.Text = this.grdinformacionPelicula.CurrentRow.Cells[12].Value.ToString();
-            pelicula.txtpuntosBonificacion.Text = this.grdinformacionPelicula.CurrentRow.Cells[13].Value.ToString();
+            pelicula.cidioma.Text = this.grdinformacionPelicula.CurrentRow.Cells[8].Value.ToString();
+            pelicula.csubtitulo.Text = this.grdinformacionPelicula.CurrentRow.Cells[9].Value.ToString();
+            pelicula.txtpuntosBonificacion.Text = this.grdinformacionPelicula.CurrentRow.Cells[10].Value.ToString();
             pelicula.bguardar.Enabled = false;
             pelicula.beditar.Enabled = true;
             pelicula.beliminar.Enabled = true;
