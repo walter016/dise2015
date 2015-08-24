@@ -150,6 +150,3 @@ C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\dllConexion.
 C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\bin\Debug\admin.exe.config
 C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.exe
 C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.pdb
-C:\Users\melvinalejandro\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\bin\Debug\admin.exe.config
-C:\Users\melvinalejandro\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.exe
-C:\Users\melvinalejandro\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.pdb
