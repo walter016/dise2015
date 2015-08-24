@@ -220,6 +220,22 @@ namespace admin
             bguardar.Enabled = true;
         }
 
+<<<<<<< HEAD
+=======
+        private void btnrefresh_Click(object sender, EventArgs e)
+        {
+            txtbidemp.Text = "";
+            txtbnombre.Text = "";
+            txtbapellido.Text = "";
+            txtbusuario.Text = "";
+
+
+            DataTable refrescars = (DataTable)grdbuscarempleado.DataSource;
+
+            refrescars.Clear(); //Limpiamos el Grid View cuando el usuario no desee realizar ninguna accion con los datos buscados.
+        }
+
+>>>>>>> origin/master
      
             
         }
