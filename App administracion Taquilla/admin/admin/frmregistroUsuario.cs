@@ -261,9 +261,9 @@ namespace admin
             txtbusuario.Text = "";
 
 
-            DataTable refrescar = (DataTable)grdbuscarempleado.DataSource;
+            DataTable refrescars = (DataTable)grdbuscarempleado.DataSource;
 
-            refrescar.Clear(); //Limpiamos el Grid View cuando el usuario no desee realizar ninguna accion con los datos buscados.
+            refrescars.Clear(); //Limpiamos el Grid View cuando el usuario no desee realizar ninguna accion con los datos buscados.
         }
 
      
