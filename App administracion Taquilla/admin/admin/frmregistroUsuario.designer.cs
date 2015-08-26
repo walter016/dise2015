@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmregistroUsuario));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.brefrescar = new System.Windows.Forms.Button();
             this.txtidempleado = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.beliminar = new System.Windows.Forms.Button();
@@ -50,12 +50,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.bguardar = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnrefresh = new System.Windows.Forms.Button();
             this.txtbusuario = new System.Windows.Forms.TextBox();
-            this.cmbbtipo = new System.Windows.Forms.ComboBox();
-            this.txtbpassword = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.grdbuscarempleado = new System.Windows.Forms.DataGridView();
             this.txtbidemp = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -86,7 +83,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.brefrescar);
             this.tabPage1.Controls.Add(this.txtidempleado);
             this.tabPage1.Controls.Add(this.label15);
             this.tabPage1.Controls.Add(this.beliminar);
@@ -111,19 +108,19 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Registro Empleado";
             // 
-            // button1
+            // brefrescar
             // 
-            this.button1.Image = global::admin.Properties.Resources.cancelar;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(338, 359);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(107, 50);
-            this.button1.TabIndex = 39;
-            this.button1.Text = "Cancelar";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.brefrescar.Image = global::admin.Properties.Resources.refresh1;
+            this.brefrescar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.brefrescar.Location = new System.Drawing.Point(338, 359);
+            this.brefrescar.Name = "brefrescar";
+            this.brefrescar.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.brefrescar.Size = new System.Drawing.Size(107, 50);
+            this.brefrescar.TabIndex = 39;
+            this.brefrescar.Text = "Refrescar";
+            this.brefrescar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.brefrescar.UseVisualStyleBackColor = true;
+            this.brefrescar.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // txtidempleado
             // 
@@ -183,10 +180,8 @@
             // 
             // cmbtipousuario
             // 
+            this.cmbtipousuario.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbtipousuario.FormattingEnabled = true;
-            this.cmbtipousuario.Items.AddRange(new object[] {
-            "Administrador",
-            "Taquillero"});
             this.cmbtipousuario.Location = new System.Drawing.Point(350, 190);
             this.cmbtipousuario.Name = "cmbtipousuario";
             this.cmbtipousuario.Size = new System.Drawing.Size(178, 23);
@@ -296,12 +291,9 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage2.Controls.Add(this.btnrefresh);
             this.tabPage2.Controls.Add(this.txtbusuario);
-            this.tabPage2.Controls.Add(this.cmbbtipo);
-            this.tabPage2.Controls.Add(this.txtbpassword);
-            this.tabPage2.Controls.Add(this.label14);
             this.tabPage2.Controls.Add(this.label11);
-            this.tabPage2.Controls.Add(this.label10);
             this.tabPage2.Controls.Add(this.grdbuscarempleado);
             this.tabPage2.Controls.Add(this.txtbidemp);
             this.tabPage2.Controls.Add(this.label9);
@@ -319,61 +311,38 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Buscar Empleados";
             // 
+            // btnrefresh
+            // 
+            this.btnrefresh.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnrefresh.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnrefresh.Image = global::admin.Properties.Resources.refresh;
+            this.btnrefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnrefresh.Location = new System.Drawing.Point(443, 392);
+            this.btnrefresh.Name = "btnrefresh";
+            this.btnrefresh.Size = new System.Drawing.Size(108, 42);
+            this.btnrefresh.TabIndex = 59;
+            this.btnrefresh.Text = "       Refrescar";
+            this.btnrefresh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnrefresh.UseVisualStyleBackColor = true;
+            this.btnrefresh.Click += new System.EventHandler(this.btnrefresh_Click);
+            // 
             // txtbusuario
             // 
-            this.txtbusuario.Location = new System.Drawing.Point(149, 144);
+            this.txtbusuario.Location = new System.Drawing.Point(456, 108);
             this.txtbusuario.Name = "txtbusuario";
             this.txtbusuario.Size = new System.Drawing.Size(178, 23);
             this.txtbusuario.TabIndex = 58;
-            // 
-            // cmbbtipo
-            // 
-            this.cmbbtipo.FormattingEnabled = true;
-            this.cmbbtipo.Items.AddRange(new object[] {
-            "Administrador",
-            "Taquillero"});
-            this.cmbbtipo.Location = new System.Drawing.Point(456, 105);
-            this.cmbbtipo.Name = "cmbbtipo";
-            this.cmbbtipo.Size = new System.Drawing.Size(180, 23);
-            this.cmbbtipo.TabIndex = 57;
-            // 
-            // txtbpassword
-            // 
-            this.txtbpassword.Location = new System.Drawing.Point(456, 141);
-            this.txtbpassword.Name = "txtbpassword";
-            this.txtbpassword.Size = new System.Drawing.Size(180, 23);
-            this.txtbpassword.TabIndex = 56;
-            this.txtbpassword.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(389, 144);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(61, 15);
-            this.label14.TabIndex = 55;
-            this.label14.Text = "Password";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(92, 149);
+            this.label11.Location = new System.Drawing.Point(399, 113);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(51, 15);
             this.label11.TabIndex = 53;
             this.label11.Text = "Usuario";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(362, 109);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 15);
-            this.label10.TabIndex = 51;
-            this.label10.Text = "Tipo Empleado";
             // 
             // grdbuscarempleado
             // 
@@ -454,12 +423,12 @@
             this.baceptarPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.baceptarPelicula.Location = new System.Drawing.Point(317, 392);
             this.baceptarPelicula.Name = "baceptarPelicula";
-            this.baceptarPelicula.Size = new System.Drawing.Size(90, 42);
+            this.baceptarPelicula.Size = new System.Drawing.Size(106, 42);
             this.baceptarPelicula.TabIndex = 50;
             this.baceptarPelicula.Text = "       Aceptar";
             this.baceptarPelicula.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.baceptarPelicula.UseVisualStyleBackColor = true;
-            this.baceptarPelicula.Click += new System.EventHandler(this.baceptarPelicula_Click);
+            this.baceptarPelicula.Click += new System.EventHandler(this.baceptarEmpleado_Click);
             // 
             // btnbuscaremp
             // 
@@ -523,18 +492,15 @@
         private System.Windows.Forms.DataGridView grdbuscarempleado;
         private System.Windows.Forms.TextBox txtbidemp;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtbpassword;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox cmbbtipo;
         private System.Windows.Forms.TextBox txtbusuario;
         private System.Windows.Forms.Button beliminar;
         private System.Windows.Forms.Button beditar;
         private System.Windows.Forms.TextBox txtidempleado;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button baceptarPelicula;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button brefrescar;
+        private System.Windows.Forms.Button btnrefresh;
 
     }
 }

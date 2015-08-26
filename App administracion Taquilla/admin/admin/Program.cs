@@ -16,7 +16,7 @@ namespace admin
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frminiciarSesion());
+            Application.Run(new frmmenuPrincipal());
         }
     }
 }

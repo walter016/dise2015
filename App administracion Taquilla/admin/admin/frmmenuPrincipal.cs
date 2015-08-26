@@ -90,11 +90,6 @@ namespace admin
             form.Show();
         }
 
-        private void horariosDePeliculaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmingresarHorario form = new frmingresarHorario();
-            form.Show();
-        }
 
         private void horariosPeliculasToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -105,6 +100,12 @@ namespace admin
         private void busquedaDeHorariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void tipoDeUsuarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmtipoUsuario form = new frmtipoUsuario();
+            form.Show();
         }
     }
 }

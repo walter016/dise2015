@@ -55,6 +55,7 @@
             // 
             // csucursal
             // 
+            this.csucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.csucursal.FormattingEnabled = true;
             this.csucursal.Location = new System.Drawing.Point(160, 29);
             this.csucursal.Name = "csucursal";
@@ -85,6 +86,7 @@
             // 
             // ctipoSala
             // 
+            this.ctipoSala.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ctipoSala.FormattingEnabled = true;
             this.ctipoSala.Location = new System.Drawing.Point(160, 80);
             this.ctipoSala.Name = "ctipoSala";

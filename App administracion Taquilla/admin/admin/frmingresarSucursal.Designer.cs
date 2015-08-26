@@ -59,6 +59,7 @@
             // 
             // cciudad
             // 
+            this.cciudad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cciudad.FormattingEnabled = true;
             this.cciudad.Location = new System.Drawing.Point(160, 32);
             this.cciudad.Name = "cciudad";
@@ -80,6 +81,7 @@
             // 
             // cestadoSucursal
             // 
+            this.cestadoSucursal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cestadoSucursal.FormattingEnabled = true;
             this.cestadoSucursal.Location = new System.Drawing.Point(160, 108);
             this.cestadoSucursal.Name = "cestadoSucursal";

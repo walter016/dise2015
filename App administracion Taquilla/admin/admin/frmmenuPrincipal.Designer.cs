@@ -42,6 +42,7 @@
             this.busquedaDeSucursalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipoDeUsuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeAcumuladoDePuntosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteDeGananciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -169,7 +170,8 @@
             // registroEmpleadosToolStripMenuItem
             // 
             this.registroEmpleadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registroUsuarioToolStripMenuItem});
+            this.registroUsuarioToolStripMenuItem,
+            this.tipoDeUsuarioToolStripMenuItem});
             this.registroEmpleadosToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registroEmpleadosToolStripMenuItem.Image = global::admin.Properties.Resources.agregar_usuario;
             this.registroEmpleadosToolStripMenuItem.Name = "registroEmpleadosToolStripMenuItem";
@@ -183,6 +185,14 @@
             this.registroUsuarioToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
             this.registroUsuarioToolStripMenuItem.Text = "Registro Usuario";
             this.registroUsuarioToolStripMenuItem.Click += new System.EventHandler(this.registroUsuarioToolStripMenuItem_Click);
+            // 
+            // tipoDeUsuarioToolStripMenuItem
+            // 
+            this.tipoDeUsuarioToolStripMenuItem.Image = global::admin.Properties.Resources.Picture1;
+            this.tipoDeUsuarioToolStripMenuItem.Name = "tipoDeUsuarioToolStripMenuItem";
+            this.tipoDeUsuarioToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.tipoDeUsuarioToolStripMenuItem.Text = "Tipo de Usuario";
+            this.tipoDeUsuarioToolStripMenuItem.Click += new System.EventHandler(this.tipoDeUsuarioToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -330,5 +340,6 @@
         private System.Windows.Forms.ToolStripMenuItem bitacoraDeIngresosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem horariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem horariosPeliculasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem tipoDeUsuarioToolStripMenuItem;
     }
 }

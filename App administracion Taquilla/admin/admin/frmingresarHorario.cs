@@ -81,22 +81,7 @@ namespace admin
             dllConexion.dllConexion.Conexion().Close();
             return dt;
         }
-        //Diseño y Creacion: Hector Joannes Gil Cardona
-        //Fecha de asignación: 03/08/2015
-        //Fecha de entrega: 07/08/2015
-        //modificacion: 19/08/2015
-        public DataTable nombreSucursal()
-        {
-            DataTable dt = new DataTable();
-            string query = "select iidSucursal,iidCiudad,vnombre from MASUCURSAL where iidciudad ='" + cbCiudad.SelectedValue + "'"; // hace un select de la ciudad el cual jala el id para mostrar el combobox
-            MySqlCommand comando = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
-            MySqlDataAdapter da = new MySqlDataAdapter(comando);
-            csucursal.DisplayMember = "vnombre";// muestra el nombre de la ciudad
-            csucursal.ValueMember = "iidSucursal"; // se guardara el nomuero de sucursal
-            da.Fill(dt);
-            dllConexion.dllConexion.Conexion().Close();
-            return dt;
-        }
+        
 
 
 
@@ -224,34 +209,7 @@ namespace admin
         }
 
 
-        private void cnoSala_TextChanged(object sender, EventArgs e)
-        //Diseño y Creacion: Hector Joannes Gil Cardona
-        //Fecha de asignación: 03/08/2015
-        //Fecha de entrega: 07/08/2015
-        //modificacion: 19/08/2015
-        {
-            //query para seleccionar datos busqcado
-            string query = "select iidsala,vtipo from TRSALA where iidsala ='" + cnoSala.Text + "';";
-
-            MySqlCommand cmd = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
-            MySqlDataReader myreader;
-
-            try
-            {
-
-                myreader = cmd.ExecuteReader();
-
-                while (myreader.Read())// si lee los datos los muestra consecutivamente
-                {
-                    string tiposala = myreader.GetString("vtipo").ToString();
-                    txttipoSala.Text = tiposala;
-
-                }
-            }
-            catch (MySqlException ex)
-            {
-            }
-        }
+        
 
         private void bguardar_Click(object sender, EventArgs e)
         {
@@ -445,29 +403,49 @@ namespace admin
             chorarioPelicula.ResetText();
         }
 
-        private void csucursal_TextChanged(object sender, EventArgs e)
+        
+
+       
+
+        private void cnoSala_TextChanged_1(object sender, EventArgs e)
         {
+            //Diseño y Creacion: Hector Joannes Gil Cardona
+            //Fecha de asignación: 03/08/2015
+            //Fecha de entrega: 07/08/2015
+            //modificacion: 19/08/2015
+            //query para seleccionar datos busqcado
+            string query = "select iidsala,vtipo from TRSALA where iidsala ='" + cnoSala.Text + "';";
 
+            MySqlCommand cmd = new MySqlCommand(query, dllConexion.dllConexion.Conexion());
+            MySqlDataReader myreader;
 
+            try
+            {
 
+                myreader = cmd.ExecuteReader();
+
+                while (myreader.Read())// si lee los datos los muestra consecutivamente
+                {
+                    string tiposala = myreader.GetString("vtipo").ToString();
+                    txttipoSala.Text = tiposala;
+
+                }
+            }
+            catch (MySqlException ex)
+            {
+            }
         }
 
-        private void cbCiudad_TextChanged(object sender, EventArgs e)
+        private void cbCiudad_TextChanged_1(object sender, EventArgs e)
         {
             //filtro al momento de seleccionar una ciudad muestra las sucursales correspondientes
             DataSet data = new DataSet();
-            MySqlDataAdapter query = new MySqlDataAdapter("select iidSucursal,iidCiudad,vnombre from MASUCURSAL where iidciudad ='" + cbCiudad.SelectedValue.ToString() + "'",dllConexion.dllConexion.Conexion());
+            MySqlDataAdapter query = new MySqlDataAdapter("select iidSucursal,iidCiudad,vnombre from MASUCURSAL where iidciudad ='" + cbCiudad.SelectedValue.ToString() + "'", dllConexion.dllConexion.Conexion());
 
             query.Fill(data, "MASUCURSAL");
             csucursal.DataSource = data.Tables[0].DefaultView;
             csucursal.ValueMember = "iidSucursal";
             csucursal.DisplayMember = "vnombre";
-
-        }
-
-        private void cbCiudad_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
 

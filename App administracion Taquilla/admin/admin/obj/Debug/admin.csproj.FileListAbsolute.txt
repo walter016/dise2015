@@ -150,3 +150,48 @@ C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\dllConexion.
 C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\bin\Debug\admin.exe.config
 C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.exe
 C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.pdb
+C:\Users\melvinalejandro\Desktop\admin\admin\bin\Debug\admin.exe.config
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.exe
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.pdb
+C:\Users\melvinalejandro\Desktop\admin\admin\bin\Debug\admin.exe
+C:\Users\melvinalejandro\Desktop\admin\admin\bin\Debug\admin.pdb
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frmbitacora.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frmingresarCiudad.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frmingresarHorario.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.frmregistroUsuario.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\melvinalejandro\Desktop\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\Hector Cardona\Desktop\admin\admin\bin\Debug\admin.exe.config
+C:\Users\Hector Cardona\Desktop\admin\admin\obj\Debug\admin.exe
+C:\Users\Hector Cardona\Desktop\admin\admin\obj\Debug\admin.pdb
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\bin\Debug\admin.exe.config
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.exe
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.pdb
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\bin\Debug\admin.exe
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\bin\Debug\admin.pdb
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\bin\Debug\insertTypeUser.pdb
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmbitacora.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmingresarCiudad.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmingresarHorario.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmregistroUsuario.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmtipoUsuario.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache

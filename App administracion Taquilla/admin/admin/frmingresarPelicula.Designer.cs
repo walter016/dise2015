@@ -143,6 +143,7 @@
             // 
             // ccategoriaPelicula
             // 
+            this.ccategoriaPelicula.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ccategoriaPelicula.FormattingEnabled = true;
             this.ccategoriaPelicula.Items.AddRange(new object[] {
             "Animación",
@@ -244,6 +245,7 @@
             // 
             // csubtitulo
             // 
+            this.csubtitulo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.csubtitulo.FormattingEnabled = true;
             this.csubtitulo.Items.AddRange(new object[] {
             "Español",
@@ -256,6 +258,7 @@
             // 
             // cidioma
             // 
+            this.cidioma.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cidioma.FormattingEnabled = true;
             this.cidioma.Items.AddRange(new object[] {
             "Español",
@@ -274,6 +277,7 @@
             // 
             // cclasificacionContenidos
             // 
+            this.cclasificacionContenidos.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cclasificacionContenidos.FormattingEnabled = true;
             this.cclasificacionContenidos.Items.AddRange(new object[] {
             "AA(Apto para todo público, en especial para niños)",
@@ -289,6 +293,7 @@
             // 
             // csalasCine
             // 
+            this.csalasCine.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.csalasCine.FormattingEnabled = true;
             this.csalasCine.Location = new System.Drawing.Point(193, 133);
             this.csalasCine.Name = "csalasCine";

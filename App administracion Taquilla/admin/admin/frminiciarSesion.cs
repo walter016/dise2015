@@ -20,11 +20,7 @@ namespace admin
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmmenuPrincipal form = new frmmenuPrincipal();
-            form.Show();
-        }
+       
 
         //Programador y Analista: Luis Fernando Linares Garzaro
         //Esta funcion es la seguridad del sistema en el cual solo usuarios verificados pueden entrar

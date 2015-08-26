@@ -29,16 +29,16 @@ namespace admin
                 String nombre = "";
                 String accion = "";
                 String tabla = "";
-                
-                string sqlb = "SELECT vusuario as 'Name Usuario', thora as 'hora ingreso',dfecha as 'fecha ingreso',vnombreEquipo as 'Nombre Equipo', vaccion as 'Accion Realizada', vTabla as 'Tabla' FROM TRBITACORA";
+
+                string sqlb = "SELECT TRBITA.vusuario as 'Nombre Usuario', TRBITA.thora as 'Hora Ingreso', TRBITA.dfecha as 'Fecha Ingreso', TRBITA.vnombreEquipo as 'Nombre Equipo', MAACC.DescAccion as 'Accion Realizada', TRBITA.vTabla as 'Tabla ' FROM TRBITACORA TRBITA, MAACCION MAACC WHERE TRBITA.vaccion=MAACC.iidAccion";
                 MySqlCommand cmdl = new MySqlCommand(sqlb, dllConexion.dllConexion.Conexion());
 
                 MySqlDataReader reader = cmdl.ExecuteReader();
 
                 DataTable bitacora = new DataTable();               //Creacion de objeto de una tabla auxiliar para sustituir por la tabla real
-                bitacora.Columns.Add("Name Usuario", typeof(string));
-                bitacora.Columns.Add("hora ingreso", typeof(string));
-                bitacora.Columns.Add("fecha ingreso", typeof(string));
+                bitacora.Columns.Add("Nombre Usuario", typeof(string));
+                bitacora.Columns.Add("Hora Ingreso", typeof(string));
+                bitacora.Columns.Add("Fecha Ingreso", typeof(string));
                 bitacora.Columns.Add("Nombre Equipo", typeof(string));
                 bitacora.Columns.Add("Accion Realizada", typeof(string));
                 bitacora.Columns.Add("Tabla", typeof(string));
