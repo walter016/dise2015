@@ -1,0 +1,42 @@
+c:\users\walter\documents\visual studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+c:\users\walter\documents\visual studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+c:\users\walter\documents\visual studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+c:\users\walter\documents\visual studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+c:\users\walter\documents\visual studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+c:\users\walter\documents\visual studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+c:\users\walter\documents\visual studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+c:\users\walter\documents\visual studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+c:\users\walter\documents\visual studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.cartelera.resources
+C:\Users\walter\Documents\Visual Studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCiudad.resources
+C:\Users\walter\Documents\Visual Studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmInformacion.resources
+C:\Users\walter\Documents\Visual Studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmventa.resources
+C:\Users\walter\Documents\Visual Studio 2013\Projects\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCompra.resources
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.cartelera.resources
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCiudad.resources
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCompra.resources
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmInformacion.resources
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmventa.resources
+C:\Users\Hector Cardona\Desktop\taquillaUsuarioV0.2\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.cartelera.resources
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCiudad.resources
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCompra.resources
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmInformacion.resources
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmreservacion.resources
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmSala3D.resources
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\bin\Debug\dllConexion.dll
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\bin\Debug\dllConexion.pdb
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\walter\Desktop\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
