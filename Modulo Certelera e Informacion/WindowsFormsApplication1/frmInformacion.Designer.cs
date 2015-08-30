@@ -29,15 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInformacion));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.Atras = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripLabel4 = new System.Windows.Forms.ToolStripLabel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TituloPeli = new System.Windows.Forms.Label();
             this.NmbPeli = new System.Windows.Forms.Label();
@@ -46,6 +37,7 @@
             this.MstIdioma = new System.Windows.Forms.Label();
             this.lblIdioma = new System.Windows.Forms.Label();
             this.grbInfo = new System.Windows.Forms.GroupBox();
+            this.cmbBxHora = new System.Windows.Forms.ComboBox();
             this.lblHoraFinal = new System.Windows.Forms.Label();
             this.lblHoraInicio = new System.Windows.Forms.Label();
             this.MstSubtitu = new System.Windows.Forms.Label();
@@ -60,105 +52,17 @@
             this.LeftToolStripPanel = new System.Windows.Forms.ToolStripPanel();
             this.ContentPanel = new System.Windows.Forms.ToolStripContentPanel();
             this.lblclasificacion = new System.Windows.Forms.Label();
-            this.lbltipoSala = new System.Windows.Forms.Label();
             this.lblClasi = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.cmbBxHora = new System.Windows.Forms.ComboBox();
-            this.toolStrip1.SuspendLayout();
+            this.msbarra = new System.Windows.Forms.MenuStrip();
+            this.atrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.breservarPelicula = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grbInfo.SuspendLayout();
             this.grbVideo.SuspendLayout();
+            this.msbarra.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.AllowMerge = false;
-            this.toolStrip1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(40, 40);
-            this.toolStrip1.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.Atras,
-            this.toolStripButton2,
-            this.toolStripLabel2,
-            this.toolStripButton3,
-            this.toolStripLabel3,
-            this.toolStripButton4,
-            this.toolStripLabel4});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1362, 47);
-            this.toolStrip1.TabIndex = 10;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = global::WindowsFormsApplication1.Properties.Resources.atras;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton1.Text = "Atras";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
-            // 
-            // Atras
-            // 
-            this.Atras.Enabled = false;
-            this.Atras.Name = "Atras";
-            this.Atras.Size = new System.Drawing.Size(43, 44);
-            this.Atras.Text = "Atras";
-            // 
-            // toolStripButton2
-            // 
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton2.Image = global::WindowsFormsApplication1.Properties.Resources.menu_principal;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton2.Text = "Menu Principal";
-            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Enabled = false;
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(106, 44);
-            this.toolStripLabel2.Text = "Menu Principal";
-            // 
-            // toolStripButton3
-            // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = global::WindowsFormsApplication1.Properties.Resources._1438150008_ticket;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton3.Text = "Reservar";
-            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
-            // 
-            // toolStripLabel3
-            // 
-            this.toolStripLabel3.Enabled = false;
-            this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(61, 44);
-            this.toolStripLabel3.Text = "Reserva";
-            // 
-            // toolStripButton4
-            // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = global::WindowsFormsApplication1.Properties.Resources.salir;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(44, 44);
-            this.toolStripButton4.Text = "Salir";
-            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
-            // 
-            // toolStripLabel4
-            // 
-            this.toolStripLabel4.Enabled = false;
-            this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(37, 44);
-            this.toolStripLabel4.Text = "Salir";
             // 
             // pictureBox1
             // 
@@ -173,11 +77,11 @@
             // TituloPeli
             // 
             this.TituloPeli.AutoSize = true;
-            this.TituloPeli.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TituloPeli.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TituloPeli.Location = new System.Drawing.Point(27, 23);
             this.TituloPeli.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TituloPeli.Name = "TituloPeli";
-            this.TituloPeli.Size = new System.Drawing.Size(58, 23);
+            this.TituloPeli.Size = new System.Drawing.Size(53, 19);
             this.TituloPeli.TabIndex = 12;
             this.TituloPeli.Text = "Titulo:";
             this.TituloPeli.Click += new System.EventHandler(this.label1_Click);
@@ -203,11 +107,11 @@
             // Catego
             // 
             this.Catego.AutoSize = true;
-            this.Catego.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Catego.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Catego.Location = new System.Drawing.Point(27, 129);
             this.Catego.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Catego.Name = "Catego";
-            this.Catego.Size = new System.Drawing.Size(88, 23);
+            this.Catego.Size = new System.Drawing.Size(78, 19);
             this.Catego.TabIndex = 14;
             this.Catego.Text = "Categoria:";
             // 
@@ -223,11 +127,11 @@
             // lblIdioma
             // 
             this.lblIdioma.AutoSize = true;
-            this.lblIdioma.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdioma.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIdioma.Location = new System.Drawing.Point(31, 227);
             this.lblIdioma.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIdioma.Name = "lblIdioma";
-            this.lblIdioma.Size = new System.Drawing.Size(69, 23);
+            this.lblIdioma.Size = new System.Drawing.Size(60, 19);
             this.lblIdioma.TabIndex = 16;
             this.lblIdioma.Text = "Idioma:";
             // 
@@ -252,21 +156,31 @@
             this.grbInfo.TabIndex = 18;
             this.grbInfo.TabStop = false;
             // 
+            // cmbBxHora
+            // 
+            this.cmbBxHora.FormattingEnabled = true;
+            this.cmbBxHora.Location = new System.Drawing.Point(39, 357);
+            this.cmbBxHora.Name = "cmbBxHora";
+            this.cmbBxHora.Size = new System.Drawing.Size(240, 27);
+            this.cmbBxHora.TabIndex = 26;
+            // 
             // lblHoraFinal
             // 
             this.lblHoraFinal.AutoSize = true;
+            this.lblHoraFinal.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHoraFinal.Location = new System.Drawing.Point(206, 322);
             this.lblHoraFinal.Name = "lblHoraFinal";
-            this.lblHoraFinal.Size = new System.Drawing.Size(79, 19);
+            this.lblHoraFinal.Size = new System.Drawing.Size(82, 19);
             this.lblHoraFinal.TabIndex = 23;
             this.lblHoraFinal.Text = "Hora Final:";
             // 
             // lblHoraInicio
             // 
             this.lblHoraInicio.AutoSize = true;
+            this.lblHoraInicio.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHoraInicio.Location = new System.Drawing.Point(35, 322);
             this.lblHoraInicio.Name = "lblHoraInicio";
-            this.lblHoraInicio.Size = new System.Drawing.Size(83, 19);
+            this.lblHoraInicio.Size = new System.Drawing.Size(87, 19);
             this.lblHoraInicio.TabIndex = 22;
             this.lblHoraInicio.Text = "Hora Inicio:";
             // 
@@ -282,9 +196,10 @@
             // Subtitu
             // 
             this.Subtitu.AutoSize = true;
+            this.Subtitu.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Subtitu.Location = new System.Drawing.Point(202, 227);
             this.Subtitu.Name = "Subtitu";
-            this.Subtitu.Size = new System.Drawing.Size(77, 19);
+            this.Subtitu.Size = new System.Drawing.Size(82, 19);
             this.Subtitu.TabIndex = 20;
             this.Subtitu.Text = "Subtitulos:";
             // 
@@ -300,9 +215,10 @@
             // Costo
             // 
             this.Costo.AutoSize = true;
+            this.Costo.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Costo.Location = new System.Drawing.Point(209, 27);
             this.Costo.Name = "Costo";
-            this.Costo.Size = new System.Drawing.Size(50, 19);
+            this.Costo.Size = new System.Drawing.Size(51, 19);
             this.Costo.TabIndex = 18;
             this.Costo.Text = "Costo:";
             // 
@@ -363,60 +279,82 @@
             // lblclasificacion
             // 
             this.lblclasificacion.AutoSize = true;
-            this.lblclasificacion.Location = new System.Drawing.Point(390, 119);
+            this.lblclasificacion.Location = new System.Drawing.Point(507, 81);
             this.lblclasificacion.Name = "lblclasificacion";
             this.lblclasificacion.Size = new System.Drawing.Size(13, 19);
             this.lblclasificacion.TabIndex = 22;
             this.lblclasificacion.Text = "l";
             // 
-            // lbltipoSala
-            // 
-            this.lbltipoSala.AutoSize = true;
-            this.lbltipoSala.Location = new System.Drawing.Point(605, 119);
-            this.lbltipoSala.Name = "lbltipoSala";
-            this.lbltipoSala.Size = new System.Drawing.Size(21, 19);
-            this.lbltipoSala.TabIndex = 23;
-            this.lbltipoSala.Text = "la";
-            // 
             // lblClasi
             // 
             this.lblClasi.AutoSize = true;
+            this.lblClasi.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblClasi.Location = new System.Drawing.Point(394, 81);
             this.lblClasi.Name = "lblClasi";
-            this.lblClasi.Size = new System.Drawing.Size(91, 19);
+            this.lblClasi.Size = new System.Drawing.Size(92, 19);
             this.lblClasi.TabIndex = 24;
             this.lblClasi.Text = "Clasificacion";
             // 
-            // label17
+            // msbarra
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(609, 81);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(36, 19);
-            this.label17.TabIndex = 25;
-            this.label17.Text = "Sala";
+            this.msbarra.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.atrasToolStripMenuItem,
+            this.menuPrincipalToolStripMenuItem,
+            this.salirToolStripMenuItem});
+            this.msbarra.Location = new System.Drawing.Point(0, 0);
+            this.msbarra.Name = "msbarra";
+            this.msbarra.Size = new System.Drawing.Size(1362, 31);
+            this.msbarra.TabIndex = 26;
             // 
-            // cmbBxHora
+            // atrasToolStripMenuItem
             // 
-            this.cmbBxHora.FormattingEnabled = true;
-            this.cmbBxHora.Location = new System.Drawing.Point(39, 357);
-            this.cmbBxHora.Name = "cmbBxHora";
-            this.cmbBxHora.Size = new System.Drawing.Size(240, 27);
-            this.cmbBxHora.TabIndex = 26;
+            this.atrasToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.atrasToolStripMenuItem.Image = global::WindowsFormsApplication1.Properties.Resources.atras;
+            this.atrasToolStripMenuItem.Name = "atrasToolStripMenuItem";
+            this.atrasToolStripMenuItem.Size = new System.Drawing.Size(80, 27);
+            this.atrasToolStripMenuItem.Text = "Atras";
+            // 
+            // menuPrincipalToolStripMenuItem
+            // 
+            this.menuPrincipalToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuPrincipalToolStripMenuItem.Image = global::WindowsFormsApplication1.Properties.Resources.menu_principal;
+            this.menuPrincipalToolStripMenuItem.Name = "menuPrincipalToolStripMenuItem";
+            this.menuPrincipalToolStripMenuItem.Size = new System.Drawing.Size(158, 27);
+            this.menuPrincipalToolStripMenuItem.Text = "Menu Principal";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirToolStripMenuItem.Image = global::WindowsFormsApplication1.Properties.Resources.salir;
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(73, 27);
+            this.salirToolStripMenuItem.Text = "Salir";
+            // 
+            // breservarPelicula
+            // 
+            this.breservarPelicula.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.breservarPelicula.Image = global::WindowsFormsApplication1.Properties.Resources.flecha_derecha;
+            this.breservarPelicula.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.breservarPelicula.Location = new System.Drawing.Point(492, 531);
+            this.breservarPelicula.Name = "breservarPelicula";
+            this.breservarPelicula.Size = new System.Drawing.Size(110, 50);
+            this.breservarPelicula.TabIndex = 51;
+            this.breservarPelicula.Text = "Reservar Pelicula";
+            this.breservarPelicula.UseVisualStyleBackColor = true;
+            this.breservarPelicula.Click += new System.EventHandler(this.breservarPelicula_Click);
             // 
             // frmInformacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1362, 741);
-            this.Controls.Add(this.label17);
+            this.Controls.Add(this.breservarPelicula);
+            this.Controls.Add(this.msbarra);
             this.Controls.Add(this.lblClasi);
-            this.Controls.Add(this.lbltipoSala);
             this.Controls.Add(this.lblclasificacion);
             this.Controls.Add(this.grbVideo);
             this.Controls.Add(this.grbInfo);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -427,13 +365,13 @@
             this.Text = "informacion";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.informacion_Load);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.grbInfo.ResumeLayout(false);
             this.grbInfo.PerformLayout();
             this.grbVideo.ResumeLayout(false);
             this.grbVideo.PerformLayout();
+            this.msbarra.ResumeLayout(false);
+            this.msbarra.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -441,15 +379,6 @@
 
         #endregion
 
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.ToolStripLabel Atras;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel4;
         public System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label TituloPeli;
         private System.Windows.Forms.Label NmbPeli;
@@ -468,13 +397,16 @@
         private System.Windows.Forms.Label lblclasificacion;
         private System.Windows.Forms.Label MstCosto;
         private System.Windows.Forms.Label Costo;
-        private System.Windows.Forms.Label lbltipoSala;
         private System.Windows.Forms.Label MstSubtitu;
         private System.Windows.Forms.Label Subtitu;
         private System.Windows.Forms.Label lblHoraFinal;
         private System.Windows.Forms.Label lblHoraInicio;
         private System.Windows.Forms.Label lblClasi;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ComboBox cmbBxHora;
+        private System.Windows.Forms.MenuStrip msbarra;
+        private System.Windows.Forms.ToolStripMenuItem atrasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuPrincipalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.Button breservarPelicula;
     }
 }

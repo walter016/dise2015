@@ -47,7 +47,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.7.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="dllConexion">
+      <HintPath>..\..\..\Documents\Visual Studio 2013\Projects\dllConexion\dllConexion\bin\Debug\dllConexion.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 6.9.6\Assemblies\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -60,7 +66,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="clascrearConexion.cs" />
     <Compile Include="claseEmp.cs" />
     <Compile Include="frmCartelera.cs">
       <SubType>Form</SubType>
@@ -86,14 +91,32 @@
     <Compile Include="frmInformacion.Designer.cs">
       <DependentUpon>frmInformacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="frmVenta.cs">
+    <Compile Include="frmreservacion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmVenta.Designer.cs">
-      <DependentUpon>frmVenta.cs</DependentUpon>
+    <Compile Include="frmreservacion.designer.cs">
+      <DependentUpon>frmreservacion.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSala3D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSala3D.designer.cs">
+      <DependentUpon>frmSala3D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSala4D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSala4D.designer.cs">
+      <DependentUpon>frmSala4D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalaIMAX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalaIMAX.designer.cs">
+      <DependentUpon>frmSalaIMAX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmCartelera.resx">
       <DependentUpon>frmCartelera.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,6 +129,18 @@
     <EmbeddedResource Include="frmInformacion.resx">
       <DependentUpon>frmInformacion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmreservacion.resx">
+      <DependentUpon>frmreservacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSala3D.resx">
+      <DependentUpon>frmSala3D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSala4D.resx">
+      <DependentUpon>frmSala4D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalaIMAX.resx">
+      <DependentUpon>frmSalaIMAX.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -116,9 +151,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="frmVenta.resx">
-      <DependentUpon>frmVenta.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -133,115 +165,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\1438032642_expense.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1438150008_ticket.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1438150045_popcorn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\adelante.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\agregar correo.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\agregar usuario.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\atras.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ayuda.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\buscar usuario.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\buscar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\compras.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\correo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\editar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eliminar correo.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eliminar usuario.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eliminar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\estadisticas.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\facebook.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\go back menu.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\guardar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\IMPRIMIR.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\loggin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo-valentines.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\manual usuario.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu principal.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\modificar correo.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\plane.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\privilegios.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\reservacion.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\salir.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\siguiente usuario.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sincroniza-refrescar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\twitter.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\usuario anterior.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\usuario.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\usuario.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\logo-valentines.ico" />
+    <None Include="Resources\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -261,8 +185,56 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\asiento.png" />
+    <None Include="Resources\usuario.png" />
+    <None Include="Resources\usuario.ico" />
+    <None Include="Resources\usuario anterior.ico" />
+    <None Include="Resources\twitter.png" />
+    <None Include="Resources\ticket.png" />
+    <None Include="Resources\sincroniza-refrescar.png" />
+    <None Include="Resources\siguiente usuario.ico" />
+    <None Include="Resources\salir.png" />
+    <None Include="Resources\salas-de-cine.png" />
+    <None Include="Resources\reservacion.ico" />
+    <None Include="Resources\privilegios.png" />
     <None Include="Resources\asiento2.png" />
+    <None Include="Resources\atras.png" />
+    <None Include="Resources\ayuda.png" />
+    <None Include="Resources\buscar usuario.ico" />
+    <None Include="Resources\buscar.png" />
+    <None Include="Resources\cambio.png" />
+    <None Include="Resources\compras.png" />
+    <None Include="Resources\conf_galeria.png" />
+    <None Include="Resources\correo.png" />
+    <None Include="Resources\editar.png" />
+    <None Include="Resources\eliminar correo.ico" />
+    <None Include="Resources\eliminar usuario.ico" />
+    <None Include="Resources\eliminar.png" />
+    <None Include="Resources\estadisticas.png" />
+    <None Include="Resources\facebook.png" />
+    <None Include="Resources\flecha_derecha.png" />
+    <None Include="Resources\go back menu.ico" />
+    <None Include="Resources\guardar.png" />
+    <None Include="Resources\guardarhover.png" />
+    <None Include="Resources\IMPRIMIR.ico" />
+    <None Include="Resources\loggin.png" />
+    <None Include="Resources\logo-valentines.ico" />
+    <None Include="Resources\logo-valentines.png" />
+    <None Include="Resources\manual usuario.png" />
+    <None Include="Resources\Mas habilitado.png" />
+    <None Include="Resources\Mas Normal.png" />
+    <None Include="Resources\menos habilitado.png" />
+    <None Include="Resources\menos.png" />
+    <None Include="Resources\menu principal.png" />
+    <None Include="Resources\modificar correo.ico" />
+    <None Include="Resources\plane.ico" />
+    <None Include="Resources\1438032642_expense.png" />
+    <None Include="Resources\1438150008_ticket.png" />
+    <None Include="Resources\1438150045_popcorn.png" />
+    <None Include="Resources\aceptar.png" />
+    <None Include="Resources\adelante.png" />
+    <None Include="Resources\agregar correo.ico" />
+    <None Include="Resources\agregar usuario.ico" />
+    <None Include="Resources\asiento.png" />
     <Content Include="Resources\portada\El-Destino-de-Júpite.jpg" />
     <Content Include="Resources\portada\FF2.jpg" />
     <Content Include="Resources\portada\images.jpg" />
@@ -273,9 +245,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\Peliculas\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

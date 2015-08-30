@@ -1,0 +1,17 @@
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\bin\Debug\dllConexion.pdb
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\Taquilla.csprojResolveAssemblyReference.cache
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.cartelera.resources
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCiudad.resources
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmCompra.resources
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmInformacion.resources
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmreservacion.resources
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmSala3D.resources
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmSala4D.resources
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.frmSalaIMAX.resources
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\LuiisFer\Desktop\taquillaUsuario\taquillaUsuario\WindowsFormsApplication1\obj\Debug\Taquilla.csproj.GenerateResource.Cache

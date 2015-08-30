@@ -40,19 +40,19 @@
             // 
             this.cmbCiudad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCiudad.FormattingEnabled = true;
-            this.cmbCiudad.Location = new System.Drawing.Point(93, 105);
+            this.cmbCiudad.Location = new System.Drawing.Point(60, 105);
             this.cmbCiudad.Name = "cmbCiudad";
-            this.cmbCiudad.Size = new System.Drawing.Size(139, 27);
+            this.cmbCiudad.Size = new System.Drawing.Size(179, 27);
             this.cmbCiudad.TabIndex = 0;
-            this.cmbCiudad.TextChanged += new System.EventHandler(this.cmbCiudad_TextChanged);
+            this.cmbCiudad.SelectedIndexChanged += new System.EventHandler(this.cmbCiudad_SelectedIndexChanged);
             // 
             // cmbCine
             // 
             this.cmbCine.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCine.FormattingEnabled = true;
-            this.cmbCine.Location = new System.Drawing.Point(328, 105);
+            this.cmbCine.Location = new System.Drawing.Point(290, 105);
             this.cmbCine.Name = "cmbCine";
-            this.cmbCine.Size = new System.Drawing.Size(139, 27);
+            this.cmbCine.Size = new System.Drawing.Size(204, 27);
             this.cmbCine.TabIndex = 1;
             // 
             // btnCartelera
@@ -65,7 +65,7 @@
             this.btnCartelera.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCartelera.Location = new System.Drawing.Point(215, 176);
             this.btnCartelera.Name = "btnCartelera";
-            this.btnCartelera.Size = new System.Drawing.Size(110, 50);
+            this.btnCartelera.Size = new System.Drawing.Size(114, 60);
             this.btnCartelera.TabIndex = 2;
             this.btnCartelera.Text = "Ver Cartelera";
             this.btnCartelera.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -76,7 +76,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(93, 72);
+            this.label1.Location = new System.Drawing.Point(56, 72);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 19);
             this.label1.TabIndex = 3;
@@ -85,7 +85,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(324, 72);
+            this.label2.Location = new System.Drawing.Point(296, 72);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 19);
             this.label2.TabIndex = 4;
@@ -96,7 +96,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(534, 261);
+            this.ClientSize = new System.Drawing.Size(538, 271);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCartelera);
@@ -120,11 +120,11 @@
 
         #endregion
 
+        private System.Windows.Forms.ComboBox cmbCiudad;
+        private System.Windows.Forms.ComboBox cmbCine;
         private System.Windows.Forms.Button btnCartelera;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.ComboBox cmbCine;
-        public System.Windows.Forms.ComboBox cmbCiudad;
     }
 }
 

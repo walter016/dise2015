@@ -29,9 +29,10 @@ namespace WindowsFormsApplication1
 
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
+            /*
             this.Close();
             //se localiza el formulario buscandolo entre los forms abiertos 
-            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmVenta);
+            Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmventa);
 
             if (frm != null)
             {
@@ -42,8 +43,39 @@ namespace WindowsFormsApplication1
             }
 
             //sino existe la instancia se crea una nueva
-            frm = new frmVenta();
-            frm.Show();
+            frm = new frmventa();
+            frm.Show
+             * */
+        }
+
+        private void atrasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            //this.Close();
+            ////se localiza el formulario buscandolo entre los forms abiertos 
+            //Form frm = Application.OpenForms.Cast<Form>().FirstOrDefault(x => x is frmventa);
+
+            //if (frm != null)
+            //{
+            //    //si la instancia existe la pongo en primer plano
+            //    frm.BringToFront();
+            //    frm.WindowState = FormWindowState.Normal;
+            //    return;
+            //}
+
+            ////sino existe la instancia se crea una nueva
+            //frm = new frmventa();
+            //frm.Show();
+        }
+
+        private void menuPrincipalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

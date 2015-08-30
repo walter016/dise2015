@@ -195,3 +195,22 @@ C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin
 C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.frmtipoUsuario.resources
 C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.Properties.Resources.resources
 C:\Users\Hector Cardona\Desktop\aplicacion de melvin ya con registro\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\bin\Debug\admin.exe
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\bin\Debug\admin.pdb
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\bin\Debug\insertTypeUser.pdb
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmbitacora.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmingresarCiudad.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmingresarHorario.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmregistroUsuario.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.frmtipoUsuario.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
