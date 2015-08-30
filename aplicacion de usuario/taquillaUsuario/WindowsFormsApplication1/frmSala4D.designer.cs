@@ -68,13 +68,27 @@
             this.button38 = new System.Windows.Forms.Button();
             this.button39 = new System.Windows.Forms.Button();
             this.button40 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtpantalla = new System.Windows.Forms.TextBox();
+            this.msbarra = new System.Windows.Forms.MenuStrip();
+            this.atrasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuPrincipalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblcontador = new System.Windows.Forms.Label();
+            this.lblreloj = new System.Windows.Forms.Label();
+            this.button41 = new System.Windows.Forms.Button();
+            this.button42 = new System.Windows.Forms.Button();
+            this.button43 = new System.Windows.Forms.Button();
+            this.lblasiento = new System.Windows.Forms.Label();
+            this.lbldisponible = new System.Windows.Forms.Label();
+            this.lblventa = new System.Windows.Forms.Label();
+            this.msbarra.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.AccessibleName = "";
-            this.button1.Location = new System.Drawing.Point(136, 58);
+            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button1.Location = new System.Drawing.Point(312, 181);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(60, 55);
             this.button1.TabIndex = 0;
@@ -85,7 +99,8 @@
             // button2
             // 
             this.button2.AccessibleName = "";
-            this.button2.Location = new System.Drawing.Point(202, 58);
+            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button2.Location = new System.Drawing.Point(397, 181);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(60, 55);
             this.button2.TabIndex = 1;
@@ -96,7 +111,8 @@
             // button3
             // 
             this.button3.AccessibleName = "";
-            this.button3.Location = new System.Drawing.Point(268, 58);
+            this.button3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button3.Location = new System.Drawing.Point(490, 181);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(60, 55);
             this.button3.TabIndex = 2;
@@ -105,7 +121,8 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(334, 58);
+            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button4.Location = new System.Drawing.Point(581, 181);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(60, 55);
             this.button4.TabIndex = 3;
@@ -114,7 +131,8 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(400, 58);
+            this.button5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button5.Location = new System.Drawing.Point(670, 181);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(60, 55);
             this.button5.TabIndex = 7;
@@ -123,7 +141,8 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(466, 58);
+            this.button6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button6.Location = new System.Drawing.Point(760, 181);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(60, 55);
             this.button6.TabIndex = 6;
@@ -133,7 +152,8 @@
             // button7
             // 
             this.button7.AccessibleName = "";
-            this.button7.Location = new System.Drawing.Point(532, 58);
+            this.button7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button7.Location = new System.Drawing.Point(843, 181);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(60, 55);
             this.button7.TabIndex = 5;
@@ -144,7 +164,8 @@
             // button8
             // 
             this.button8.AccessibleName = "";
-            this.button8.Location = new System.Drawing.Point(598, 58);
+            this.button8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button8.Location = new System.Drawing.Point(928, 181);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(60, 55);
             this.button8.TabIndex = 4;
@@ -155,7 +176,8 @@
             // button9
             // 
             this.button9.AccessibleName = "";
-            this.button9.Location = new System.Drawing.Point(136, 119);
+            this.button9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button9.Location = new System.Drawing.Point(312, 258);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(60, 55);
             this.button9.TabIndex = 8;
@@ -166,7 +188,8 @@
             // button10
             // 
             this.button10.AccessibleName = "";
-            this.button10.Location = new System.Drawing.Point(202, 119);
+            this.button10.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button10.Location = new System.Drawing.Point(397, 258);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(60, 55);
             this.button10.TabIndex = 9;
@@ -177,7 +200,8 @@
             // button11
             // 
             this.button11.AccessibleName = "";
-            this.button11.Location = new System.Drawing.Point(268, 119);
+            this.button11.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button11.Location = new System.Drawing.Point(490, 258);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(60, 55);
             this.button11.TabIndex = 10;
@@ -188,7 +212,8 @@
             // button12
             // 
             this.button12.AccessibleName = "";
-            this.button12.Location = new System.Drawing.Point(334, 119);
+            this.button12.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button12.Location = new System.Drawing.Point(581, 258);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(60, 55);
             this.button12.TabIndex = 11;
@@ -199,7 +224,8 @@
             // button13
             // 
             this.button13.AccessibleName = "";
-            this.button13.Location = new System.Drawing.Point(400, 119);
+            this.button13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button13.Location = new System.Drawing.Point(670, 258);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(60, 55);
             this.button13.TabIndex = 12;
@@ -210,7 +236,8 @@
             // button14
             // 
             this.button14.AccessibleName = "";
-            this.button14.Location = new System.Drawing.Point(466, 119);
+            this.button14.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button14.Location = new System.Drawing.Point(760, 258);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(60, 55);
             this.button14.TabIndex = 13;
@@ -221,7 +248,8 @@
             // button15
             // 
             this.button15.AccessibleName = "";
-            this.button15.Location = new System.Drawing.Point(532, 119);
+            this.button15.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button15.Location = new System.Drawing.Point(843, 258);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(60, 55);
             this.button15.TabIndex = 14;
@@ -232,7 +260,8 @@
             // button16
             // 
             this.button16.AccessibleName = "";
-            this.button16.Location = new System.Drawing.Point(598, 119);
+            this.button16.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button16.Location = new System.Drawing.Point(928, 258);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(60, 55);
             this.button16.TabIndex = 15;
@@ -243,7 +272,8 @@
             // button17
             // 
             this.button17.AccessibleName = "";
-            this.button17.Location = new System.Drawing.Point(136, 180);
+            this.button17.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button17.Location = new System.Drawing.Point(312, 338);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(60, 55);
             this.button17.TabIndex = 16;
@@ -254,7 +284,8 @@
             // button18
             // 
             this.button18.AccessibleName = "";
-            this.button18.Location = new System.Drawing.Point(202, 180);
+            this.button18.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button18.Location = new System.Drawing.Point(397, 338);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(60, 55);
             this.button18.TabIndex = 17;
@@ -265,7 +296,8 @@
             // button19
             // 
             this.button19.AccessibleName = "";
-            this.button19.Location = new System.Drawing.Point(268, 180);
+            this.button19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button19.Location = new System.Drawing.Point(490, 338);
             this.button19.Name = "button19";
             this.button19.Size = new System.Drawing.Size(60, 55);
             this.button19.TabIndex = 18;
@@ -276,7 +308,8 @@
             // button20
             // 
             this.button20.AccessibleName = "";
-            this.button20.Location = new System.Drawing.Point(334, 180);
+            this.button20.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button20.Location = new System.Drawing.Point(581, 338);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(60, 55);
             this.button20.TabIndex = 19;
@@ -287,7 +320,8 @@
             // button21
             // 
             this.button21.AccessibleName = "";
-            this.button21.Location = new System.Drawing.Point(400, 180);
+            this.button21.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button21.Location = new System.Drawing.Point(670, 338);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(60, 55);
             this.button21.TabIndex = 20;
@@ -298,7 +332,8 @@
             // button22
             // 
             this.button22.AccessibleName = "";
-            this.button22.Location = new System.Drawing.Point(466, 180);
+            this.button22.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button22.Location = new System.Drawing.Point(760, 338);
             this.button22.Name = "button22";
             this.button22.Size = new System.Drawing.Size(60, 55);
             this.button22.TabIndex = 21;
@@ -309,7 +344,8 @@
             // button23
             // 
             this.button23.AccessibleName = "";
-            this.button23.Location = new System.Drawing.Point(532, 180);
+            this.button23.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button23.Location = new System.Drawing.Point(843, 338);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(60, 55);
             this.button23.TabIndex = 22;
@@ -320,7 +356,8 @@
             // button24
             // 
             this.button24.AccessibleName = "";
-            this.button24.Location = new System.Drawing.Point(598, 180);
+            this.button24.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button24.Location = new System.Drawing.Point(928, 338);
             this.button24.Name = "button24";
             this.button24.Size = new System.Drawing.Size(60, 55);
             this.button24.TabIndex = 23;
@@ -331,7 +368,8 @@
             // button25
             // 
             this.button25.AccessibleName = "";
-            this.button25.Location = new System.Drawing.Point(136, 241);
+            this.button25.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button25.Location = new System.Drawing.Point(312, 414);
             this.button25.Name = "button25";
             this.button25.Size = new System.Drawing.Size(60, 55);
             this.button25.TabIndex = 24;
@@ -342,7 +380,8 @@
             // button26
             // 
             this.button26.AccessibleName = "";
-            this.button26.Location = new System.Drawing.Point(202, 241);
+            this.button26.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button26.Location = new System.Drawing.Point(397, 414);
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(60, 55);
             this.button26.TabIndex = 25;
@@ -353,7 +392,8 @@
             // button27
             // 
             this.button27.AccessibleName = "";
-            this.button27.Location = new System.Drawing.Point(268, 241);
+            this.button27.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button27.Location = new System.Drawing.Point(490, 414);
             this.button27.Name = "button27";
             this.button27.Size = new System.Drawing.Size(60, 55);
             this.button27.TabIndex = 26;
@@ -364,7 +404,8 @@
             // button28
             // 
             this.button28.AccessibleName = "";
-            this.button28.Location = new System.Drawing.Point(334, 241);
+            this.button28.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button28.Location = new System.Drawing.Point(581, 414);
             this.button28.Name = "button28";
             this.button28.Size = new System.Drawing.Size(60, 55);
             this.button28.TabIndex = 27;
@@ -375,7 +416,8 @@
             // button29
             // 
             this.button29.AccessibleName = "";
-            this.button29.Location = new System.Drawing.Point(400, 241);
+            this.button29.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button29.Location = new System.Drawing.Point(670, 414);
             this.button29.Name = "button29";
             this.button29.Size = new System.Drawing.Size(60, 55);
             this.button29.TabIndex = 28;
@@ -386,7 +428,8 @@
             // button30
             // 
             this.button30.AccessibleName = "";
-            this.button30.Location = new System.Drawing.Point(466, 241);
+            this.button30.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button30.Location = new System.Drawing.Point(760, 414);
             this.button30.Name = "button30";
             this.button30.Size = new System.Drawing.Size(60, 55);
             this.button30.TabIndex = 29;
@@ -397,7 +440,8 @@
             // button31
             // 
             this.button31.AccessibleName = "";
-            this.button31.Location = new System.Drawing.Point(532, 241);
+            this.button31.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button31.Location = new System.Drawing.Point(843, 414);
             this.button31.Name = "button31";
             this.button31.Size = new System.Drawing.Size(60, 55);
             this.button31.TabIndex = 30;
@@ -408,7 +452,8 @@
             // button32
             // 
             this.button32.AccessibleName = "";
-            this.button32.Location = new System.Drawing.Point(598, 241);
+            this.button32.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button32.Location = new System.Drawing.Point(928, 414);
             this.button32.Name = "button32";
             this.button32.Size = new System.Drawing.Size(60, 55);
             this.button32.TabIndex = 31;
@@ -419,7 +464,8 @@
             // button33
             // 
             this.button33.AccessibleName = "";
-            this.button33.Location = new System.Drawing.Point(136, 302);
+            this.button33.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button33.Location = new System.Drawing.Point(312, 491);
             this.button33.Name = "button33";
             this.button33.Size = new System.Drawing.Size(60, 55);
             this.button33.TabIndex = 32;
@@ -430,7 +476,8 @@
             // button34
             // 
             this.button34.AccessibleName = "";
-            this.button34.Location = new System.Drawing.Point(202, 302);
+            this.button34.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button34.Location = new System.Drawing.Point(397, 491);
             this.button34.Name = "button34";
             this.button34.Size = new System.Drawing.Size(60, 55);
             this.button34.TabIndex = 33;
@@ -441,7 +488,8 @@
             // button35
             // 
             this.button35.AccessibleName = "";
-            this.button35.Location = new System.Drawing.Point(268, 302);
+            this.button35.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button35.Location = new System.Drawing.Point(490, 491);
             this.button35.Name = "button35";
             this.button35.Size = new System.Drawing.Size(60, 55);
             this.button35.TabIndex = 34;
@@ -452,7 +500,8 @@
             // button36
             // 
             this.button36.AccessibleName = "";
-            this.button36.Location = new System.Drawing.Point(334, 302);
+            this.button36.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button36.Location = new System.Drawing.Point(581, 491);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(60, 55);
             this.button36.TabIndex = 35;
@@ -463,7 +512,8 @@
             // button37
             // 
             this.button37.AccessibleName = "";
-            this.button37.Location = new System.Drawing.Point(400, 302);
+            this.button37.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button37.Location = new System.Drawing.Point(670, 491);
             this.button37.Name = "button37";
             this.button37.Size = new System.Drawing.Size(60, 55);
             this.button37.TabIndex = 36;
@@ -474,7 +524,8 @@
             // button38
             // 
             this.button38.AccessibleName = "";
-            this.button38.Location = new System.Drawing.Point(466, 302);
+            this.button38.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button38.Location = new System.Drawing.Point(760, 491);
             this.button38.Name = "button38";
             this.button38.Size = new System.Drawing.Size(60, 55);
             this.button38.TabIndex = 37;
@@ -485,7 +536,8 @@
             // button39
             // 
             this.button39.AccessibleName = "";
-            this.button39.Location = new System.Drawing.Point(532, 302);
+            this.button39.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button39.Location = new System.Drawing.Point(843, 491);
             this.button39.Name = "button39";
             this.button39.Size = new System.Drawing.Size(60, 55);
             this.button39.TabIndex = 38;
@@ -496,7 +548,8 @@
             // button40
             // 
             this.button40.AccessibleName = "";
-            this.button40.Location = new System.Drawing.Point(598, 302);
+            this.button40.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button40.Location = new System.Drawing.Point(928, 491);
             this.button40.Name = "button40";
             this.button40.Size = new System.Drawing.Size(60, 55);
             this.button40.TabIndex = 39;
@@ -504,23 +557,162 @@
             this.button40.Text = "E8";
             this.button40.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtpantalla
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.textBox1.Location = new System.Drawing.Point(167, 11);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(456, 41);
-            this.textBox1.TabIndex = 40;
-            this.textBox1.Text = "Esta Es la Pantalla";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtpantalla.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txtpantalla.Enabled = false;
+            this.txtpantalla.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpantalla.Location = new System.Drawing.Point(300, 119);
+            this.txtpantalla.Multiline = true;
+            this.txtpantalla.Name = "txtpantalla";
+            this.txtpantalla.Size = new System.Drawing.Size(712, 41);
+            this.txtpantalla.TabIndex = 40;
+            this.txtpantalla.Text = "Esta Es la Pantalla";
+            this.txtpantalla.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // msbarra
+            // 
+            this.msbarra.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.atrasToolStripMenuItem,
+            this.menuPrincipalToolStripMenuItem,
+            this.salirToolStripMenuItem});
+            this.msbarra.Location = new System.Drawing.Point(0, 0);
+            this.msbarra.Name = "msbarra";
+            this.msbarra.Size = new System.Drawing.Size(1362, 31);
+            this.msbarra.TabIndex = 41;
+            // 
+            // atrasToolStripMenuItem
+            // 
+            this.atrasToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.atrasToolStripMenuItem.Image = global::WindowsFormsApplication1.Properties.Resources.atras;
+            this.atrasToolStripMenuItem.Name = "atrasToolStripMenuItem";
+            this.atrasToolStripMenuItem.Size = new System.Drawing.Size(80, 27);
+            this.atrasToolStripMenuItem.Text = "Atras";
+            this.atrasToolStripMenuItem.Click += new System.EventHandler(this.atrasToolStripMenuItem_Click);
+            // 
+            // menuPrincipalToolStripMenuItem
+            // 
+            this.menuPrincipalToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuPrincipalToolStripMenuItem.Image = global::WindowsFormsApplication1.Properties.Resources.menu_principal;
+            this.menuPrincipalToolStripMenuItem.Name = "menuPrincipalToolStripMenuItem";
+            this.menuPrincipalToolStripMenuItem.Size = new System.Drawing.Size(158, 27);
+            this.menuPrincipalToolStripMenuItem.Text = "Menu Principal";
+            this.menuPrincipalToolStripMenuItem.Click += new System.EventHandler(this.menuPrincipalToolStripMenuItem_Click);
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salirToolStripMenuItem.Image = global::WindowsFormsApplication1.Properties.Resources.salir;
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(73, 27);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
+            // lblcontador
+            // 
+            this.lblcontador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblcontador.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcontador.Location = new System.Drawing.Point(53, 98);
+            this.lblcontador.Name = "lblcontador";
+            this.lblcontador.Size = new System.Drawing.Size(64, 30);
+            this.lblcontador.TabIndex = 0;
+            // 
+            // lblreloj
+            // 
+            this.lblreloj.AutoSize = true;
+            this.lblreloj.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblreloj.ForeColor = System.Drawing.Color.YellowGreen;
+            this.lblreloj.Location = new System.Drawing.Point(26, 79);
+            this.lblreloj.Name = "lblreloj";
+            this.lblreloj.Size = new System.Drawing.Size(124, 19);
+            this.lblreloj.TabIndex = 42;
+            this.lblreloj.Text = "Tiempo Restante";
+            // 
+            // button41
+            // 
+            this.button41.AccessibleName = "";
+            this.button41.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button41.BackColor = System.Drawing.Color.Red;
+            this.button41.Location = new System.Drawing.Point(760, 51);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(60, 55);
+            this.button41.TabIndex = 43;
+            this.button41.Tag = "";
+            this.button41.UseVisualStyleBackColor = false;
+            // 
+            // button42
+            // 
+            this.button42.AccessibleName = "";
+            this.button42.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button42.BackColor = System.Drawing.SystemColors.Control;
+            this.button42.Location = new System.Drawing.Point(596, 51);
+            this.button42.Name = "button42";
+            this.button42.Size = new System.Drawing.Size(60, 55);
+            this.button42.TabIndex = 44;
+            this.button42.Tag = "";
+            this.button42.UseVisualStyleBackColor = false;
+            // 
+            // button43
+            // 
+            this.button43.AccessibleName = "";
+            this.button43.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button43.BackColor = System.Drawing.Color.Green;
+            this.button43.Location = new System.Drawing.Point(437, 51);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(60, 55);
+            this.button43.TabIndex = 45;
+            this.button43.Tag = "";
+            this.button43.UseVisualStyleBackColor = false;
+            // 
+            // lblasiento
+            // 
+            this.lblasiento.AutoSize = true;
+            this.lblasiento.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblasiento.ForeColor = System.Drawing.Color.Black;
+            this.lblasiento.Location = new System.Drawing.Point(503, 68);
+            this.lblasiento.Name = "lblasiento";
+            this.lblasiento.Size = new System.Drawing.Size(82, 19);
+            this.lblasiento.TabIndex = 46;
+            this.lblasiento.Text = "Su Asiento";
+            // 
+            // lbldisponible
+            // 
+            this.lbldisponible.AutoSize = true;
+            this.lbldisponible.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldisponible.ForeColor = System.Drawing.Color.Black;
+            this.lbldisponible.Location = new System.Drawing.Point(657, 68);
+            this.lbldisponible.Name = "lbldisponible";
+            this.lbldisponible.Size = new System.Drawing.Size(81, 19);
+            this.lbldisponible.TabIndex = 47;
+            this.lbldisponible.Text = "Disponible";
+            // 
+            // lblventa
+            // 
+            this.lblventa.AutoSize = true;
+            this.lblventa.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblventa.ForeColor = System.Drawing.Color.Black;
+            this.lblventa.Location = new System.Drawing.Point(821, 68);
+            this.lblventa.Name = "lblventa";
+            this.lblventa.Size = new System.Drawing.Size(143, 19);
+            this.lblventa.TabIndex = 48;
+            this.lblventa.Text = "Vendido/Reservado";
             // 
             // frmSala4D
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 393);
-            this.Controls.Add(this.textBox1);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.lblventa);
+            this.Controls.Add(this.lbldisponible);
+            this.Controls.Add(this.lblasiento);
+            this.Controls.Add(this.button43);
+            this.Controls.Add(this.button42);
+            this.Controls.Add(this.button41);
+            this.Controls.Add(this.lblreloj);
+            this.Controls.Add(this.lblcontador);
+            this.Controls.Add(this.msbarra);
+            this.Controls.Add(this.txtpantalla);
             this.Controls.Add(this.button40);
             this.Controls.Add(this.button39);
             this.Controls.Add(this.button38);
@@ -561,10 +753,15 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.MainMenuStrip = this.msbarra;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmSala4D";
             this.Text = "Reservacion de Asientos";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.msbarra.ResumeLayout(false);
+            this.msbarra.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -612,7 +809,19 @@
         private System.Windows.Forms.Button button38;
         private System.Windows.Forms.Button button39;
         private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtpantalla;
+        private System.Windows.Forms.MenuStrip msbarra;
+        private System.Windows.Forms.ToolStripMenuItem atrasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem menuPrincipalToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.Label lblcontador;
+        private System.Windows.Forms.Label lblreloj;
+        private System.Windows.Forms.Button button41;
+        private System.Windows.Forms.Button button42;
+        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Label lblasiento;
+        private System.Windows.Forms.Label lbldisponible;
+        private System.Windows.Forms.Label lblventa;
     }
 }
 
