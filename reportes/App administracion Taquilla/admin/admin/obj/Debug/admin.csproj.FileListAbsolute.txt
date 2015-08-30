@@ -1,0 +1,185 @@
+C:\Users\Wilfredo\Desktop\admin\admin\admin\bin\Debug\admin.exe.config
+C:\Users\Wilfredo\Desktop\admin\admin\admin\bin\Debug\admin.exe
+C:\Users\Wilfredo\Desktop\admin\admin\admin\bin\Debug\admin.pdb
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.exe
+C:\Users\Wilfredo\Desktop\admin\admin\admin\obj\Debug\admin.pdb
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\bin\Debug\admin.exe.config
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.exe
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.pdb
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\bin\Debug\admin.exe
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\bin\Debug\admin.pdb
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\Hector Cardona\Desktop\adminnuevo11111\admin\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\bin\Debug\admin.exe.config
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.exe
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.pdb
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\bin\Debug\admin.exe
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\bin\Debug\admin.pdb
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\walter\Downloads\dise2015-master\proyecto administrativo\admin\admin\admin\obj\Debug\admin.frmingresarCiudad.resources
+C:\Users\Wilfredo\Documents\GitHub\dise2015\proyecto administrativo\admin\admin\admin\bin\Debug\admin.exe.config
+C:\Users\Wilfredo\Documents\GitHub\dise2015\proyecto administrativo\admin\admin\admin\obj\Debug\admin.exe
+C:\Users\Wilfredo\Documents\GitHub\dise2015\proyecto administrativo\admin\admin\admin\obj\Debug\admin.pdb
+C:\Users\walter\Downloads\dise2015-master\admin\admin\bin\Debug\admin.exe.config
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.exe
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.pdb
+C:\Users\walter\Downloads\dise2015-master\admin\admin\bin\Debug\admin.exe
+C:\Users\walter\Downloads\dise2015-master\admin\admin\bin\Debug\admin.pdb
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.frmingresarCiudad.resources
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.frmbitacora.resources
+C:\Users\walter\Downloads\dise2015-master\admin\admin\obj\Debug\admin.frmregistroUsuario.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\bin\Debug\admin.exe.config
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.exe
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.pdb
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\bin\Debug\admin.exe
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\bin\Debug\admin.pdb
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.frmbitacora.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.frmingresarCiudad.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.frmregistroUsuario.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\Hector Cardona\Downloads\adminCorregido\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\bin\Debug\admin.exe.config
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.exe
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.pdb
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\bin\Debug\admin.exe
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\bin\Debug\admin.pdb
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.frmbitacora.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.frmingresarCiudad.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.frmregistroUsuario.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\walter\Desktop\Proyecto Diseño\adminCorregido\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\bin\Debug\admin.exe.config
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.exe
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.pdb
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\bin\Debug\admin.exe
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\bin\Debug\admin.pdb
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmbitacora.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarCiudad.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmregistroUsuario.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\Hector Cardona\Desktop\admin\admin\admin\obj\Debug\admin.frmingresarHorario.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\admin.exe.config
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.exe
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.pdb
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmbitacora.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmingresarCiudad.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmingresarHorario.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.frmregistroUsuario.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\admin.exe
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\admin.pdb
+C:\Users\walter\Documents\Diseño de sistemas\admin\admin\bin\Debug\dllConexion.dll
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\bin\Debug\admin.exe.config
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.exe
+C:\Users\LuiisFer\Documents\GitHub\dise2015\App administracion Taquilla\admin\admin\obj\Debug\admin.pdb
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmbitacora.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmbuscarSala.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmbuscarSucursal.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmingresarCiudad.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmingresarHorario.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmingresarPelicula.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmbuscarPelicula.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmingresarSala.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmingresarSucursal.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frminiciarSesion.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmmenuPrincipal.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmregistroUsuario.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.Properties.Resources.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.csproj.GenerateResource.Cache
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\bin\Debug\admin.exe.config
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\bin\Debug\admin.exe
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\bin\Debug\admin.pdb
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.csprojResolveAssemblyReference.cache
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.exe
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.pdb
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmReporteAcumuladoPuntos.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmReporteGanancias.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmReporteHorarioReservado.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmReportePeliculas.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\RdlCompile.cache
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\RdlCompile.compiled
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmReAcumulado.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmRePeliculas.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmReGanancias.resources
+C:\Users\Wilfredo\Desktop\App administracion Taquilla\admin\admin\obj\Debug\admin.frmReHorarios.resources
+C:\Users\Wilfredo\Desktop\forms editados\App administracion Taquilla\admin\admin\bin\Debug\admin.exe.config
+C:\Users\Wilfredo\Desktop\forms editados\App administracion Taquilla\admin\admin\obj\Debug\admin.exe
+C:\Users\Wilfredo\Desktop\forms editados\App administracion Taquilla\admin\admin\obj\Debug\admin.pdb
