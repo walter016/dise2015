@@ -1,0 +1,15 @@
+c:\users\walter\documents\visual studio 2013\Projects\Seguridad\Seguridad\obj\Debug\Seguridad.csprojResolveAssemblyReference.cache
+c:\users\walter\documents\visual studio 2013\Projects\Seguridad\Seguridad\obj\Debug\Manejo_Rol.frmConsulta.resources
+c:\users\walter\documents\visual studio 2013\Projects\Seguridad\Seguridad\obj\Debug\Errores.frmErrores.resources
+c:\users\walter\documents\visual studio 2013\Projects\Seguridad\Seguridad\obj\Debug\Bitacora.frmIniciarSesion.resources
+c:\users\walter\documents\visual studio 2013\Projects\Seguridad\Seguridad\obj\Debug\Manejo_Rol.frmManejoRol.resources
+c:\users\walter\documents\visual studio 2013\Projects\Seguridad\Seguridad\obj\Debug\Bitacora.Presentacion.resources
+c:\users\walter\documents\visual studio 2013\Projects\Seguridad\Seguridad\obj\Debug\Seguridad.csproj.GenerateResource.Cache
+C:\Users\Hector Cardona\Desktop\Seguridad\Seguridad\Seguridad\obj\Debug\Seguridad.csprojResolveAssemblyReference.cache
+C:\Users\Hector Cardona\Desktop\Seguridad\Seguridad\Seguridad\obj\Debug\Manejo_Rol.frmConsulta.resources
+C:\Users\Hector Cardona\Desktop\Seguridad\Seguridad\Seguridad\obj\Debug\Errores.frmErrores.resources
+C:\Users\Hector Cardona\Desktop\Seguridad\Seguridad\Seguridad\obj\Debug\Bitacora.frmIniciarSesion.resources
+C:\Users\Hector Cardona\Desktop\Seguridad\Seguridad\Seguridad\obj\Debug\Manejo_Rol.frmManejoRol.resources
+C:\Users\Hector Cardona\Desktop\Seguridad\Seguridad\Seguridad\obj\Debug\Bitacora.Presentacion.resources
+C:\Users\Hector Cardona\Desktop\Seguridad\Seguridad\Seguridad\obj\Debug\Seguridad.Properties.Resources.resources
+C:\Users\Hector Cardona\Desktop\Seguridad\Seguridad\Seguridad\obj\Debug\Seguridad.csproj.GenerateResource.Cache
